@@ -1,0 +1,116 @@
+#title
+{
+
+border-bottom-width: 6px;
+border-style: solid;
+border-color: black;
+border-top-width: 6px;
+border-right-width: 6px;
+border-left-width: 6px;
+color:red;
+margin-right: 980px;
+
+}
+#head a:link {
+	text-decoration: none;
+	color:red;
+	
+}
+#head a:visited 
+{
+color:red;
+
+
+}
+#codelang
+{
+float: right;
+border-bottom-width: 4px;
+border-style: dotted;
+border-color: blue;
+border-top-width: 4px;
+border-right-width: 4px;
+border-left-width: 4px;
+color: orange;
+margin-top: 1px;
+
+
+}
+a:hover {
+  text-decoration: none;
+  filter:drop-shadow(10px 10px 8px rgb(106, 255, 0));
+  -50webkit-filter: drop-shadow(10px 10px 8px rgb(0, 255, 154));
+}
+
+
+#ame
+
+{
+
+border-bottom-width: 4px;
+border-style: solid;
+border-color: #65ff00;
+border-top-width: 4px;
+border-right-width: 4px;
+border-left-width: 4px;
+color:grey;
+margin-right: 500px;
+padding: 6px;
+ border-radius: 25px;
+ background-color: darkorange;
+
+}
+
+#maintext
+{
+color:red;
+margin-right:450px;
+border-bottom-width: 6px;
+border-style: solid;
+border-color: #red;
+border-top-width: 6px;
+border-right-width: 6px;
+border-left-width: 6px;
+margin-right: 450px;
+padding: 6px;
+ border-radius: 25px;
+  background-color: orange;
+ 
+}
+
+#greentextburgandyline
+    
+    {
+border-bottom-width: 2px;
+border-style: solid;
+border-color: #ba5600;
+border-top-width: 2px;
+border-right-width: 2px;
+border-left-width: 2px;
+color:#10e809;
+margin-right: 500px;
+}
+
+
+#orangetextburgandyline
+    
+    {
+border-bottom-width: 2px;
+border-style: solid;
+border-color: #ba5600;
+border-top-width: 2px;
+border-right-width: 2px;
+border-left-width: 2px;
+color:orange;
+margin-right: 500px;
+}
+
+.otherpagebutton  {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 7px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}

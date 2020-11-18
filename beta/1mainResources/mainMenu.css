@@ -1,0 +1,72 @@
+/*INFO for all the page*/
+
+/*Info for the menuBox*/
+.menuBox {
+  background-color: #111;
+  font-family: Arial;
+  padding: 1px 10px 20px 10px;
+  position: fixed;
+  width: 40%;
+  top: 10%;
+  left: 30%;
+  animation-name: slidein;
+  animation-duration: .7s;
+  border-radius: 12px;
+  display: none;
+}
+
+@keyframes slidein {
+  0% {top: -50%;}
+  100% {top: 10%;}
+}
+
+
+.menuBox  a{
+  text-align: center;
+  display: block;
+  transition: all 0.2s ease;
+  padding: 14px;
+  font-size: 20px;
+}
+
+/*info for text in menubox*/
+#area {
+  color: white;
+  text-decoration: none;
+
+}
+
+#area:hover {
+  background-color: #000;
+  color: orange;
+}
+
+/*title in menubox*/
+.menuBoxTitle {
+  font-size: 30px;
+  border-bottom:2px solid #444;
+  text-align: center;
+  display: block;
+  color: white;
+}
+
+/*secret NPA stuff...*/
+.npa {
+  font-size: 30px;
+  bottom: 50px;
+  left: 65%;
+  position: fixed;
+  cursor: default;
+  user-select: none;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  color: #222
+}
+
+.npa:hover {
+  color: #777;
+  background-color: #000;
+  transition: all 6s ease;
+
+}

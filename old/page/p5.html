@@ -1,0 +1,250 @@
+<title> Other Page
+</title> 
+<html>
+    <head>
+        <script>
+            
+            var menuDisplayed = false;
+            var menuBox = null;
+            
+            window.addEventListener("contextmenu", function() {
+                var left = arguments[0].clientX;
+                var top = arguments[0].clientY;
+                
+                menuBox = window.document.querySelector(".menu");
+                menuBox.style.left = left + "px";
+                menuBox.style.top = top + "px";
+                menuBox.style.display = "block";
+                
+                arguments[0].preventDefault();
+                
+                menuDisplayed = true;
+            }, false);
+            
+            window.addEventListener("click", function() {
+                if(menuDisplayed == true){
+                    menuBox.style.display = "none"; 
+                }
+            }, true);
+        </script>
+        <style>
+            .menu
+            {
+                width: 150px;
+                box-shadow: 3px 3px 5px #888888;
+                border-style: solid;
+                border-width: 1px;
+                border-color: grey;
+                border-radius: 2px;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 3px;
+                padding-bottom: 3px;
+                position: fixed;
+                display: none;
+                background-color: white;
+            }
+            
+            .menu-item
+            {
+                height: 20px;
+            }
+            
+           
+        </style>
+    </head>
+    <body>
+        <div class="menu">
+            <div class="menu-item" onclick="openNav()">Open Menu</div>
+            <div class="menu-item" a href="/index.html">Go to index</div>
+        </div>
+    </body>
+</html>
+<script src="js1.js"></script>
+<head>
+<link rel="stylesheet" type="text/css" href="/page/stylesheet1.css">
+
+</head>
+
+
+<style>
+body
+
+{
+
+background-image: url("/image/star.gif");
+background-color:#f7dc96;
+
+}
+
+
+    
+    
+    
+.otherpagebutton    
+{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 7px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+    
+    
+    
+
+    
+    
+
+</style>
+
+
+
+
+
+
+
+
+<p id=menu>
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="/index.html">Index</a>
+    <a href="/page/p2.html">Cool Pictures</a>
+    <a href="/page/p3.html">Updates</a>
+    <a href="/page/p5.html">Other</a>
+    <a href="/page/p6.html">Software</a>
+</div>
+
+
+<span style="color:white;font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+     
+</body>
+
+
+
+<p id="title">
+
+<font size=7>  Owen's weird Site 
+</p>
+</a>
+<font size=2>
+
+
+
+<p id="greentextburgandyline">
+    <font size=4> .           Other
+</p>    
+
+
+
+ 
+<form action="mailto:owen.daigle@outlook.com?subject=Owens Weird Site&body=I would like to contact you about your site."target="_blank">
+    <input type="submit" value="Contact Me" class="otherpagebutton" />
+</form>
+
+<form action="http://nevansrandomwebsite.000webhostapp.com"target="_blank">
+    <input type="submit" value="Inspiring Site" class="otherpagebutton" />
+</form>
+
+
+<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+while (testV < 3) {
+if (!pass1) 
+history.go(0);
+if (pass1.toLowerCase() == "11073641") {
+alert('Welcome to the NPA');
+window.open('npa-11073641LoggedIn2WebPage.html');
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(0);
+return " ";
+} 
+</SCRIPT>
+
+
+
+
+
+<p>
+<font size=6>
+<br>
+<font size=5>
+	<li> </li>
+	
+</p>
+<div style='text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: not-allowed;line-height: 0;display:block !important;'>
+<p>
+<form action="/npa/npalog.html">
+    <input type="submit" value="NPA" />
+</form>
+</div>
