@@ -1,7 +1,6 @@
 # trmWebsite
-This is the repository for TheRuntingMuumuu's website. You can find it: http://trm.ddns.net or, if that fails, a lesser-updated can be found at https://theruntingmuumuu.github.io/trmWebsite. In the future, theruntingmuumuu.github.io could be MORE updated than trm.ddns.net, but not right now as TheRuntingMuumuu's computer doesn't work right and we'd need to set up a cronjob.
+This is the repository for TheRuntingMuumuu's website. You can find it: http://trm.ddns.net or, if that fails, a lesser-updated can be found at https://theruntingmuumuu.github.io/trmWebsite. 
 
-MOST OF MY WORK I WILL SAVE ON ONEDRIVE SINCE GITHUB DOES NOT WORK FOR ME.
-IT CAN BE VIEWED HERE: https://1drv.ms/u/s!AuOY4LneJIRzhfgQzVvFY2imk53QCw
+I hope to in the future make github the main location for the website, but right now my computer doesent seem to want to cooperate with github. So for the time being it will be saved on my onedrive at this link. https://1drv.ms/u/s!AuOY4LneJIRzhfgQzVvFY2imk53QCw
 
-THE OLD VERSIONS OF THE WEBSITE SHOULD BE ABLE TO BE FOUND HERE https://cloud.degoo.com/share/ZnCxiMNVAOcMwR
+I also intend to later make github the primary location for the archives of the website, but for now they can be found here, unless the link goes down. If it goes down, please file an issue and i'll try to get the link back up and working ASAP. https://cloud.degoo.com/share/ZnCxiMNVAOcMwR
