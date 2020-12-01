@@ -1,0 +1,114 @@
+/*Stuff for my font (1st icon on menubar)*/
+@font-face {
+  font-family: trmFont;
+  src: url(trmFont.ttf);
+}
+
+.trmFont {
+  font-family:trmFont;
+  font-size:28px;
+  color:white;
+  float:left;
+  padding-left:8px;
+  padding-right:15px;
+  padding-bottom:16px;
+  text-decoration: none;
+}
+
+.trmFont:hover {
+  background-color: #333;
+  color:purple;
+}
+
+/*Stuff for the main categories on the menubar*/
+.main {
+  color: white;
+  padding: 15px;
+  font-size: 17px;
+}
+
+.main:hover {
+  background-color: #333;
+  color:orange;
+}
+
+/*stuff for the whole page*/
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/*stuff for the menu bar*/
+.menuBar {
+  overflow: hidden;
+  background-color: #111;
+  top: 0;
+  width: 100%;
+  font-family: Arial;
+  position: fixed;
+  z-index: 50;
+}
+
+.menuBar  a{
+  float: left;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.1s ease;
+
+}
+
+  /*MenuBar responsive stuff (mobile compatability layer 1)*/
+  @media screen and (max-width: 700px) {
+  .menuBar a:not(:first-child) {display: none;}
+  .menuBar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .menuBar.responsive {position: relative;}
+  .menuBar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menuBar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.menuBar .icon { /*icon on right of screen in mobile view*/
+  display: none;
+  color: white ;
+  font-size: 24px;
+  text-align: center;
+  padding: 12px 14px;
+}
+
+.menuBar .icon:hover { /*icon on right of screen in mobile view*/
+  background-color: #333;
+  color: orange;
+}
+
+/*this is the back function that will take the user back a page.*/
+.back {
+  color: white;
+  padding: 15px;
+  padding-right: 25px;
+  font-size: 17px;
+}
+
+.back:hover {
+  background-color: #333;
+  color:red;
+}
+
+
+/*Margin for the mainText*/
+.mainText {
+  margin-top:60px;
+}

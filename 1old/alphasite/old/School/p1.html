@@ -1,0 +1,406 @@
+<!DOCTYPE HTML>
+
+
+<title> School
+</title>
+<html>
+    <head>
+        <script>
+            
+            var menuDisplayed = false;
+            var menuBox = null;
+            
+            window.addEventListener("contextmenu", function() {
+                var left = arguments[0].clientX;
+                var top = arguments[0].clientY;
+                
+                menuBox = window.document.querySelector(".menu");
+                menuBox.style.left = left + "px";
+                menuBox.style.top = top + "px";
+                menuBox.style.display = "block";
+                
+                arguments[0].preventDefault();
+                
+                menuDisplayed = true;
+            }, false);
+            
+            window.addEventListener("click", function() {
+                if(menuDisplayed == true){
+                    menuBox.style.display = "none"; 
+                }
+            }, true);
+        </script>
+        <style>
+            .menu
+            {
+                width: 150px;
+                box-shadow: 3px 3px 5px #888888;
+                border-style: solid;
+                border-width: 1px;
+                border-color: grey;
+                border-radius: 2px;
+                padding-left: 5px;
+                padding-right: 5px;
+                padding-top: 3px;
+                padding-bottom: 3px;
+                position: fixed;
+                display: none;
+                background-color: white;
+            }
+            
+            .menu-item
+            {
+                height: 20px;
+            }
+            
+           .FS    
+{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 7px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+        </style>
+    </head>
+    <body>
+        <div class="menu">
+            <div class="menu-item" onclick="openNav()">Open Menu</div>
+            <div class="menu-item" a href="/index.html"><a href=/index.html>"Go to index</a></a></div>
+        </div>
+    </body>
+</html>
+<head>
+<link rel="stylesheet" type="text/css" href="/page/stylesheet1.css">
+</head>
+
+<style>
+
+body
+{
+
+
+background-color:#f7dc96;
+
+
+
+
+}
+
+
+
+
+
+
+#head
+{
+
+border-bottom-width: 6px;
+border-style: solid;
+border-color: black;
+border-top-width: 6px;
+border-right-width: 6px;
+border-left-width: 6px;
+color:red;
+margin-right: 980px;
+
+}
+#head a:link {
+	text-decoration: none;
+	color:red;
+	
+}
+#head a:visited 
+{
+color:red;
+
+
+}
+#try
+{
+float: right;
+border-bottom-width: 4px;
+border-style: dotted;
+border-color: blue;
+border-top-width: 4px;
+border-right-width: 4px;
+border-left-width: 4px;
+color: orange;
+margin-top: 1px;
+
+
+}
+a:hover {
+  text-decoration: none;
+  filter:drop-shadow(10px 10px 8px rgb(106, 255, 0));
+  -50webkit-filter: drop-shadow(10px 10px 8px rgb(0, 255, 154));
+}
+#next
+{
+
+border-bottom-width: 4px;
+border-style: ridge;
+border-color: purple;
+border-top-width: 4px;
+border-right-width: 4px;
+border-left-width: 4px;
+color: green;
+margin-right: 450px;
+padding: 6px;
+ border-radius: 25px;
+
+}
+#click {
+ margin-left: 500px;
+ margin-top: 1px;
+clear: bottom;
+
+
+
+
+
+}
+
+
+
+#end
+
+{
+
+border-bottom-width: 4px;
+border-style: solid;
+border-color: #65ff00;
+border-top-width: 4px;
+border-right-width: 4px;
+border-left-width: 4px;
+color:grey;
+margin-right: 500px;
+padding: 6px;
+ border-radius: 25px;
+
+
+}
+
+#second
+{
+color:red;
+margin-right:450px;
+border-bottom-width: 6px;
+border-style: solid;
+border-color: #red;
+border-top-width: 6px;
+border-right-width: 6px;
+border-left-width: 6px;
+margin-right: 450px;
+padding: 6px;
+ border-radius: 25px;
+ 
+ 
+}
+
+
+#menu
+{
+border-bottom-width: 4px;
+border-style: solid;
+border-top-width: 4px;
+border-right-width: 4px;
+border-left-width: 4px;
+color: yellow;
+background-color: #d3d3d3;
+ text-align: center;
+text-decoration: none;
+
+}
+
+#TODO
+    {
+border-bottom-width: 2px;
+border-style: solid;
+border-color: #00defc;
+border-top-width: 2px;
+border-right-width: 2px;
+border-left-width: 2px;
+color:#9e0002;
+margin-right: 500px;     }
+        
+        
+        
+        
+        
+  .sof      
+  { background-color: red;
+    border: solid;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius: 10px;      } 
+        
+  
+.button {
+    background-color: red;
+    border: solid;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+	border-radius: 10px;
+	
+}
+
+</style>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.alert {
+    padding: 20px;
+    background-color: #00a9ff;
+    color: white;
+}
+
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+</style>
+</head>
+<body>
+
+
+
+
+
+
+
+<html>
+
+
+
+
+
+
+
+
+
+<body>
+
+
+
+
+
+
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+</head>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="/index.html">Index</a>
+    <a href="/page/p2.html">Cool Pictures</a>
+    <a href="/page/p3.html">Updates</a>
+    <a href="/page/p5.html">Other</a>
+    <a href="/page/p6.html">Software</a>
+</div>
+
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+     
+</body>
+ 
+ 
+ <html>
+<body>
+
+<p id="head">
+
+<font size=7>  School Work 
+</p>
+</a>
+<font size=2>
+
+
+
+<p id="p2head">
+    <font size=4>    Notre Carte des plaines interieurs
+</p>    
+
+
+<iframe src="https://www.google.com/maps/d/embed?mid=1QD6Vfh66oTgHuyOaO0ZlZwz-FflkDmYF" width="680" height="400"></iframe>
+<form action="/School/p1f.html"target="_blank">
+    <input type="submit" value="Full Screen" class="FS" />
+</form>
+
+

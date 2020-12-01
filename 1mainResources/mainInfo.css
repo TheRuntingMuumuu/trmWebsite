@@ -1,0 +1,62 @@
+/*INFO for all the page*/
+
+/*Info for the menuBox*/
+.infoBox {
+  background-color: #111;
+  font-family: Arial;
+  padding: 1px 10px 20px 10px;
+  position: absolute;
+  width: 80%;
+  top: 10%;
+  left: 10%;
+  animation-name: slidein;
+  animation-duration: .7s;
+  border-radius: 12px;
+}
+
+@keyframes slidein {
+  0% {top: -50%;}
+  100% {top: 10%;}
+}
+
+/*info for text in menubox*/
+.text {
+  color: white;
+  padding: 0px 14px 14px 14px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.hyperlink {
+  text-decoration: none;
+  color: lightblue;
+}
+.hyperlink:hover {
+  color: orange;
+}
+
+
+/*title in menubox*/
+.infoBoxTitle {
+  font-size: 30px;
+  border-bottom:2px solid #444;
+  text-align: center;
+  color: white;
+}
+
+/*Mobile Compatability*/
+@media screen and (max-width: 900px) { /*Mobile Compatibility - Make the box take up entire screen*/
+  div.infoBox {
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    animation-duration: .0s; /*Cancelles the animation for mobile*/
+  }
+  body {
+    background-color: #111;
+  }
+  /*title in menubox*/
+  .infoBoxTitle {
+    font-size: 24px;
+    color: white;
+  }
+}

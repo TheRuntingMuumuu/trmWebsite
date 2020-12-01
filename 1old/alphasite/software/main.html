@@ -1,0 +1,39 @@
+<!DOCTYPE html5>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--To help with the mobile compatibility-->
+
+<title>Software</title>
+<link rel="stylesheet" type="text/css" href="../menucss.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Link for the menu icon in mobile view-->
+<script src="../menujs.js"></script>
+
+
+
+<!--This is the menu-->
+
+<div class="menuBar" id="menuBarResponsive">
+  <a href="../index.html" class="trmFont">TRM</a>
+  <a href="../mc/main.html" class="main">Minecraft Server</a>
+  <a href="../eso/main.html" class="main">ESO</a>
+  <a href="../64support/main.html" class="main">64support</a>
+  <a href="../youtube/main.html" class="main">Youtube</a>
+  <a href="../software/main.html" class="main">Software</a>
+  <!--for the responsive (mobile friendly) menuBar-->
+  <a href="javascript:void(0);" class="icon" onclick="responsiveMenuBar()">
+      <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<!--This is the content-->
+<div class="mainText"> <!--This is a tag that has margin-top: 60px; -- It can be replaced as long as the new one has margin-top:60px;-->
+  <p id="Text">I have created some software and games, and here they are avalible to download.</p>
+
+  <div class="software">
+    <ul>
+      <li><a href="../old/oldsite.html">Old Website</a></li>
+      <li><a href="games/yahtzeeWindows.zip" download>Yahtzee Python Game</a></li>
+      <li><a href="https://github.com/TheRuntingMuumuu/SCtechEncrypterDecrypter">Basic Encrypter</a></li>
+      <li><a href="games/creeper.zip" download>Creeper random funny weird game</a></li>
+    </ul>
+  </div>
+</div>

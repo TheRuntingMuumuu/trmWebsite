@@ -1,0 +1,46 @@
+/*menu bar styling*/
+body {
+  margin: 0;
+}
+/*Menu stuff*/
+.menuBar {
+  background-color: #000;
+  width: 100%;
+  position: fixed;
+  font-family: Arial;
+  top: 0px;
+  z-index: 50;
+
+}
+
+.main {
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.1s ease;
+}
+
+.main:hover {
+  color:orange;
+}
+
+#esoNavBar {
+  padding: 0px;
+}
+/*For the button leading to the index*/
+
+.indexButton {
+  color: white;
+  float: left;
+  padding: 12px 25px;
+  font-size: 20px;
+  font-family: arial;
+}
+
+.indexButton:hover {
+  color: purple;
+  background-color: #111;
+}

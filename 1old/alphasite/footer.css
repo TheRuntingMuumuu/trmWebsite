@@ -1,0 +1,14 @@
+/*This is the document for the footer on all pages*/
+
+.theFooter {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+}
+
+#footerText {
+  color: white;
+  margin: 5px;
+  text-decoration: none;
+}
