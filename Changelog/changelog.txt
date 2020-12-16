@@ -104,3 +104,17 @@ Alpha 1.5.4
 -	Fixed some mobile compatibility (only for testing for the beta since the framework was already in place for alpha)
 o	Made the mobile compatibility work on screens that are larger than 600px
 -	Made a TXT file as well as the DOCX file for the changelog
+Beta 2.4.1
+- (2.4.1 not 2.5 since I only have a limited number of points. I don’t want to go into three for a long time)
+- Minecraft
+o Made good mobile compatibility
+o Changed the menu framework to better framework
+o Added worlds page
+o Moved Index button
+- Bugfixed some of the main mobile compatibility
+- Fixed bug where icon would not render for main page
+- ESO
+o Improved ESO mobile compatibility
+o Updated ESO page
+- Fixed some of the main page bugs where the mobile compatibility did not work on about and contact me pages.
+- Put version on General page. The General page has no other changes as of now.
