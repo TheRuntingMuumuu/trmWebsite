@@ -3,22 +3,18 @@
 <link rel="stylesheet" type="text/css" href="stylesheet1.css">
 <link rel="shortcut icon" href="omsIcon.png" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--Link for the menu icon in mobile view-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> <!--Importing JQuery which is used for the menu bar to be editable from one file.-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Mobile Compatability-->
 
 
 <!--This is the content-->
 <!--This is the wallpaper code-->
-<div class="splitSmall right">
-  <ul id="resourcesTitle">
-    <li>Server Resources <a href="../index.html" class="indexButton"><i class="fa fa-bars"></i></a></li>
-  </ul>
-  <ul id="resources">
-    <li><a href="map.html">Server Map</a></li>
-    <li><a href="../contact.html" target="_blank">Contact Me</a></li>
-    <li><a href="https://minecraftskinstealer.com/" target="_blank">Skin Stealer</a></li>
-  </ul>
-</div>
+
+<div class="splitSmall right " id="mcNavBar"><script src="mcnavBar.js"></script></div>
+
 <div class="splitBig left">
   <div class="mainText">
+    <div onclick="openNav()"><a class="mobileMenu"><i class="fa fa-bars"></i> Menu</a></div> <!--Only shown on mobile-->
     <b><font size=6px>Minecraft Server</font></b>
     <p>This is the website for the OMS minecraft server. Most stuff will be found on the discord server though.</p>
     <p>Our minecraft server is Fast, Friendly, and Fun!!! We have both a survival world, and a creative world.</p>
