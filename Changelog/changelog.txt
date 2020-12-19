@@ -1,106 +1,14 @@
-I WOULD HIGHLY SUGGEST USING THE .DOCX VERSION OF THE CHANGELOG
-
-ALPHA 1.1
-ALPHA 1.2
-ALPHA 1.3
--	Added the changelog (that’s why there is nothing for the earlier versions)
--	Did many bugfixes
--	Added new information to Minecraft page
--	Added new information to ESO page
--	Added framework for footer (not enabled yet, will do once I have more content, feel free to test it by removing the comment tags (<!-- -->)
-Alpha 1.3.1
--	Added pictures to ESO page
-Alpha 1.4
--	Fixed slow download speed
--	Added some mobile compatibility with the responsive menubar – enables when the windows is >700px
--	Bugfixes
--	Bugfixed the mobile compatibility…
--	Spent hours fixing the mobile compatibility
--	Added more useful comments
-Alpha 1.4.1
--	Fixed the chrome bug (the ESO and MC pages would not work in chrome based browsers)
-Alpha 1.4.2
--	Fixed firefox but where menubar would not render
-Alpha 1.4.3
--	Fixed bug where menuBar would render on top of some of the text making it impossible to see.
--	Changed the lava creepers to Preview, as I do not have any content yet…
-Alpha 1.5
--	General bugfixes
--	Added my new ESO character
--	Added a new program
--	Started working on the beta redesign (currently located in the beta folder)
--	LAST PROJECTED VERSION OF ALPHA
-Alpha 1.5.1
--	Added links to the beta website
--	Removed NPA (as there is a more secure way to enter on the Beta)
-
-Beta 2.0 (Originally named Beta 1.0)
--	Came out with a good concept for the redesign
--	Implemented the new concept
--	Changed up a lot of the dependencies to be better organized
--	Optimised some of the webpages
--	Added more secure NPA
-Beta 2.1
--	Started working on redesigning/porting many other sections including :
-o	ESO – Redesign - Started
-o	Minecraft – Imported - Started
-o	64support – Imported - Completed
-o	Software – not decided yet – Not started
-o	School – Adding old feature (was present on original site [OWS]) – Not started
-o	Youtube – Undecided – Imported old one for time being
-o	Genaral – Redisign – Not started
--	Bugfixes
--	Renamed Beta 1.0 to Beta 2.0 
-Alpha 1.5.2
--	Updated ESO page
--	Reworked the Versions to include the beta.
--	Bugfixes
-Beta 2.2
--	Made a lot of progress on ESO section
--	Refined theme for the ESO section
--	Imported more files for other sections
--	Bugfixes
-o	Fixed some of the files that were missing and added pages that said under construction
-o	Removed unnecessary code from software page
-o	Fixed MC map being tiny
-o	Other things
-Beta 2.3
--	BUGFIXES
-o	Fixed no scrolling on certain pages
-o	Fixed dead links
-o	Added menu button to ALL subpages
-o	Added back button to many pages
--	Added about me page to main site
--	Added better ways of contacting me
--	Better organization (renamed old, licence, resource to 1old, 1licence, 1resource)
--	Archived 64Support
--	Added more formatting to certain pages
--	Added more software to software page
--	Uploaded site to Github
--	Updated software page
--	Updated ESO page
-Alpha 1.5.3
--	Couple bugfixes
--	LAST UPDATE
--	Added message to use the beta
-Beta 2.4
--	SCHOOL
-o	Added framework for better JS menu to School section
--	NPA
-o	Made the NPA page to be accessed by typing “Up Up Down Down Left Right Left Right B A” to improve security.
-	There was a bug where the NPA ENTER TEXT HYPERLINK was visible on small screens
-o	Removed additional dialogue box after NPA password is entered.
-o	Organized (better) NPA pages
-o	Added 30 minute limit to NPA page. (will require login after 30 minutes)
--	Added better NOJS compatibility to the index menu
--	Made the menu and associated pages work on mobile
--	Added better mobile compatibility throughout the site
--	Changed the ESO framework to be easier to manage
--	Bugfixes
--	Commented many JS pages
--	RELEASED THE BETA AS MAIN VERSION AND RETIRED ALPHA
-o	COMPLETELY REDID THE FILE STRUCTURE
-Alpha 1.5.4
--	Fixed some mobile compatibility (only for testing for the beta since the framework was already in place for alpha)
-o	Made the mobile compatibility work on screens that are larger than 600px
--	Made a TXT file as well as the DOCX file for the changelog
+Beta 2.4.1
+- (2.4.1 not 2.5 since I only have a limited number of points. I don’t want to go into three for a long time)
+- Minecraft
+o Made good mobile compatibility
+o Changed the menu framework to better framework
+o Added worlds page
+o Moved Index button
+- Bugfixed some of the main mobile compatibility
+- Fixed bug where icon would not render for main page
+- ESO
+o Improved ESO mobile compatibility
+o Updated ESO page
+- Fixed some of the main page bugs where the mobile compatibility did not work on about and contact me pages.
+- Put version on General page. The General page has no other changes as of now.
