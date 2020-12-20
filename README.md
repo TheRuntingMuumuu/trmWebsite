@@ -7,3 +7,5 @@ These should be the archives for the website. If the link goes down, please file
 
 # Contributing
 Put any contributions into the `beta1` branch. `master` is only for commits that are published to the web server, and should only be modified by TheRuntingMuumuu and TheTechRobo, to fix a critical issue with e.g. README.md.
+
+There are better ways to do this, but for now, this is what the contributing guideline is. if you don't follow this rule, we may close your Pull Request and create a new one with the correct base branch. Changes in `master` should only be README.md fixes.
