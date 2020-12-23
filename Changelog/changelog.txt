@@ -122,3 +122,15 @@ o Updated ESO page
 Beta 2.5.1
 - Cosmetic and bug fixes
 - Improved mobile compatibility
+
+Beta 2.5.2
+- Fix for devices that use https (SSL) if the server is https (like github pages)
+
+Beta 2.6
+- Started working on general section redesign
+- Removed beta from index title
+- Fixed a typo in the readme document
+- Added credit where due (fuel rats [general] & alcast [ESO])
+- Added plan for sitemap
+- Added link for beta website
+- Slightly better organized software section
