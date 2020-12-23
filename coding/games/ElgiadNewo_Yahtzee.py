@@ -54,10 +54,10 @@ def theGame():
         print('You rolled: ', dice)
         for j in range(0,2): #this allows the user to reroll the dice twice instead of just once
             if input('Do you want to reroll any of the dice? (Y/n) : ').lower()[0] == 'y': #asks the user whether or not they want to reroll one or many of the dice
-                dice2Rerollinput = str(input('Which dice do you want to reroll ? : ')) #asks them which ones they want to reroll if they had responded yes to the line above
+                dice2Rerollinput = str(input('Which die do you want to reroll? For example, if you wanted to reroll the 4th die type 4. ')) #asks them which ones they want to reroll if they had responded yes to the line above
                 dice2RerollActual = dice2Rerollinput.split() #this will take the user input of which dice they wanted to reroll and turn it into a list
                 if dice2RerollActual[0] != '1' and dice2RerollActual[0] != '2' and dice2RerollActual[0] != '3' and dice2RerollActual[0] != '4' and dice2RerollActual[0] != '5': #simple way of detecting if the user accidentally entered a letter. Sadly it only works on the first character.
-                    print('\n\tYou did not enter an integer.')
+                    print('\n\tYou did not enter a valid integer.')
                     input('Press \'ENTER\' to continue...')
                     break
                 for l in range(0, len(dice2RerollActual)): #these lines will change the list created on the previous line into integers.
