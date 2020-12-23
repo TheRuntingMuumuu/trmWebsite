@@ -12,15 +12,15 @@ def clearScreen():
     print('\033c')#second attempt at clearing the screen w/ ansi escape codes
     print('\x1bc')#third attempt at clearing the screen w/ ansi escape codes
 
-def standTextOut(string, printMechanismDash=print, printMechanismString=print):
+def standTextOut(string):
     """
-    Borrowed from TheTechRobo's calculator.
+    Will return the finished string so you can output it the way you want.
     """
     width = os.get_terminal_size().columns
-    dashes = "-" * width
-    printMechanismDash(dashes)
-    printMechanismString(string.center(width))
-    printMechanismDash(dashes)
+    result = "-" * width
+    result = (result + "\n" + string.center(width))
+    result = (result + "\n" + ("-" * width))
+    return result
 
 import random #allows me to use the random module so that I can get a random value for the dice rolls
 import os #allows me to use the os module so that I can clear the window by using commands that are built in to windows, such as cls (may not be needed anymore)
