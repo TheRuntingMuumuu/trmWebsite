@@ -2,17 +2,9 @@
 course: ICS3U
 filename: OwenDaigle_Yahtzee.py
 date: January 13 2019
-name: Owen Daigle
+name: Elgiad Newo
 description: This program is the dice game Yahtzee for the computer. It is navigated by a CLI. It is my summative for my ICS3U grade 11 computer science course.
 """
-
-import random #allows me to use the random module so that I can get a random value for the dice rolls
-import os #allows me to use the os module so that I can clear the window by using commands that are built in to windows, such as cls (may not be needed anymore)
-print('\n------------------YAHTZEE------------------\n')
-print('Welcome to the game Yahtzee.')
-if input('Do you want to view the rules? Y/n : ') == 'Y':
-    print('\n\nIt is a dice game.\n\n You roll 5 dice, and you try to get a combination that will get you the highest number of points in one of thirteen categories. You need to fill each category once each round, and there are 13 rounds. If you don’t like the combination that you got on your roll, you can reroll either all, or some of the dice for a total of three rolls. Then, you must accept what you have. There are 2 groups of categories. Upper, and Lower. If you score more than 63 points in the upper category, you get a 35-point bonus. The categories are:  \n\n\tNumbers (1 through 6) [upper] \n\t\tYou will add the number of \'x\'s into the score of that number \n\t3 and 4 of a kind [lower] \n\t\tSum of all of the faces (55568 = 29pts) \n\tStrait [lower] \n\t\tSmall (4 in a row, 1234, 3456, 2345) 30pts \n\t\tLarge (12345, 23456) 40pts \n\tFull house (ex. 11122 OR 22255 OR 99966) [lower] 25pts \n\tYahtzee (55555 OR 11111 OR 22222 OR 33333 OR 44444 OR 66666) [lower] 50pts for the first, 100 for thesecond, third, fourth etc. if applicable \n\tChance (ANYTHING) [lower] Sum up the total (24868 = 28) \n You can only score once per category.\n\n') #these are just the rules to the game with formatting
-    input('Press \'ENTER\' to continue...')
 
 def clearScreen():
     """This will work most of the time. Tries three times to clear the screen."""
@@ -29,6 +21,14 @@ def standTextOut(string, printMechanismDash=print, printMechanismString=print):
     printMechanismDash(dashes)
     printMechanismString(string.center(width))
     printMechanismDash(dashes)
+
+import random #allows me to use the random module so that I can get a random value for the dice rolls
+import os #allows me to use the os module so that I can clear the window by using commands that are built in to windows, such as cls (may not be needed anymore)
+print(standTextOut("YAHTZEE"))
+print('Welcome to the game Yahtzee.')
+if input('Do you want to view the rules? Y/n : ') == 'Y':
+    print('\n\tYAHTZEE is a dice game.\n\n You roll 5 dice, and you try to get a combination that will get you the highest number of points in one of thirteen categories. You need to fill each category once each round, and there are 13 rounds. If you don’t like the combination that you got on your roll, you can reroll either all, or some of the dice for a total of three rolls. Then, you must accept what you have. There are 2 groups of categories. Upper, and Lower. If you score more than 63 points in the upper category, you get a 35-point bonus. The categories are:  \n\n\tNumbers (1 through 6) [upper] \n\t\tYou will add the number of \'x\'s into the score of that number \n\t3 and 4 of a kind [lower] \n\t\tSum of all of the faces (55568 = 29pts) \n\tStrait [lower] \n\t\tSmall (4 in a row, 1234, 3456, 2345) 30pts \n\t\tLarge (12345, 23456) 40pts \n\tFull house (ex. 11122 OR 22255 OR 99966) [lower] 25pts \n\tYahtzee (55555 OR 11111 OR 22222 OR 33333 OR 44444 OR 66666) [lower] 50pts for the first, 100 for thesecond, third, fourth etc. if applicable \n\tChance (ANYTHING) [lower] Sum up the total (24868 = 28) \n You can only score once per category.\n\n') #these are just the rules to the game with formatting
+    input('Press \'ENTER\' to continue...')
 
 clearScreen()
 
@@ -48,7 +48,7 @@ def theGame():
     catLargeStrait = 'UNUSED'
     catFullHouse = 'UNUSED'
     for i in range(0,13): #this will make it excecute a total of 13 times
-        standTextOut("YAHTZEE Round "+ str((i + 1))) #formatting
+        print(standTextOut("YAHTZEE Round "+ str((i + 1)))) #formatting
         input('Press \'ENTER\' to roll the dice...') #this line is useless, except that it is cool and it makes the user think that they are rolling the dice
         dice = [random.randint(1, 6),random.randint(1, 6),random.randint(1, 6),random.randint(1, 6),random.randint(1, 6)] #this will assign random values for all of the dice
         print('You rolled: ', dice)
@@ -68,6 +68,7 @@ def theGame():
             print('This is what you ended up with', dice)
         print('This is the list of the categories : \n\t1 : ', cat1, '\n\t2 : ', cat2,'\n\t3 : ', cat3,'\n\t4 : ', cat4,'\n\t5 : ', cat5,'\n\t6 : ', cat6,'\n\t3 of a kind : ', cat3Kind,'\n\t4 of a kind : ', cat4Kind, '\n\tfull house : ', catFullHouse,'\n\tsmall strait : ', catSmallStrait,'\n\tlarge strait : ', catLargeStrait,'\n\tchance : ', catChance,'\n\tyahtzee : ', catYahtzee)
         userInputForCat = input('Which category do you want to fill ? : ')
+        userInputForCat = userInputForCat.lower()
         if userInputForCat == '1': #all of these if and elif statements will determine which category the user wants to fill based on their input.
             if cat1 != 'UNUSED': #this will only activate if the user has already chosen the category, and then it will terminate the game if it activates since the user will have cheated.
                 print('\n\tYou have cheated. You have chosen the same category twice. In the future, please do not do that.')
@@ -204,6 +205,5 @@ def theGame():
         print('\nYour final score is : ', finalScore) #this prints thje final score
     else:
         print('\nYou cheated at some point during the game, so the score cannot be calculated since you did not finish the game.')
-    #todo: use standTextOut() on the line below
-    return('\n\tThank you for playing\n') #I use return instead of print since if I use print, it will also output NONE since this is the last line in the function.
+    return(standTextOut('\n\tThank you for playing\n')) #I use return instead of print since if I use print, it will also output NONE since this is the last line in the function.
 print(theGame())#this activates the function which is most of the game and prints a thanks to the user
