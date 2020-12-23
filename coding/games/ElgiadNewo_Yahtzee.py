@@ -66,7 +66,7 @@ def theGame():
                 for k in range(0, len(dice2RerollActual)): #will activate for the number of dice the user wants to reroll
                     dice[dice2RerollActual[k]] = random.randint(1, 6) #this rerolls the dice
             print('This is what you ended up with', dice)
-        print('This is the list of the categories : \n\t1 : ', cat1, '\n\t2 : ', cat2,'\n\t3 : ', cat3,'\n\t4 : ', cat4,'\n\t5 : ', cat5,'\n\t6 : ', cat6,'\n\t3 of a kind : ', cat3Kind,'\n\t4 of a kind : ', cat4Kind, '\n\tfull house : ', catFullHouse,'\n\tsmall strait : ', catSmallStrait,'\n\tlarge strait : ', catLargeStrait,'\n\tchance : ', catChance,'\n\tyahtzee : ', catYahtzee)
+        print('This is the list of the categories : \n\t1 : ', cat1, '\n\t2 : ', cat2,'\n\t3 : ', cat3,'\n\t4 : ', cat4,'\n\t5 : ', cat5,'\n\t6 : ', cat6,'\n\t3 of a kind : ', cat3Kind,'\n\t4 of a kind : ', cat4Kind, '\n\tfull house : ', catFullHouse,'\n\tsmall straight : ', catSmallStrait,'\n\tlarge straight : ', catLargeStrait,'\n\tchance : ', catChance,'\n\tyahtzee : ', catYahtzee)
         userInputForCat = input('Which category do you want to fill ? : ')
         userInputForCat = userInputForCat.lower().strip() #.lower() will make it lowercase; .strip() will strip any leading and trailing spaces. May reduce crashing.
         if userInputForCat == '1': #all of these if and elif statements will determine which category the user wants to fill based on their input.
@@ -132,7 +132,7 @@ def theGame():
             else:
                 catYahtzee += 100
         elif userInputForCat == '3 of a kind':
-            if dice.count(int(input('What digit did you get 3 of a kind of : '))) >= 3: #asks the user for what dice they rolled 3 of a king and sees if there are actually 3 of a kind
+            if dice.count(int(input('What digit did you get 3 of a kind of? '))) >= 3: #asks the user for what dice they rolled 3 of a king and sees if there are actually 3 of a kind
                 cat3Kind = sum(dice)
             elif cat4Kind == 0:
                 print('You cheated. You scored the same category twice. In the future, please do not do that again.')
@@ -161,7 +161,7 @@ def theGame():
                 catFullHouse = 25 #assigns 25 points to the full house catefory
             else:
                 catFullHouse = 0 #assigns a zero to the full house category if there was not a full house scored.
-        elif userInputForCat == 'small strait':
+        elif userInputForCat == 'small strait' or 'small straight':
             if catSmallStrait != 'UNUSED':
                 print('You cheated. You scored the same category twice. In the future, please do not do that again.')
                 input('Press \'ENTER\' to continue...')
@@ -175,7 +175,7 @@ def theGame():
                 catSmallStrait = 30
             else:
                 catSmallStrait = 0
-        elif userInputForCat == 'large strait':
+        elif userInputForCat == 'large strait' or 'large straight':
             if catLargeStrait != 'UNUSED':
                 print('You cheated. You scored the same category twice. In the future, please do not do that again.')
                 input('Press \'ENTER\' to continue...')
