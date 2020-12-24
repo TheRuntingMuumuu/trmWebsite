@@ -1,4 +1,4 @@
-invisbutton { /*https://stackoverflow.com/questions/13990629/html-css-invisible-button*/
+.invisbutton { /*https://stackoverflow.com/questions/13990629/html-css-invisible-button*/
     background: transparent;
     border: none !important;
     display: none; /*should be block for show*/
