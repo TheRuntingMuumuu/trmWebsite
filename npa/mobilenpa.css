@@ -3,5 +3,5 @@
     border: none !important;
     /*display: none; - temporarily disabled for tetsing*/
     pointer-events: none;
-    font-size:0;
+    font-size:5; /*should be 0 for production use*/
 }
