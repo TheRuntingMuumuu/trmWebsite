@@ -7,6 +7,7 @@ body {
 }
 
 .content {
+
   color: white;
   padding-top: 10px;
   margin-top: 15%;
@@ -37,6 +38,22 @@ body {
   font-size: 18px;
 }
 
+.homeButton {
+  text-decoration: none;
+  color: black;
+  left: 10px;
+  top: 10px;
+  position: fixed;
+  background-color: #eee;
+  padding: 12px 25px;
+  font-size: 20px;
+  border-radius: 20px;
+}
+.homeButton:hover {
+  background-color: #222;
+  transition: all 0.5s ease;
+  color: white;
+}
 @media screen and (max-width: 900px) { /*Mobile Compatibility - Make the box take up entire screen*/
   body {
     /*background-image: none;*/
@@ -44,7 +61,7 @@ body {
   .content {
     padding-top: 5px;
     position: ;
-    margin-top: 0px;
+    margin-top: 50px;
     left: 0px;
     top: 0px;
     width: 100%;
@@ -56,4 +73,9 @@ body {
 
 .box {
   width: 75%;
+}
+
+.homeButton {
+  top: 2px;
+  left: 2px;
 }
