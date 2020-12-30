@@ -8,6 +8,7 @@ $(document).ready(function(){
     $(".menuLink7").text("Youtube Channel", "");
     $(".menuLink8").text("Contact Me", "");
     $(".menuLink9").text("About Me", "");
+    $(".menuLink10").text("Clash Royale Clan", "");
 
 
 //    $(".menuLink1").attr("href", "../index.html");
@@ -19,4 +20,6 @@ $(document).ready(function(){
     $(".menuLink7").attr("href", "youtube/yt.html");
     $(".menuLink8").attr("href", "contact.html");
     $(".menuLink9").attr("href", "about.html");
+    $(".menuLink10").attr("href", "cr/index.html");
+
 });

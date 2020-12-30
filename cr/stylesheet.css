@@ -1,0 +1,81 @@
+body {
+  background-color: #41a4ff;
+  /*background-color: #333;*/
+  background-image: url("wp.jfif");
+  font-family: sans-serif;
+  background-attachment: fixed;
+}
+
+.content {
+
+  color: white;
+  padding-top: 10px;
+  margin-top: 15%;
+  width: 70%;
+  margin-left: 15%;
+  background-color: #ddd;
+  height: auto;
+  border-radius: 20px;
+}
+
+.title {
+  padding: 20px 20px 18px 20px;
+  font-size: 22px;
+  color: black;
+}
+
+.box {
+  background-color: #ffd31d;
+  margin: 10px 10px 10px 10px;
+  border-radius: 10px;
+  width: 25%;
+}
+
+.text {
+  padding: 10px 0px 10px 0px;
+  padding-left: 2%;
+  color: #41a4ff;
+  font-size: 18px;
+}
+
+.homeButton {
+  text-decoration: none;
+  color: black;
+  left: 10px;
+  top: 10px;
+  position: fixed;
+  background-color: #eee;
+  padding: 12px 25px;
+  font-size: 20px;
+  border-radius: 20px;
+}
+.homeButton:hover {
+  background-color: #222;
+  transition: all 0.5s ease;
+  color: white;
+}
+@media screen and (max-width: 900px) { /*Mobile Compatibility - Make the box take up entire screen*/
+  body {
+    /*background-image: none;*/
+  }
+  .content {
+    padding-top: 5px;
+    position: ;
+    margin-top: 50px;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    margin-left: 0%;
+  }
+.title {
+  padding: 10px 20px 18px 20px;
+}
+
+.box {
+  width: 75%;
+}
+
+.homeButton {
+  top: 2px;
+  left: 2px;
+}
