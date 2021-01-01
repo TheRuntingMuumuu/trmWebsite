@@ -11,7 +11,7 @@
   left: 30%;
   animation-name: slidein;
   animation-duration: .7s;
-  border-radius: 12px;
+  border-radius: 20px;
   display: none;
 }
 
@@ -33,12 +33,13 @@
 #area {
   color: white;
   text-decoration: none;
-
+  border-radius: 15px;
 }
 
 #area:hover {
   background-color: #000;
   color: orange;
+  border-radius: 15px;
 }
 
 
@@ -54,10 +55,11 @@
 
 /*Mobile Compatability*/
 @media screen and (max-width: 900px) { /*Mobile Compatibility - Make the box take up entire screen*/
-  div.menuBox {
+  .menuBox {
     width: 100%;
     left: 0%;
     top: 0%;
+    padding: 0px 0px 10px 0px;
     animation-duration: .0s; /*Cancelles the animation for mobile*/
   }
   body {
