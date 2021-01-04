@@ -3,7 +3,7 @@ This is the repository for TheRuntingMuumuu's website. You can find it: http://t
 
 I am trying to now make Github the primary location for my website, (since I got GH working). The old website foles can be found here https://1drv.ms/u/s!AuOY4LneJIRzhfgQzVvFY2imk53QCw
 
-Here are the archives for pre-Beta 2.5 site. If the link goes down, please file an issue and i'll try to get the link back up and working ASAP. [https://cloud.degoo.com/share/ZnCxiMNVAOcMwR](https://cloud.degoo.com/share/ZnCxiMNVAOcMwR). Later releases can be found at the releases page on this github site.
+Here are the archives for pre-Beta 2.5 site. If the link goes down, please file an issue and i'll try to get the link back up and working ASAP. [https://cloud.degoo.com/share/ZnCxiMNVAOcMwR](https://cloud.degoo.com/share/ZnCxiMNVAOcMwR). A mirror to this can be found here: https://archive.org/details/beta-2.3 (in case the degoo goes down). Later releases can be found at the releases page on this github site.
 
 # Contributing
 Put any contributions into the `beta1` branch. `master` is only for commits that are published to the web server, and should only be modified in rare cases, if there's a critical issue with README.md.
