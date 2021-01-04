@@ -134,3 +134,15 @@ Beta 2.6
 - Added plan for sitemap
 - Added link for beta website
 - Slightly better organized software section
+- Added rounded corners to ESO section
+- Some bugfixes
+- Added the Clash Royale Section for my clan
+o Linked to it in general
+o Mobile compatibility
+o Desktop Compatibility
+o Found out how I like the round corners theme
+- A couple other things that I forgot
+- Bugfixes on the main page (no horizontal scroll on mobile)
+- Other cosmetic and bug fixes
+- Fixes to make more parts of the site valid HTML5.
+- Add discontinuation message to 64support, and a landing page for 64support from the coding page
