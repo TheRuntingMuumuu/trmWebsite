@@ -20,13 +20,15 @@ body {
   color:white;
   border-bottom:2px solid #444;
   padding:15px;
-  right: 20px
+  right: 20px;
 }
 
 .resources li a:hover {
   background-color:#111;
-  transition-duration:.2s;
+  transition-duration: .20s;
   color:orange;
+  border-radius: 15px;
+  border-bottom: 2px solid #111;
 }
 
 .resourcesTitle li {
@@ -75,7 +77,10 @@ body {
 .left {
   top: 0;
   left: 0;
+  height: 100%;
   background-color: #eee;
+  border-radius: 20px;
+
 }
 
 /*Index Button*/
