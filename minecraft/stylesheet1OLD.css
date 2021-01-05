@@ -1,0 +1,170 @@
+body {
+  font-family: arial;
+  background-color: #eee;
+}
+.mainText {
+  float:left;
+  padding:12px;
+}
+
+.resources {
+  display: block;
+  padding:2px;
+  margin-right: 1%;
+  color:white;
+}
+
+.resources li a {
+  display:block;
+  text-decoration: none;
+  color:white;
+  border-bottom:2px solid #444;
+  padding:15px;
+  right: 20px;
+}
+
+.resources li a:hover {
+  background-color:#111;
+  transition-duration: .20s;
+  color:orange;
+  border-radius: 15px;
+  border-bottom: 2px solid #111;
+}
+
+.resourcesTitle li {
+  text-decoration: none;
+  color:white;
+  font-size:30px;
+  display:block;
+  margin-top:10px;
+  list-style-type: none;
+  padding:1%;
+  right: 20px
+}
+
+.resourcesTitle {
+  list-style-type: none;
+  margin-right: 1%;
+  color:white;
+}
+
+
+/*Wallpaper stuff*/
+
+.splitSmall {
+  height: 100%;
+  width: 30%;
+  position: fixed;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.splitBig {
+  height: 100%;
+  width: 70%;
+  position: ;
+  top: 0;
+  overflow-x: auto;
+}
+
+
+.right {
+  right: 0;
+  background-color: #333;
+}
+
+.left {
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #eee;
+  border-radius: 20px;
+
+}
+
+/*Index Button*/
+.indexButton {
+  color: white;
+  float: right;
+  padding: 12px 26px;
+  font-size: 20px;
+  font-family: arial;
+}
+
+.indexButton:hover {
+  color: orange;
+  background-color: #333;
+}
+
+.mobileMenu { /*Button to trigger the menu*/
+  display: none;
+}
+.indexButtonMobile {
+  display: none;
+}
+/*Mobile Compatability*/
+
+@media screen and (max-width: 1200px) { /*Mobile Compatibility - change menu to slide menu*/
+  .splitBig {
+    width: 95%;
+  }
+  .splitSmall {
+    width: 0px;
+    z-index: 10;
+  }
+  .resources {
+    display:;
+  }
+
+  .resourcesTitle {
+    display:;
+  }
+  .mobileMenu { /*Stuff for the mobikle menu open button*/
+    position: fixed;
+    display: block;
+    top: 0%;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #444
+    color: white;
+    padding:15px;
+    float: right;
+    right: 0%;
+
+  }
+  .mobileMenuNav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    text-align:center;
+  }
+
+  .mobileMenuNav a {
+    font-size: 20px;
+    color: #818181; /*colour of the X icon for the mobile menu*/
+
+  }
+
+  .mobileMenuNav a:hover{
+    color: #f1f1f1;
+  }
+
+  .mobileMenuNav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 5px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .indexButton { /*Better placement for index button*/
+    display: none;
+  }
+}
