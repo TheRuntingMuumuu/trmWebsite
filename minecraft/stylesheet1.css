@@ -63,7 +63,6 @@ body {
   left: 0px; /*flush with the left*/
   height: 100%; /*so it takes up the entire screen (so the content is not only as tall as the content)*/
   width: 100%; /*so it is wide enough (entire screen)*/
-  overflow: auto;
   background-color: #333;
 }
 
@@ -71,6 +70,8 @@ body {
   position: relative;
   width: 25%;
   background-color: #333;
+  overflow: auto;
+
 }
 
 
@@ -80,6 +81,7 @@ body {
   border-radius: 15px;
   padding: 20px;
   margin: 2px 2px 2px 2px;
+  overflow: auto;
 }
 
 /*Index Button*/
@@ -105,11 +107,15 @@ body {
 /*Mobile Compatability*/
 
 @media screen and (max-width: 1200px) { /*Mobile Compatibility - change menu to slide menu*/
-  .fullPage {
-
+  html {
+    height: auto; /*fixes mobile menu scroll*/
+  }
+  body {
+    height: auto; /*fixes mobile menu scroll*/
+    background-color: #333;
   }
   .MCcontent {
-
+    height: 100%;
   }
   .MCsideBar {
     width: 0px;
