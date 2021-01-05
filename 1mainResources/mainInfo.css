@@ -45,8 +45,9 @@
 
 /*Mobile Compatability*/
 @media screen and (max-width: 900px) { /*Mobile Compatibility - Make the box take up entire screen*/
-  div.infoBox {
+  .infoBox {
     width: 100%;
+    padding: 0px 0px 10px 0px;
     left: 0%;
     top: 0%;
     animation-duration: .0s; /*Cancelles the animation for mobile*/

@@ -1,4 +1,6 @@
-<meta http-equiv="refresh" content="1800" >
+<!DOCTYPE html>
+<meta http-equiv="refresh" content="1800" > <!--refreshes page (so forces relogin) after 1800 seconds, or 30 minutes (I think???)-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Helps with mobile compatibility-->
 
 <html>
     <title>NPA website</title>
@@ -7,7 +9,6 @@
         background-color:black;
         }
     </style>
-</html>
 
 <script type="text/javascript">
 function passWord() {
@@ -16,7 +17,7 @@ var pass1 = prompt('Enter Password for the NPA',' ');
 while (testV < 3) {
 if (!pass1)
 history.go(0);
-if (pass1.toLowerCase() == "11073641") {
+if (pass1 == "11073641") {
 break;
 }
 testV+=1;
@@ -31,13 +32,11 @@ passWord()
 document.addEventListener('contextmenu', event => event.preventDefault()); <!-- disable right click -->
 
 </script>
-
-
-
-
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cantarell" /> <!--imports the NPA font (gnome GUI font) from the online link-->
     <style>
         body{
         background-color:limegreen;
+        font-family: Cantarell;
         }
     </style>
 
@@ -59,9 +58,7 @@ function passWord()    });
   <a href="#al" class="main">Alfred</a>
   <a href="#qr" class="main">Scanner</a>
   <a href="npalog.html" class="logoot">Logout</a>
-  <a href="../index.html" class="leave">Leave NPA</a>
 </div>
-
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <p id="main">
@@ -70,16 +67,14 @@ function passWord()    });
     The NPA website is outdated.
 </p>
 <p>
-<form action="https://mail.google.com/mail/u/?authuser=npa.npa3641@gmail.com" target="_blank">
-    <input type="submit" value="Gmail" />.<p>
+<form action="https://mail.google.com" target="_blank">
+    <input type="submit" value="Gmail" /> <p>
 <form action="https://alfred.camera/webapp2/" target="_blank">
     <input type="submit" value="Alfred" /> <p>
 <form action="https://groups.google.com/forum/#!forum/npa-npa" target="_blank">
-    <input type="submit" value="Groups" /> <p>
+    <input type="submit" value="NPA Forum" /> <p>
 <form action="https://www.the-qrcode-generator.com/" target="_blank">
-    <input type="submit" value="QR" /> <p>
-<form action="https://hangouts.google.com" target="_blank">
-    <input type="submit" value="Hangout" /> <p>
+    <input type="submit" value="QR Codes" /> <p>
 </form>
 
 <div class="footer"> hi</div>
@@ -88,7 +83,7 @@ function passWord()    });
 
 <a name="al">
     <br>
-<iframe name="Alfredo" src="https://alfred.camera/webapp2/" width="100%" height="88%" align="right" frameborder="25" scrolling="auto" class="frame-area">
+<iframe name="Alfredo" src="https://alfred.camera/webapp/viewer/" width="100%" height="88%" align="right" frameborder="25" scrolling="auto" class="frame-area">
 </iframe>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -126,22 +121,20 @@ function passWord()    });
   <input type="radio" name="grade" value="D"> D <input type="radio" name="+-" value="-"> -<br>
     <input type="radio" name="grade" value="F"> F<br>
   <input type="radio" name="grade" value="INS"> INS<br>
-
-
-
+            <!--here add a vutton to submit-->
 
     <p id="p2head">
         <font size=6>TO DO
         <br>
         <br>
         <font size=4>
-  <input type="checkbox" name="CBOX" value="ID"> ID cards<br>
-  <input type="checkbox" name="CBOX" value="CO"> Communications<br>
-  <input type="checkbox" name="CBOX" value="CA"> Cameras<br>
-  <input type="checkbox" name="CBOX" value="SOP" > Spy on parents <br>
-  <input type="checkbox" name="CBOX" value="TS" > Tech Security
-
+  <input type="checkbox" name="CBOX" value="ID"> ID cards<br></input>
+  <input type="checkbox" name="CBOX" value="CO"> Communications<br></input>
+  <input type="checkbox" name="CBOX" value="CA"> Cameras<br></input>
+  <input type="checkbox" name="CBOX" value="SOP" > Spy on parents <br></input>
+  <input type="checkbox" name="CBOX" value="TS" > Tech Security</input>
   <input type="text" name="CBOX" value="Grade"><br>
+  <input type="checkbox" name="CBOX" value="REWRITE">Rewrite NPA site</input>
 
 </form>
 
@@ -157,7 +150,6 @@ function passWord()    });
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-
 <a name="qr">
     <br>
     <iframe name="Alfredo" src="https://qrcodescan.in/" width="100%" height="88%" align="right" frameborder="25" scrolling="auto" class="frame-area">
@@ -171,3 +163,4 @@ function passWord()    });
 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </html>
