@@ -33,7 +33,7 @@ body {
   background-color:#111;
   transition-duration: .20s;
   color:orange;
-  border-radius: 15px;
+  border-radius: 11px;
   border-bottom: 2px solid #111;
 }
 
@@ -80,7 +80,7 @@ body {
   background-color: #eee;
   border-radius: 15px;
   padding: 20px;
-  margin: 2px 2px 2px 2px;
+  margin: /*2px 2px 2px 2px*/; /*makes it look slightly different*/
   overflow: auto;
 }
 
@@ -101,9 +101,7 @@ body {
 .mobileMenu { /*Button to trigger the menu*/
   display: none;
 }
-.indexButtonMobile {
-  display: none;
-}
+
 /*Mobile Compatability*/
 
 @media screen and (max-width: 1200px) { /*Mobile Compatibility - change menu to slide menu*/
@@ -115,7 +113,7 @@ body {
     background-color: #333;
   }
   .MCcontent {
-    height: 100%;
+    min-height: calc(100vh - 7vh);
   }
   .MCsideBar {
     width: 0px;
