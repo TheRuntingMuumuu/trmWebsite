@@ -1,29 +1,29 @@
 <title> Other Page
-</title> 
+</title>
 <html>
     <head>
         <script>
-            
+
             var menuDisplayed = false;
             var menuBox = null;
-            
+
             window.addEventListener("contextmenu", function() {
                 var left = arguments[0].clientX;
                 var top = arguments[0].clientY;
-                
+
                 menuBox = window.document.querySelector(".menu");
                 menuBox.style.left = left + "px";
                 menuBox.style.top = top + "px";
                 menuBox.style.display = "block";
-                
+
                 arguments[0].preventDefault();
-                
+
                 menuDisplayed = true;
             }, false);
-            
+
             window.addEventListener("click", function() {
                 if(menuDisplayed == true){
-                    menuBox.style.display = "none"; 
+                    menuBox.style.display = "none";
                 }
             }, true);
         </script>
@@ -44,13 +44,13 @@
                 display: none;
                 background-color: white;
             }
-            
+
             .menu-item
             {
                 height: 20px;
             }
-            
-           
+
+
         </style>
     </head>
     <body>
@@ -78,10 +78,10 @@ background-color:#f7dc96;
 }
 
 
-    
-    
-    
-.otherpagebutton    
+
+
+
+.otherpagebutton
 {
     background-color: #4CAF50;
     border: none;
@@ -91,12 +91,12 @@ background-color:#f7dc96;
     font-size: 16px;
     cursor: pointer;
 }
-    
-    
-    
 
-    
-    
+
+
+
+
+
 
 </style>
 
@@ -179,14 +179,14 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 </script>
-     
+
 </body>
 
 
 
 <p id="title">
 
-<font size=7>  Owen's weird Site 
+<font size=7>  Owen's weird Site
 </p>
 </a>
 <font size=2>
@@ -195,12 +195,12 @@ function closeNav() {
 
 <p id="greentextburgandyline">
     <font size=4> .           Other
-</p>    
+</p>
 
 
 
- 
-<form action="mailto:owen.daigle@outlook.com?subject=Owens Weird Site&body=I would like to contact you about your site."target="_blank">
+
+<form action="mailto:theruntingmuumuu@gmail.com?subject=Owens Weird Site&body=I would like to contact you about your site."target="_blank">
     <input type="submit" value="Contact Me" class="otherpagebutton" />
 </form>
 
@@ -214,21 +214,21 @@ function passWord() {
 var testV = 1;
 var pass1 = prompt('Please Enter Your Password',' ');
 while (testV < 3) {
-if (!pass1) 
+if (!pass1)
 history.go(0);
 if (pass1.toLowerCase() == "11073641") {
 alert('Welcome to the NPA');
 window.open('npa-11073641LoggedIn2WebPage.html');
 break;
-} 
+}
 testV+=1;
-var pass1 = 
+var pass1 =
 prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
 }
-if (pass1.toLowerCase()!="password" & testV ==3) 
+if (pass1.toLowerCase()!="password" & testV ==3)
 history.go(0);
 return " ";
-} 
+}
 </SCRIPT>
 
 
@@ -240,7 +240,7 @@ return " ";
 <br>
 <font size=5>
 	<li> </li>
-	
+
 </p>
 <div style='text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: not-allowed;line-height: 0;display:block !important;'>
 <p>
