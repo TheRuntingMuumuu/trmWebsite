@@ -1,11 +1,13 @@
 html {
-  min-height: 100%;
+  height: 100%;
 }
 body {
   font-family: arial;
   background-color: #;
   margin: 0px; /*Makes it so that the elements float at the left and top for 0px. Replaces the position fixed+top0+left0    EXTREMELY USEFUL THING TO PUT IN THE BODY TAG!!*/
+  height: 100%;
 }
+
 .mainText {
   float:left;
   padding:12px;
@@ -67,7 +69,6 @@ body {
 
 .MCsideBar {
   position: relative;
-  height: %;
   width: 25%;
   background-color: #333;
 }
@@ -79,7 +80,6 @@ body {
   border-radius: 15px;
   padding: 20px;
   margin: 2px 2px 2px 2px;
-  min-height: 100%;
 }
 
 /*Index Button*/
