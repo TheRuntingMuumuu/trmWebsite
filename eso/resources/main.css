@@ -2,7 +2,7 @@
 
 /*Document Settings and such*/
 body {
-  background-color: #000;
+  background-color: #111;
   font-family: arial;
 }
 
@@ -28,8 +28,7 @@ body {
 .fullPage {
   background-color: #222;
   border-radius: 20px;
-  margin-top: 0px;
-
+  margin-top: 50px;
 }
 
 .mainText {

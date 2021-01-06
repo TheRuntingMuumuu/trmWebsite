@@ -4,17 +4,17 @@ body {
 }
 /*Menu stuff*/
 .menuBar {
-  background-color: #000;
+  background-color: #111;
   width: 100%;
-  position: sticky;
+  position: fixed;
   font-family: Arial;
   top: 0px;
   z-index: 50;
   border-radius: 0px 0px 15px 15px;
-
+  overflow: hidden; /*Needed so that the additional text on menu bar (when screen is too small, mobile) gets shoved away*/
 }
 
-.main {
+.menuBar a {
   color: white;
   padding: 15px;
   font-size: 18px;
@@ -22,10 +22,14 @@ body {
   text-align: center;
   text-decoration: none;
   transition: all 0.1s ease;
+  border-radius: 20px;
+
 }
 
-.main:hover {
-  color:orange;
+.menuBar a:hover {
+  color: orange;
+  background-color: #000;
+  border-radius: 10px;
 }
 
 #esoNavBar {
@@ -44,4 +48,31 @@ body {
 .indexButton:hover {
   color: purple;
   background-color: #111;
+}
+
+
+.menuBar .icon {
+  display: none; /*only display mobile menu button on mobile*/
+}
+
+@media screen and (max-width: 600px) {
+  .menuBar a:not(:first-child) {display: none;}
+  .menuBar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .menuBar.responsive {position: fixed;}
+  .menuBar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menuBar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
 }

@@ -1,30 +1,30 @@
 <title> UPDATES
-</title> 
+</title>
 
 <html>
     <head>
         <script>
-            
+
             var menuDisplayed = false;
             var menuBox = null;
-            
+
             window.addEventListener("contextmenu", function() {
                 var left = arguments[0].clientX;
                 var top = arguments[0].clientY;
-                
+
                 menuBox = window.document.querySelector(".menu");
                 menuBox.style.left = left + "px";
                 menuBox.style.top = top + "px";
                 menuBox.style.display = "block";
-                
+
                 arguments[0].preventDefault();
-                
+
                 menuDisplayed = true;
             }, false);
-            
+
             window.addEventListener("click", function() {
                 if(menuDisplayed == true){
-                    menuBox.style.display = "none"; 
+                    menuBox.style.display = "none";
                 }
             }, true);
         </script>
@@ -45,13 +45,13 @@
                 display: none;
                 background-color: white;
             }
-            
+
             .menu-item
             {
                 height: 20px;
             }
-            
-           
+
+
         </style>
     </head>
     <body>
@@ -86,13 +86,13 @@ background-color:#f7dc96;
     display: inline-block;
     font-size: 16px;
 	border-radius: 10px;
-	
+
 }
-        
-        
-        
-        
-.version       
+
+
+
+
+.version
 {
     background-color: lightgreen;
     border: solid;
@@ -104,17 +104,17 @@ background-color:#f7dc96;
     font-size: 12px;
 	border-radius: 10px;
 	margin-right
-}        
-    
-    
-    
-    
-    
-    
-    
+}
 
-    
-    
+
+
+
+
+
+
+
+
+
 
 </style>
 
@@ -147,8 +147,8 @@ background-color:#f7dc96;
 </style>
 
 <div class="alert">
-  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
- If you would like to suggest any ideas for future updates, email me at owen.daigle@outlook.com
+  <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+ If you would like to suggest any ideas for future updates, email me at theruntingmuumuu@gmail.com
 </div>
 
 
@@ -223,13 +223,13 @@ function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
 }
 </script>
-     
+
 </body>
 
 
 <p id="title">
 
-<font size=7>  Owen's weird Site 
+<font size=7>  Owen's weird Site
 </p>
 </a>
 <font size=2>
@@ -238,10 +238,10 @@ function closeNav() {
 
 <p id="orangetextburgandyline">
     <font size=4> .           This is the page that will show the updates and versions of this site. Want to see the current code, press ctrl+U in chrome ONLY.
-</p>    
+</p>
 
 <p>
-    
+
     <div class="dropdown">
   <button class="dropbtn">Downloads</button>
   <div class="dropdown-content">
@@ -264,7 +264,7 @@ function closeNav() {
 	<li> I cleaned it up</li>
 	<li> And Now, I replaced the dropdown with a drawer???</li>
 
-	
+
 </p>
 
 
@@ -329,6 +329,3 @@ function closeNav() {
 
 </body>
 </html>
-
-
-

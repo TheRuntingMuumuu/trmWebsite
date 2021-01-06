@@ -1,7 +1,13 @@
+html {
+  height: 100%;
+}
 body {
   font-family: arial;
-  background-color: #eee;
+  background-color: #;
+  margin: 0px; /*Makes it so that the elements float at the left and top for 0px. Replaces the position fixed+top0+left0    EXTREMELY USEFUL THING TO PUT IN THE BODY TAG!!*/
+  height: 100%;
 }
+
 .mainText {
   float:left;
   padding:12px;
@@ -20,13 +26,15 @@ body {
   color:white;
   border-bottom:2px solid #444;
   padding:15px;
-  right: 20px
+  right: 20px;
 }
 
 .resources li a:hover {
   background-color:#111;
-  transition-duration:.2s;
+  transition-duration: .20s;
   color:orange;
+  border-radius: 11px;
+  border-bottom: 2px solid #111;
 }
 
 .resourcesTitle li {
@@ -46,36 +54,34 @@ body {
   color:white;
 }
 
+/*New layout code*/
 
-/*Wallpaper stuff*/
-
-.splitSmall {
-  height: 100%;
-  width: 30%;
-  position: fixed;
-  top: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
-}
-
-.splitBig {
-  height: 100%;
-  width: 70%;
-  position: ;
-  top: 0;
-  overflow-x: auto;
-}
-
-
-.right {
-  right: 0;
+.fullPage { /*to allow both panels to sit side by site easily. AMAZING piece of code that I MUST remember*/
+  display: flex; /*THIS IS THE MAGIC PIECE, MAKES ALL DIVS INSIDE IT FLEX TO BE THE RIGHT SIZE*/
+  position: ; /*needed so that it sits flush with the walls, unless you add the margin:0px in the body tag which I did, so now it is not needed*/
+  top: 0px; /*again so it is flush with the top*/
+  left: 0px; /*flush with the left*/
+  height: 100%; /*so it takes up the entire screen (so the content is not only as tall as the content)*/
+  width: 100%; /*so it is wide enough (entire screen)*/
   background-color: #333;
 }
 
-.left {
-  top: 0;
-  left: 0;
+.MCsideBar {
+  position: relative;
+  width: 25%;
+  background-color: #333;
+  overflow: auto;
+
+}
+
+
+.MCcontent {
+  width: 100%; /*if there is not enough space, it will compromise with the side bar because of the flex element in the parent div element (.fullPage)    on mobile, I think I will add a side menu that takes up the entire screen with the touch of a button, and I think that that one will make use of this element, since then the side bar will be hidden, and this one will actually NEED the 100%.*/
   background-color: #eee;
+  border-radius: 15px;
+  padding: 20px;
+  margin: /*2px 2px 2px 2px*/; /*makes it look slightly different*/
+  overflow: auto;
 }
 
 /*Index Button*/
@@ -95,19 +101,24 @@ body {
 .mobileMenu { /*Button to trigger the menu*/
   display: none;
 }
-.indexButtonMobile {
-  display: none;
-}
+
 /*Mobile Compatability*/
 
 @media screen and (max-width: 1200px) { /*Mobile Compatibility - change menu to slide menu*/
-  .splitBig {
-    width: 95%;
+  html {
+    height: auto; /*fixes mobile menu scroll*/
   }
-  .splitSmall {
+  body {
+    height: auto; /*fixes mobile menu scroll*/
+    background-color: #333;
+  }
+  .MCcontent {
+    min-height: calc(100vh - 7vh);
+  }
+  .MCsideBar {
     width: 0px;
-    z-index: 10;
   }
+  /*Menu list*/
   .resources {
     display:;
   }
@@ -115,6 +126,7 @@ body {
   .resourcesTitle {
     display:;
   }
+  /*Mobile Menu Stuff (panel)*/
   .mobileMenu { /*Stuff for the mobikle menu open button*/
     position: fixed;
     display: block;
