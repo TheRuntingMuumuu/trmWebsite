@@ -6,7 +6,7 @@ body {
 .menuBar {
   background-color: #000;
   width: 100%;
-  position: sticky;
+  position: fixed;
   font-family: Arial;
   top: 0px;
   z-index: 50;
