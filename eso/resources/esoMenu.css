@@ -4,7 +4,7 @@ body {
 }
 /*Menu stuff*/
 .menuBar {
-  background-color: #000;
+  background-color: #111;
   width: 100%;
   position: fixed;
   font-family: Arial;
@@ -22,11 +22,14 @@ body {
   text-align: center;
   text-decoration: none;
   transition: all 0.1s ease;
+  border-radius: 20px;
+
 }
 
 .menuBar a:hover {
-  color:black;
-  background-color: orange;
+  color: orange;
+  background-color: #000;
+  border-radius: 10px;
 }
 
 #esoNavBar {
