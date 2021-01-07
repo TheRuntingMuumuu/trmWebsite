@@ -1,0 +1,43 @@
+/*I took a lot of insparation from the fuel rats' website (https://fuelrats.com) so they deserve some credit for the thought of the design.*/
+
+body {
+  font-family: sans-serif;
+  margin: 0px;
+}
+
+.fullPage { /*to allow both panels to sit side by site easily. AMAZING piece of code that I MUST remember*/
+  display: flex; /*THIS IS THE MAGIC PIECE, MAKES ALL DIVS INSIDE IT FLEX TO BE THE RIGHT SIZE*/
+  top: 0px; /*again so it is flush with the top*/
+  left: 0px; /*flush with the left*/
+  min-height: 100%; /*so it takes up the entire screen (so the content is not only as tall as the content)*/
+  min-width: 100%; /*so it is wide enough (entire screen)*/
+  background-color: #555;
+}
+
+.topBar {
+  height: 50px;
+  width: 100%;
+  background-color: #111;
+  position: fixed;
+  z-index: 100;
+}
+
+
+.content {
+  position: relative;
+  display: ;
+  margin-top: 20%;
+  padding: 20px;
+  margin-left: 10%;
+  width: 80%; /*if there is not enough space, it will compromise with the side bar because of the flex element in the parent div element (.fullPage)    on mobile, I think I will add a side menu that takes up the entire screen with the touch of a button, and I think that that one will make use of this element, since then the side bar will be hidden, and this one will actually NEED the 100%.*/
+  background-color: #111;
+  border-radius: 20px;
+  margin-bottom: 100px;
+
+}
+
+.text {
+  color: white;
+  padding: 10px 0px 10px 0px;
+
+}
