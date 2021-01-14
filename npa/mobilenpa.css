@@ -1,0 +1,7 @@
+.invisbutton { /*https://stackoverflow.com/questions/13990629/html-css-invisible-button*/
+    background: transparent;
+    border: none !important;
+    display: none;
+    pointer-events: none;
+    font-size:50; /*should be 0 for production use*/
+}
