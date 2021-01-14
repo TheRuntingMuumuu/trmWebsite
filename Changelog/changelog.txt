@@ -146,3 +146,9 @@ o Found out how I like the round corners theme
 - Other cosmetic and bug fixes
 - Fixes to make more parts of the site valid HTML5.
 - Add discontinuation message to 64support, and a landing page for 64support from the coding page
+- MC section rework
+ o Reworked the framework into the general framework
+ o Solved a TON of bugs with that new framework
+ o Fixed some more bugs with it
+ o Fixed bug where worlds page would not work
+ o Deleted old pages
