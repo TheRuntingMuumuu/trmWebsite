@@ -5,5 +5,3 @@
     pointer-events: none;
     font-size:50; /*should be 0 for production use*/
 }
-
-@media screen and (max-width: 600px) {display: ;}
