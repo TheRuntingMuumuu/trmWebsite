@@ -1,8 +1,9 @@
 /*INFO for all the page*/
+body{background-color: #111;font-family: arial;}
 
 /*Info for the menuBox*/
 .menuBox {
-  background-color: #111;
+  background-color: #222;
   font-family: Arial;
   padding: 1px 10px 20px 10px;
   position: absolute;
@@ -45,6 +46,7 @@
 
 /*title in menubox*/
 .menuBoxTitle {
+  padding-bottom: 10px;
   font-size: 30px;
   border-bottom:2px solid #444;
   text-align: center;
