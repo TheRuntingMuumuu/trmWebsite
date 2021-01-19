@@ -3,6 +3,8 @@
 /*Document Settings and such*/
 body {
   background-color: #111;
+  background-image: url("elsewhereWP.jpg");
+  background-attachment: fixed;
   font-family: arial;
 }
 
@@ -15,7 +17,7 @@ body {
   border-bottom: solid;
   border-width: 2px;
   display: block;
-  width: 300px;
+  max-width: 300px; /*so that it is 300px unless it has to be less (max)*/
   border-color: orange;
 }
 
@@ -27,8 +29,11 @@ body {
 
 .fullPage {
   background-color: #222;
+  margin-left: 10%;
+  width: 80%;
   border-radius: 20px;
   margin-top: 53px;
+  min-height: calc(100vh - 53px); /*the calc makes it as high as the viewport (window) and the -53px is so that it minuses the menubar*/
 }
 
 .mainText {
@@ -38,6 +43,7 @@ body {
 
 .linkList { /*List of websites*/
   text-decoration: underline;
+  max-width: 400px;
   color: #5f88e1;
   list-style-type: none;
 }

@@ -12,6 +12,7 @@ body {
   z-index: 50;
   border-radius: 0px 0px 15px 15px;
   overflow: hidden; /*Needed so that the additional text on menu bar (when screen is too small, mobile) gets shoved away*/
+  /*REMOVE FOR NON-CENTERED THEME*/text-align: center; /*If I want to align it center*/
 }
 
 .menuBar a {
@@ -19,11 +20,9 @@ body {
   padding: 15px;
   font-size: 18px;
   display: inline-block;
-  text-align: center;
   text-decoration: none;
   transition: all 0.1s ease;
   border-radius: 20px;
-
 }
 
 .menuBar a:hover {
@@ -32,9 +31,6 @@ body {
   border-radius: 10px;
 }
 
-#esoNavBar {
-  padding: 0px;
-}
 /*For the button leading to the index*/
 
 .indexButton {
@@ -43,11 +39,6 @@ body {
   padding: 12px 25px;
   font-size: 20px;
   font-family: arial;
-}
-
-.indexButton:hover {
-  color: purple;
-  background-color: #111;
 }
 
 
@@ -62,9 +53,6 @@ body {
     display: block;
   }
 }
-
-@media screen and (max-width: 600px) {
-  .menuBar.responsive {position: fixed;}
   .menuBar.responsive .icon {
     position: absolute;
     right: 0;
