@@ -41,7 +41,10 @@ body {
   font-family: arial;
 }
 
-
+.indexButtonBalance { /*So that there is an index button on both sides, the buttons should then be centered*/
+  float: right;
+  visibility: hidden;
+}
 .menuBar .icon {
   display: none; /*only display mobile menu button on mobile*/
 }
