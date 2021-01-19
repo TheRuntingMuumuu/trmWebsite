@@ -4,6 +4,7 @@
 body {
   background-color: #111;
   background-image: url("elsewhereWP.jpg");
+  background-position: center;
   background-attachment: fixed;
   font-family: arial;
 }
@@ -28,12 +29,12 @@ body {
 }
 
 .fullPage {
-  background-color: #222;
   margin-left: 10%;
   width: 80%;
   border-radius: 20px;
-  margin-top: 53px;
-  min-height: calc(100vh - 53px); /*the calc makes it as high as the viewport (window) and the -53px is so that it minuses the menubar*/
+  margin-top: calc(51px + 10px); /*51 = the heigh of the menubar, other number = the amount of space between the menu bar and the content*/
+  min-height: calc(100vh - 51px - 10px); /*the calc makes it as high as the viewport (window) and the -53px is so that it minuses the menubar, and the third number is minus the small gab between menubar, and text.*/
+  background: rgba(34, 34, 35, /**/.99/*THIS NUMBER CHANGES TRANSPARENCY, 1=opaque, .1=transparent*/); /*Transparency of main element (fullpage)*/
 }
 
 .mainText {
@@ -72,4 +73,16 @@ body {
   transition: all .2s;
   color: orange;
   background-color: #111;
+}
+
+@media screen and (max-width: 1100px) { /*The reason for 1100px rather than 600 like the mobilemenu, is since the image itself only looks good above 1100.*/
+  body {
+    background-image: none;
+  }
+  .fullPage {
+    margin-left: 0%;
+    width: 100%;
+    margin-top: calc(51px + 0px); /*51 = the heigh of the menubar, other number = the amount of space between the menu bar and the content*/
+    background: rgba(34, 34, 35, 1);
+  }
 }
