@@ -86,3 +86,11 @@ body {
     background: rgba(34, 34, 35, 1);
   }
 }
+@media screen and (max-width: 600px) {
+  .linkList { /*List of websites*/
+    padding-left: 12px;
+  }
+  .linkList li a {
+    padding: 4px;
+  }
+}
