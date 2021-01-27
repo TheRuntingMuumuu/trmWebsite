@@ -31,13 +31,13 @@ body{background-color: #111;font-family: arial;}
 }
 
 /*info for text in menubox*/
-#area {
+.area {
   color: white;
   text-decoration: none;
   border-radius: 15px;
 }
 
-#area:hover {
+.area:hover {
   background-color: #000;
   color: orange;
   border-radius: 15px;
