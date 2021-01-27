@@ -113,7 +113,7 @@ body {
     background-color: #333;
   }
   .MCcontent {
-    min-height: calc(100vh - 7vh);
+    min-height: calc(100vh - 40px); /*There is something (idk what) that is making 100vh stretch down 40px past the end of the page.*/
   }
   .MCsideBar {
     width: 0px;
