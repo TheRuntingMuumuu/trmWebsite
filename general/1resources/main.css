@@ -1,0 +1,131 @@
+/*A bunch of credit goes to https://alcasthq.com for the style.*/
+
+/*Document Settings and such*/
+body {
+  background-color: #111;
+  background-image: url("bgtech2.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  font-family: arial;
+}
+
+
+/*Page stuff*/
+.Title {
+  color: orange;
+  font-size: 22px;
+  font-weight: bold;
+  border-bottom: solid;
+  border-width: 2px;
+  display: block;
+  max-width: 300px; /*so that it is 300px unless it has to be less (max)*/
+  border-color: orange;
+}
+
+.miniTitle {
+  color:  #00CD00;
+  font-size: 20px;
+  font-weight: 300;
+  border-bottom: solid;
+  border-width: 2px;
+  display: block;
+  max-width: 250px; /*so that it is 300px unless it has to be less (max)*/
+  border-color:  #00CD00;
+  margin-left: 5px;
+}
+
+.bodyText {
+  color: white;
+  font-size: 18px;
+  margin-left: 12px;
+  line-height: 1.4; /*To add spacing in between the lines, 1.4, so just a bit to make easier to read.*/
+}
+
+.fullPage {
+  margin-left: 10%;
+  width: 80%;
+  border-radius: 20px;
+  margin-top: calc(51px + 10px); /*51 = the heigh of the menubar, other number = the amount of space between the menu bar and the content*/
+  min-height: calc(100vh - 51px - 10px); /*the calc makes it as high as the viewport (window) and the -53px is so that it minuses the menubar, and the third number is minus the small gab between menubar, and text.*/
+  background: rgba(34, 34, 35, /**/.99/*THIS NUMBER CHANGES TRANSPARENCY, 1=opaque, .1=transparent*/); /*Transparency of main element (fullpage)*/
+}
+
+.mainText { /*The container that all of the text is stored in, container inside the big grey box*/
+  padding: 20px;
+}
+
+.linkList { /*List of websites*/
+  text-decoration: underline;
+  max-width: 400px;
+  color: #5f88e1;
+  list-style-type: none;
+}
+
+.linkList li a {
+  display: block;
+  padding: 6px;
+  margin-top:2px;
+  font-size: 18px
+}
+
+.linkList li a:hover {
+  transition: all .2s;
+  color: orange;
+  background-color: #111;
+}
+
+.bodyList { /*For when I want listed items but without any bullets*/
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+/*links*/
+.textLinks { /*List of websites*/
+  text-decoration: underline;
+  color: #5f88e1;
+  list-style-type: none;
+}
+
+.textLinks:hover {
+  transition: all .2s;
+  color: orange;
+  background-color: #111;
+}
+/*Tables*/
+.bodyTable {
+  padding: 20px;
+  border: 1px solid;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+th, td {
+  padding: 10px;
+}
+
+.charImages {
+   width: 30%;
+}
+
+@media screen and (max-width: 1100px) { /*The reason for 1100px rather than 600 like the mobilemenu, is since the image itself only looks good above 1100.*/
+  body {
+    background-image: none;
+  }
+  .fullPage {
+    margin-left: 0%;
+    width: 100%;
+    margin-top: calc(51px + 0px); /*51 = the heigh of the menubar, other number = the amount of space between the menu bar and the content*/
+    background: rgba(34, 34, 35, 1);
+  }
+}
+@media screen and (max-width: 600px) {
+  .linkList { /*List of websites*/
+    padding-left: 12px;
+  }
+  .linkList li a {
+    padding: 4px;
+  }
+  .charImages {
+     width: 100%;
+  }
+}

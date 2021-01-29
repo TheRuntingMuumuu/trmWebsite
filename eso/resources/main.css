@@ -85,6 +85,10 @@ th, td {
   padding: 10px;
 }
 
+.charImages {
+   width: 30%;
+}
+
 @media screen and (max-width: 1100px) { /*The reason for 1100px rather than 600 like the mobilemenu, is since the image itself only looks good above 1100.*/
   body {
     background-image: none;
@@ -102,5 +106,8 @@ th, td {
   }
   .linkList li a {
     padding: 4px;
+  }
+  .charImages {
+     width: 100%;
   }
 }
