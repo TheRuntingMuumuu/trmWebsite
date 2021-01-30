@@ -1,5 +1,13 @@
 /*INFO for all the page*/
-body{background-color: #111;font-family: arial;}
+body{
+  background-color: #111;
+  background-image: url("bgtech1.png");
+  background-position: center;
+  background-attachment: fixed;
+  background-color: #111;
+  font-family: arial;
+  margin: 0;
+}
 
 /*Info for the menuBox*/
 .menuBox {
@@ -30,6 +38,18 @@ body{background-color: #111;font-family: arial;}
   font-size: 20px;
 }
 
+.menuBoxBG {
+  background-color: rgba(0, 0, 0, .84);
+  width: 100%;
+  height: 100%;
+  animation-name: opacity;
+  animation-duration: .7s;
+}
+
+@keyframes opacity {
+  0% {opacity: 0}
+  100% {opacity: 1}
+}
 /*info for text in menubox*/
 #area {
   color: white;
@@ -58,6 +78,7 @@ body{background-color: #111;font-family: arial;}
 /*Mobile Compatability*/
 @media screen and (max-width: 900px) { /*Mobile Compatibility - Make the box take up entire screen*/
   .menuBox {
+    min-height: calc(100vh - 10px);
     width: 100%;
     left: 0%;
     top: 0%;
@@ -65,7 +86,7 @@ body{background-color: #111;font-family: arial;}
     animation-duration: .0s; /*Cancelles the animation for mobile*/
   }
   body {
-    background-color: #111;
+    background-image: none;
   }
   .menuBox  a{
     padding: 16px;
