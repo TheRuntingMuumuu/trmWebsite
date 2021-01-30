@@ -12,6 +12,9 @@ body {font-family: Arial, Helvetica, sans-serif;}
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  animation-name: fadein;
+  animation-duration: 0.6s
+
 }
 
 /* Modal Content */
@@ -27,9 +30,68 @@ body {font-family: Arial, Helvetica, sans-serif;}
   animation-name: animatetop;
   animation-duration: 0.6s
 }
+
 /* Add Animation */
 
 @keyframes animatetop {
   from {top:-90%; opacity:0}
   to {top:10%; opacity:1}
+}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+.menuBox  a{
+  text-align: center;
+  display: block;
+  transition: all 0.2s ease;
+  padding: 14px;
+  font-size: 20px;
+}
+
+/*info for text in menubox*/
+.area {
+  color: white;
+  text-decoration: none;
+  border-radius: 15px;
+}
+
+.area:hover {
+  background-color: #000;
+  color: orange;
+  border-radius: 15px;
+}
+
+
+/*title in menubox*/
+.menuBoxTitle {
+  padding-bottom: 10px;
+  font-size: 30px;
+  border-bottom:2px solid #444;
+  text-align: center;
+  display: block;
+  color: white;
+}
+
+
+/*Mobile Compatability*/
+@media screen and (max-width: 900px) { /*Mobile Compatibility - Make the box take up entire screen*/
+  .modal-content {
+    width: 100%;
+    left: 0%;
+    top: 0%;
+    padding: 0px 0px 10px 0px;
+  }
+
+  .menuBox  a{
+    padding: 16px;
+    font-size: 18px;
+  }
+
+  /*title in menubox*/
+  .menuBoxTitle {
+    font-size: 24px;
+    color: white;
+  }
 }
