@@ -1,0 +1,9 @@
+<script src="min.js"></script>
+	<script>
+const queryString = window.location.search;
+console.log("queryString will follow")
+console.log(queryString);
+const urlParams = new URLSearchParams(queryString);
+const grade = urlParams.get('grade');
+const plusMinus = urlParams.get('pm');
+	</script>
