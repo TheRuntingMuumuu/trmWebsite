@@ -1,8 +1,78 @@
 <script>
+	function FigureOutForm() {
+		//https://www.w3schools.com/js/js_functions.asp
+		var drill = document.forms["form"]["lolz"].value;
+		var secam = document.forms["form"]["secam"].value;
+		var currentGrade = 0;
+		console.log(drill)
+                console.log(secam)
+		if (drill == "3plus") {
+			var currentGrade = 6;
+		}
+		else if (drill == "3") {
+			var currentGrade = 6;
+		}
+		else if (drill == "2") { 
+			var currentGrade = 5;
+		}
+		else if (drill == "1") {
+			var currentGrade = 4;
+		}else if (drill == "0") {
+			var currentGrade = 3;
+		}else {
+			document.write("Something's wrong...");
+			return false;
+		}
+		if (secam == "3plus") {
+			var secamGrade = 6;
+		}
+		else if (secam == "3"){
+			var secamGrade = 6;
+		}else if (secam == "2") {
+			var secamGrade = 5;
+		}
+		else if (secam == "1") {
+			var secamGrade = 4;
+		}else if (secam == "0") {
+			var secamGrade = 2;}
+		else {
+			document.write("Something's wrong...");
+			return false; }
+		console.log(secamGrade);
+		console.log(currentGrade);
+		var currentGradee = Number(currentGrade);
+		var secamGradee = Number(secamGrade); //https://gomakethings.com/converting-strings-to-numbers-with-vanilla-javascript/
+		var totalGrade = (secamGradee + currentGradee) / 2;
+		console.log(totalGrade);
+		var totalGrade = Math.round(totalGrade) //https://pawelgrzybek.com/rounding-and-truncating-numbers-in-javascript/
+		console.log("rounded total grade is");
+		console.log(totalGrade);
+		if (totalGrade == 1) {
+			var ending = "INS";
+		}
+		else if (totalGrade == 2) {
+			var ending = "F";
+		}
+		else if (totalGrade == 3) {
+			var ending = "D";
+		}
+		else if (totalGrade == 4) {
+			var ending = "C";
+		}
+		else if (totalGrade == 5) {
+			var ending = "B";
+		} else if (totalGrade == 6) {
+			var ending = "A";
+		}
+		newSite = "CheckGrades.html?grade=%s",ending;
+		newSite = newSite.replace('%s', ending);
+		window.location.href = newSite;
+		return false;
+	}
 </script>
 Please.Respond to the questions. This page need javascript.<br>
 
-<form name="myForm" action="CheckGrades.html" onsubmit="return FigureOutForm()">
+<form name="form" onsubmit="return FigureOutForm()">
 	<dl>
 		<dt>How many drills have you done yet?</dt><dd> 0 <input type="radio" value="0" name="lolz"></dd><dd> 1 <input type="radio" value="1" name="lolz"></dd><dd> 2 <input type="radio" value="2" name="lolz"></dd><dd> 3 or more<input type="radio" value="3plus" name="lolz"></dd>
 		<dt>How Many security cameras have you?</dt><dd>0<input type="radio" value="0" name="secam"></dd><dd>1<input type="radio" value="1" name="secam"></dd><dd>2<input type="radio" value="2" name="secam"></dd><dd>3 or more<input type="radio" value="3plus" name="secam"></dd>
