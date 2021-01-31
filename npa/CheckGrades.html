@@ -1,4 +1,7 @@
 <style>
+.gradeATips {
+	display: none
+}
 .gradeBTips {
         display: none;
 }
@@ -15,13 +18,54 @@
         display: none;
 }
 </style>
+<div class="gradeATips" id="gradeATips">
+	<p>You're doing amazing stuff, keep it up!!</p>
+	<dl>
+		<dt>No new tips.</dt>
+	</dl>
+</div>
 <div class="gradeBTips" id="gradeBTips">
         <p>Nice, you've met the NPA specifications, but there's still room to improve.
         <dl>
         <dt>Have you tried...</dt>
         <dd>Practicing an extra drill.</dd>
         <dd>Putting one more security camera outside NPA.</dd></dl></div>
-
+<div class="gradeCTips">
+	<p>Eh, you've got some room to improve, but overall this is going ok.</p>
+	<dl>
+		<dt>Have you tried</dt>
+		<dd>Practicing TWO extra drills.</dd>
+		<dd>Putting TWO more security cameras outside NPA.</dd>
+	</dl>
+</div>
+<div class="gradeDTips">
+	<p>Oh no! The NPA's security is falling apart!!!</p>
+	<dl>
+		<dt>Have you tried...</dt>
+		<dd>Practicing THREE extra drills.</dd>
+		<dd>Putting THREE more security cameras outside NPA.</dd>
+	</dl>
+</div>
+<div class="gradeFTips">
+	<p>The NPA may be disbanded if the security doesn't come back up.</p>
+	<dl>
+		<dt>Have you tried...</dt>
+		<dd>Practicing THREE extra drills.</dd>
+		<dd>Putting THREE more security cameras outside NPA.</dd>
+		<dd>Adding a guard.</dd>
+	</dl>
+</div>
+<div class="gradeITips">
+	<p>The NPA <b>WILL</b> be disbanded if the security stays this way.</p>
+	<dl>
+		<dt>Have you tried...</dt>
+		<dd>Practicing THREE extra drills.</dd>
+		<dd>Putting THREE more security cameras outside NPA.</dd>
+		<dd>Adding a guard.</dd>
+		<dd>Forming plans.</dd>
+		<dd>Using ID cards or some form of authentication.</dd>
+	</dl>
+</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 <script src="min.js"></script>
 	<script>
@@ -30,10 +74,10 @@ console.log("queryString will follow")
 console.log(queryString);
 const urlParams = new URLSearchParams(queryString);
 const grade = urlParams.get('grade');
-const plusMinus = urlParams.get('pm');
 //https://www.sitepoint.com/get-url-parameters-with-javascript/ and the chrome console. 
 if (grade == "A") {
 	//document.writeln("Great job, you're doing great!!!!!!!!!!!!!!!!!!!111");
+	$('.gradeATips').css('display','inline');
 	console.log("grade A");
 }
 else if (grade == "B") {
