@@ -7,4 +7,26 @@ const urlParams = new URLSearchParams(queryString);
 const grade = urlParams.get('grade');
 const plusMinus = urlParams.get('pm');
 //https://www.sitepoint.com/get-url-parameters-with-javascript/ and the chrome console. 
+if (grade == "A") {
+	document.write("Great job, you're doing great!!!!!!!!!!!!!!!!!!!111");
+	console.log("grade A");
+}
+else if (grade == "B") {
+	document.write("Nice, you've met NPA specification expectations, but there's still room to improve.");
+	console.log("grade B");
+}
+else if (grade == "C") {
+	document.write("Uh oh! There's a lot of room to improve!");
+	console.log("grade C");
+	console.log("here ask whats wrong and stuff and add tips");
+} else if (grade == "D") {
+	document.write("Uh oh! There's a lot wrong with the NPA's current status!");
+	console.log("grade D");
+} else if (grade == "F") {
+	document.write("The NPA will be disbanded if the grade is not improved.");
+	console.log("fail");
+} else if (grade == "INS") {
+	console.log("insufficient mark for failure");
+	document.write("The NPA will be disbanded if in 15 minutes the grade is not improved.");
+}
 	</script>
