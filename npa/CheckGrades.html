@@ -1,3 +1,28 @@
+<style>
+.gradeBTips {
+        display: none;
+}
+.gradeCTips {
+        display: none;
+}
+.gradeDTips {
+        display: none;
+}
+.gradeFTips {
+        display: none;
+}
+.gradeITips {
+        display: none;
+}
+</style>
+<div class="gradeBTips" id="gradeBTips">
+        <p>Nice, you've met the NPA specifications, but there's still room to improve.
+        <dl>
+        <dt>Have you tried...</dt>
+        <dd>Practicing an extra drill.</dd>
+        <dd>Putting one more security camera outside NPA.</dd></dl></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 <script src="min.js"></script>
 	<script>
 const queryString = window.location.search;
@@ -8,25 +33,30 @@ const grade = urlParams.get('grade');
 const plusMinus = urlParams.get('pm');
 //https://www.sitepoint.com/get-url-parameters-with-javascript/ and the chrome console. 
 if (grade == "A") {
-	document.write("Great job, you're doing great!!!!!!!!!!!!!!!!!!!111");
+	//document.writeln("Great job, you're doing great!!!!!!!!!!!!!!!!!!!111");
 	console.log("grade A");
 }
 else if (grade == "B") {
-	document.write("Nice, you've met NPA specification expectations, but there's still room to improve.");
 	console.log("grade B");
+	$('.gradeBTips').css('display', 'inline');
 }
 else if (grade == "C") {
-	document.write("Uh oh! There's a lot of room to improve!");
+	//document.writeln("Uh oh! There's a lot of room to improve!");
 	console.log("grade C");
 	console.log("here ask whats wrong and stuff and add tips");
+	$('.gradeCTips').css('display', 'inline');
 } else if (grade == "D") {
-	document.write("Uh oh! There's a lot wrong with the NPA's current status!");
+//	document.writeln("Uh oh! There's a lot wrong with the NPA's current status!");
 	console.log("grade D");
+	$('.gradeDTips').css('display', 'inline');
 } else if (grade == "F") {
-	document.write("The NPA will be disbanded if the grade is not improved.");
+//	document.writeln("The NPA will be disbanded if the grade is not improved.");
 	console.log("fail");
+	$('.gradeFTips').css('display', 'inline');
 } else if (grade == "INS") {
 	console.log("insufficient mark for failure");
-	document.write("The NPA will be disbanded if in 15 minutes the grade is not improved.");
+//	document.writeln("The NPA will be disbanded if in 15 minutes the grade is not improved.");
+	$('.gradeITips').css('display', 'inline');
 }
 	</script>
+
