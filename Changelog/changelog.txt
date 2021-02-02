@@ -1,154 +1,175 @@
-I WOULD HIGHLY SUGGEST USING THE .DOCX VERSION OF THE CHANGELOG
-
-ALPHA 1.1
+﻿ALPHA 1.1
 ALPHA 1.2
 ALPHA 1.3
--	Added the changelog (that’s why there is nothing for the earlier versions)
--	Did many bugfixes
--	Added new information to Minecraft page
--	Added new information to ESO page
--	Added framework for footer (not enabled yet, will do once I have more content, feel free to test it by removing the comment tags (<!-- -->)
+    • Added the changelog (that’s why there is nothing for the earlier versions)
+    • Did many bugfixes
+    • Added new information to Minecraft page
+    • Added new information to ESO page
+    • Added framework for footer (not enabled yet, will do once I have more content, feel free to test it by removing the comment tags (<!-- -->)
 Alpha 1.3.1
--	Added pictures to ESO page
+    • Added pictures to ESO page
 Alpha 1.4
--	Fixed slow download speed
--	Added some mobile compatibility with the responsive menubar – enables when the windows is >700px
--	Bugfixes
--	Bugfixed the mobile compatibility…
--	Spent hours fixing the mobile compatibility
--	Added more useful comments
+    • Fixed slow download speed
+    • Added some mobile compatibility with the responsive menubar – enables when the windows is >700px
+    • Bugfixes
+    • Bugfixed the mobile compatibility…
+    • Spent hours fixing the mobile compatibility
+    • Added more useful comments
 Alpha 1.4.1
--	Fixed the chrome bug (the ESO and MC pages would not work in chrome based browsers)
+    • Fixed the chrome bug (the ESO and MC pages would not work in chrome based browsers)
 Alpha 1.4.2
--	Fixed firefox but where menubar would not render
+    • Fixed firefox but where menubar would not render
 Alpha 1.4.3
--	Fixed bug where menuBar would render on top of some of the text making it impossible to see.
--	Changed the lava creepers to Preview, as I do not have any content yet…
+    • Fixed bug where menuBar would render on top of some of the text making it impossible to see.
+    • Changed the lava creepers to Preview, as I do not have any content yet…
 Alpha 1.5
--	General bugfixes
--	Added my new ESO character
--	Added a new program
--	Started working on the beta redesign (currently located in the beta folder)
--	LAST PROJECTED VERSION OF ALPHA
+    • General bugfixes
+    • Added my new ESO character
+    • Added a new program
+    • Started working on the beta redesign (currently located in the beta folder)
+    • LAST PROJECTED VERSION OF ALPHA
 Alpha 1.5.1
--	Added links to the beta website
--	Removed NPA (as there is a more secure way to enter on the Beta)
+    • Added links to the beta website
+    • Removed NPA (as there is a more secure way to enter on the Beta)
 
 Beta 2.0 (Originally named Beta 1.0)
--	Came out with a good concept for the redesign
--	Implemented the new concept
--	Changed up a lot of the dependencies to be better organized
--	Optimised some of the webpages
--	Added more secure NPA
+    • Came out with a good concept for the redesign
+    • Implemented the new concept
+    • Changed up a lot of the dependencies to be better organized
+    • Optimised some of the webpages
+    • Added more secure NPA
 Beta 2.1
--	Started working on redesigning/porting many other sections including :
-o	ESO – Redesign - Started
-o	Minecraft – Imported - Started
-o	64support – Imported - Completed
-o	Software – not decided yet – Not started
-o	School – Adding old feature (was present on original site [OWS]) – Not started
-o	Youtube – Undecided – Imported old one for time being
-o	Genaral – Redisign – Not started
--	Bugfixes
--	Renamed Beta 1.0 to Beta 2.0 
+    • Started working on redesigning/porting many other sections including :
+        ◦ ESO – Redesign - Started
+        ◦ Minecraft – Imported - Started
+        ◦ 64support – Imported - Completed
+        ◦ Software – not decided yet – Not started
+        ◦ School – Adding old feature (was present on original site [OWS]) – Not started
+        ◦ Youtube – Undecided – Imported old one for time being
+        ◦ Genaral – Redisign – Not started
+    • Bugfixes
+    • Renamed Beta 1.0 to Beta 2.0 
 Alpha 1.5.2
--	Updated ESO page
--	Reworked the Versions to include the beta.
--	Bugfixes
+    • Updated ESO page
+    • Reworked the Versions to include the beta.
+    • Bugfixes
 Beta 2.2
--	Made a lot of progress on ESO section
--	Refined theme for the ESO section
--	Imported more files for other sections
--	Bugfixes
-o	Fixed some of the files that were missing and added pages that said under construction
-o	Removed unnecessary code from software page
-o	Fixed MC map being tiny
-o	Other things
+    • Made a lot of progress on ESO section
+    • Refined theme for the ESO section
+    • Imported more files for other sections
+    • Bugfixes
+        ◦ Fixed some of the files that were missing and added pages that said under construction
+        ◦ Removed unnecessary code from software page
+        ◦ Fixed MC map being tiny
+        ◦ Other things
 Beta 2.3
--	BUGFIXES
-o	Fixed no scrolling on certain pages
-o	Fixed dead links
-o	Added menu button to ALL subpages
-o	Added back button to many pages
--	Added about me page to main site
--	Added better ways of contacting me
--	Better organization (renamed old, licence, resource to 1old, 1licence, 1resource)
--	Archived 64Support
--	Added more formatting to certain pages
--	Added more software to software page
--	Uploaded site to Github
--	Updated software page
--	Updated ESO page
+    • BUGFIXES
+        ◦ Fixed no scrolling on certain pages
+        ◦ Fixed dead links
+        ◦ Added menu button to ALL subpages
+        ◦ Added back button to many pages
+    • Added about me page to main site
+    • Added better ways of contacting me
+    • Better organization (renamed old, licence, resource to 1old, 1licence, 1resource)
+    • Archived 64Support
+    • Added more formatting to certain pages
+    • Added more software to software page
+    • Uploaded site to Github
+    • Updated software page
+    • Updated ESO page
 Alpha 1.5.3
--	Couple bugfixes
--	LAST UPDATE
--	Added message to use the beta
+    • Couple bugfixes
+    • LAST UPDATE
+    • Added message to use the beta
 Beta 2.4
--	SCHOOL
-o	Added framework for better JS menu to School section
--	NPA
-o	Made the NPA page to be accessed by typing “Up Up Down Down Left Right Left Right B A” to improve security.
-	There was a bug where the NPA ENTER TEXT HYPERLINK was visible on small screens
-o	Removed additional dialogue box after NPA password is entered.
-o	Organized (better) NPA pages
-o	Added 30 minute limit to NPA page. (will require login after 30 minutes)
--	Added better NOJS compatibility to the index menu
--	Made the menu and associated pages work on mobile
--	Added better mobile compatibility throughout the site
--	Changed the ESO framework to be easier to manage
--	Bugfixes
--	Commented many JS pages
--	RELEASED THE BETA AS MAIN VERSION AND RETIRED ALPHA
-o	COMPLETELY REDID THE FILE STRUCTURE
+    • SCHOOL
+        ◦ Added framework for better JS menu to School section
+    • NPA
+        ◦ Made the NPA page to be accessed by typing “Up Up Down Down Left Right Left Right B A” to improve security.
+            ▪ There was a bug where the NPA ENTER TEXT HYPERLINK was visible on small screens
+        ◦ Removed additional dialogue box after NPA password is entered.
+        ◦ Organized (better) NPA pages
+        ◦ Added 30 minute limit to NPA page. (will require login after 30 minutes)
+    • Added better NOJS compatibility to the index menu
+    • Made the menu and associated pages work on mobile
+    • Added better mobile compatibility throughout the site
+    • Changed the ESO framework to be easier to manage
+    • Bugfixes
+    • Commented many JS pages
+    • RELEASED THE BETA AS MAIN VERSION AND RETIRED ALPHA
+        ◦ COMPLETELY REDID THE FILE STRUCTURE
 Alpha 1.5.4
--	Fixed some mobile compatibility (only for testing for the beta since the framework was already in place for alpha)
-o	Made the mobile compatibility work on screens that are larger than 600px
--	Made a TXT file as well as the DOCX file for the changelog
-
+    • Fixed some mobile compatibility (only for testing for the beta since the framework was already in place for alpha)
+        ◦ Made the mobile compatibility work on screens that are larger than 600px
+    • Made a TXT file as well as the DOCX file for the changelog
 Beta 2.5
-- Minecraft
-o Made good mobile compatibility
-o Changed the menu framework to better framework
-o Added worlds page
-o Moved Index button
-- Bugfixed some of the main mobile compatibility
-- Fixed bug where icon would not render for main page
-- ESO
-o Improved ESO mobile compatibility
-o Updated ESO page
-- Fixed some of the main page bugs where the mobile compatibility did not work on about and contact me pages.
-- Put version on General page. The General page has no other changes as of now.
-
+    • (2.4.1 not 2.5 since I only have a limited number of points. I don’t want to go into three for a long time) EDIT Changed it into Beta 2.5 (thanks ttr for the info that I can do 2.10 later, why did I not think of that :rofl:)
+    • Minecraft
+        ◦ Made good mobile compatibility
+        ◦ Improve the menu framework
+        ◦ Added worlds page
+        ◦ Moved Index button
+    • Bugfixed some of the main mobile compatibility
+    • Fixed bug where icon would not render for main page
+    • ESO
+        ◦ Updated page
+        ◦ Improved mobile compatibility
+    • Fixed some of the main page bugs where the mobile compatibility did not work on the About and Contact Me pages.
+    • Put the version on the General page. The General page has no other changes as of now.
 Beta 2.5.1
-- Cosmetic and bug fixes
-- Improved mobile compatibility
-
+    • Cosmetic and bug fixes
+    • A bit more mobile compatibility
 Beta 2.5.2
-- Fix for devices that use https (SSL) if the server is https (like github pages)
-
+    • Fix for devices that use https (SSL) if the server is https (like github pages)
 Beta 2.6
-- Started working on general section redesign
-- Removed beta from index title
-- Fixed a typo in the readme document
-- Added credit where due (fuel rats [general] & alcast [ESO])
-- Added plan for sitemap
-- Added link for beta website
-- Slightly better organized software section
-- Added rounded corners to ESO section
-- Some bugfixes
-- Added the Clash Royale Section for my clan
-o Linked to it in general
-o Mobile compatibility
-o Desktop Compatibility
-o Found out how I like the round corners theme
-- A couple other things that I forgot
-- Bugfixes on the main page (no horizontal scroll on mobile)
-- Other cosmetic and bug fixes
-- Fixes to make more parts of the site valid HTML5.
-- Add discontinuation message to 64support, and a landing page for 64support from the coding page
-- MC section rework
- o Reworked the framework into the general framework
- o Solved a TON of bugs with that new framework
- o Fixed some more bugs with it
- o Fixed bug where worlds page would not work
- o Deleted old pages
+    • Started working on general section redesign
+    • Removed beta from index title
+    • Fixed a typo in the readme document
+    • Added credit where due (fuel rats [general] & alcast [ESO])
+    • Create a rudimentary, ugly sitemap
+    • Added link for beta website
+    • Slightly better organized software section
+    • Added rounded corners to ESO section
+    • Some bugfixes
+    • Added the Clash Royale Section for my clan
+        ◦ Linked to it in general
+        ◦ Mobile compatibility
+        ◦ Desktop Compatibility
+        ◦ Found out how I like the round corners theme
+    • A couple other things that I forgot 
+    • Bugfixes on the main page (no horizontal scroll on mobile)
+    • Other cosmetic and bug fixes
+    • Fixes to make more parts of the site valid HTML5.
+    • Add discontinuation message to 64support, and a landing page for 64support from the coding page
+    • MC section rework
+        ◦ Reworked the framework into the general framework
+        ◦ Solved a TON of bugs with that new framework
+        ◦ Fixed some more bugs with it
+        ◦ Fixed bug where worlds page would not work
+        ◦ Deleted old pages
+I AM RELEASING 2.6 BEFORE FINISHING THE GENERAL SECTION
+Beta 2.7
+    • ESO section mobile menu
+    • ESO section refinements
+    • More ESO refinements
+    • Small ESO redesign (but not full redesign)
+    • Changed colours for index page.
+    • Fixed bug where ESO centered menubar was not actually centered
+    • More ESO style changing (since I think I will adopt this style for the general section, I really like it)
+    • More ESO bugfixes (again since I want to continue using the style)
+    • Removed a few megabytes of old files (still accessible in their respective zip downloads)
+    • Fix ESO table bug where it would not work on mobile
+    • Fixed MC bug where the content pane was not quite tall enough on mobile
+    • Added some more ESO content
+Beta 2.8
+    • Bugfix where the images show 30% even in mobile, now they show full width in mobile
+    • General Section implementation of ESO theme
+    • Couple changes to that theme
+    • Added all the general content (for the moment)
+    • Removed About Me
+    • Added BG to index.html
+    • Couple bugfixes
+    • Added BG to general section
+      Beta 2.??????
+    • Fix a link in the alpha site so people who haven’t looked at the website in a while won’t be confused when their bookmarks don’t work
+    • Improve wording in the general section
