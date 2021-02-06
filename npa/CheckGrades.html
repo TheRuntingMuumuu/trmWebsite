@@ -18,6 +18,7 @@
         display: none;
 }
 </style>
+<!--This is where the text gets displayed.-->
 <div class="gradeATips" id="gradeATips">
 	<p>You're doing amazing stuff, keep it up!!</p>
 	<dl>
@@ -67,8 +68,13 @@
 	</dl>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-<script src="min.js"></script>
+<script src="min.js"></script> <!--for older browsers, will offer support for queryString.-->
 	<script>
+		//Here be
+		//dragons!
+		//Do not modify this
+		//code if you don't know
+		//what you're doing!
 const queryString = window.location.search;
 console.log("queryString will follow")
 console.log(queryString);
@@ -87,7 +93,6 @@ else if (grade == "B") {
 else if (grade == "C") {
 	//document.writeln("Uh oh! There's a lot of room to improve!");
 	console.log("grade C");
-	console.log("here ask whats wrong and stuff and add tips");
 	$('.gradeCTips').css('display', 'inline');
 } else if (grade == "D") {
 //	document.writeln("Uh oh! There's a lot wrong with the NPA's current status!");
