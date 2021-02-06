@@ -173,3 +173,15 @@ Beta 2.8
       Beta 2.??????
     • Fix a link in the alpha site so people who haven’t looked at the website in a while won’t be confused when their bookmarks don’t work
     • Improve wording in the general section
+Beta 2.8.1
+ - Fix a link in the alpha site so people who haven’t looked at the website in a while won’t be confused when their bookmarks don’t work
+ - Improve wording in the general section
+ - Added download links to MC Worlds
+ - Added links to both MC maps
+ - Fixed the bug where contact.hml would not show translucent bg
+Beta 2.8.2
+ - Removed unnecessary files
+ - Spelling Fixes
+ - Bugfixes
+ - Content updates
+ - Couple other small things
