@@ -1,17 +1,9 @@
 /*A bunch of credit goes to https://alcasthq.com for the style.*/
 
-/*To show different links on mobile and not*/
-.mobileNo {display:inline;}
-.desktopNo {display:none;}
-@media screen and (max-width: 600px) {
-.mobileNo {display:none;}
-.desktopNo {display: inline;}
-}
-
 /*Document Settings and such*/
 body {
   background-color: #111;
-  background-image: url("schoolwp1.jfif");
+  background-image: url("programmingbg1.png");
   background-position: center;
   background-attachment: fixed;
   font-family: arial;

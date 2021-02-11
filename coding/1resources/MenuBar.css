@@ -1,0 +1,75 @@
+/*menu bar styling*/
+body {
+  margin: 0;
+}
+/*Menu stuff*/
+.menuBar {
+  background-color: #111;
+  width: 100%;
+  position: fixed;
+  font-family: Arial;
+  top: 0px;
+  z-index: 50;
+  border-radius: 0px 0px 15px 15px;
+  overflow: hidden; /*Needed so that the additional text on menu bar (when screen is too small, mobile) gets shoved away*/
+  /*REMOVE FOR NON-CENTERED THEME*/text-align: center; /*If I want to align it center*/
+}
+
+.menuBar a {
+  color: white;
+  padding: 15px;
+  font-size: 18px;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.1s ease;
+  border-radius: 20px;
+}
+
+.menuBar a:hover {
+  color: orange;
+  background-color: #000;
+  border-radius: 10px;
+}
+
+/*For the button leading to the index*/
+
+.indexButton {
+  color: white;
+  float: left;
+  padding: 12px 25px;
+  font-size: 20px;
+  font-family: arial;
+}
+
+.indexButtonBalance { /*So that there is an index button on both sides, the buttons should then be centered*/
+  float: right;
+  visibility: hidden;
+}
+
+.menuBar .icon {
+  display: none; /*only display mobile menu button on mobile*/
+}
+
+@media screen and (max-width: 600px) {
+  .menuBar a:not(:first-child) {display: none;}
+  .menuBar a.icon {
+    float: right;
+    display: block;
+  }
+
+  .menuBar.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .menuBar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .indexButtonBalance { /*used for centering in desktop mode, makes extra button in mobile mode*/
+      float: none;
+      visibility: visible;
+      display: none;
+  }
+}
