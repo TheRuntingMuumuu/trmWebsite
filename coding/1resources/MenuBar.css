@@ -4,7 +4,7 @@ body {
 }
 /*Menu stuff*/
 .menuBar {
-  background-color: #111;
+  background-color: rgba(17, 17, 17, 1.00);
   width: 100%;
   position: fixed;
   font-family: Arial;
