@@ -1,0 +1,61 @@
+/*This page is for the highlights which are my 3 most important programs at the moment (like ads)*/
+
+.highlightsContainer {
+  display: flex;
+  width: calc(100% - 20px);
+  background-color: #333;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.hl {
+  background-color: #444;
+  border-radius: 5px;
+  text-align: center;
+  width: 33.33%;
+  padding: 20px;
+  transition: all 0.2s ease;
+}
+
+.hl:hover {
+  filter: brightness(130%) saturate(120%);
+}
+
+.hlText { /*The text on top of the images*/
+  color: white;
+  background-color: rgba(0, 0, 0, .6);
+  padding: 5px;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+/*For the individual backgrounds for each place*/
+.hl1 {
+  margin-right: 10px;
+  background-image: url("programmingbg1.png");
+}
+.hl2 {
+  margin-right: 10px;
+  background-image: url("binarywp.jfif");
+}
+.hl3 {
+  background-image: url("dicewp.jfif");
+}
+
+/*Mobile*/
+@media screen and (max-width: 600px) {
+  .highlightsContainer {
+    display: block;
+    background-color: rgba(34, 34, 35, .99);
+
+    padding: 0px;
+
+  }
+  .hl {
+    margin-right: 0px;
+    margin-top: 10px;
+    width: 100%;
+    padding: 20px;
+    transition: all 0.2s ease;
+  }
+}
