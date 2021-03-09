@@ -31,19 +31,7 @@ body
     left:80px;
     bottom:2%;
 }
-    #menu
-{
-border-bottom-width: 4px;
-border-style: solid;
 
-border-top-width: 4px;
-border-right-width: 4px;
-border-left-width: 4px;
-color: yellow;
-background-color: #d3d3d3;
- text-align: center;
-text-decoration: none;
-}
 #head
 {
 border-bottom-width: 6px;
@@ -65,6 +53,6 @@ margin-right: 100px;
 <form action="LoadingNPA.htm">
     <input type="submit" value="LOGIN" class="dropbtn" />
 </form>
-<form action="../index.html">
-    <input type="submit" value="MENU" class="menu" />
+<form onclick="self.close()">
+    <input type="submit" value="Back" class="menu" />
 </form>

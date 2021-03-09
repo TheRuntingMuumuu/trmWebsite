@@ -20,15 +20,18 @@ history.go(0);
 if (pass1 == "11073641") {
 break;
 }
-testV+=1;
 var pass1 =
 alert('Password Incorrect, Try again');
 }
-if (pass1.toLowerCase()!="password" & testV ==3)
-history.go(0);
-return " ";
 }
-passWord()
+
+passWord() //Runs the password thing on page load
+
+window.setInterval(function() //Runs the password function every 5 minutes
+{
+    passWord();
+}, 300000);
+
 document.addEventListener('contextmenu', event => event.preventDefault()); <!-- disable right click -->
 
 </script>
@@ -47,9 +50,9 @@ document.addEventListener('contextmenu', event => event.preventDefault()); <!-- 
 <div class="menu">
   <a href="#main" class="main">Main</a>
   <a href="#se" class="main">Security</a>
-  <a href="#gg" class="main">Groups</a>
-  <a href="#al" class="main">Alfred</a>
   <a href="#qr" class="main">Scanner</a>
+  <a href="#gg" class="main">Forum</a>
+  <a href="#progs" class="main">Programs</a>
   <a href="npalog.html" class="logoot">Logout</a>
 </div>
 
@@ -59,27 +62,10 @@ document.addEventListener('contextmenu', event => event.preventDefault()); <!-- 
     </font>
     The NPA website is outdated.
 </p>
-<p>
-<form action="https://mail.google.com" target="_blank">
-    <input type="submit" value="Gmail" /> <p>
-<form action="https://alfred.camera/webapp2/" target="_blank">
-    <input type="submit" value="Alfred" /> <p>
-<form action="https://groups.google.com/forum/#!forum/npa-npa" target="_blank">
-    <input type="submit" value="NPA Forum" /> <p>
-<form action="https://www.the-qrcode-generator.com/" target="_blank">
-    <input type="submit" value="QR Codes" /> <p>
-</form>
 
-<div class="footer"> hi</div>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<a name="al">
-    <br>
-<iframe name="Alfredo" src="https://alfred.camera/webapp/viewer/" width="100%" height="88%" align="right" frameborder="25" scrolling="auto" class="frame-area">
-</iframe>
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <a name="gg">
     <br>
 <iframe id="forum_embed"
@@ -92,66 +78,23 @@ document.addEventListener('contextmenu', event => event.preventDefault()); <!-- 
   allowtransparency="true"
   style="background: #FFFFFF;">
 </iframe>
-<script type="text/javascript">
-  document.getElementById('forum_embed').src =
-     'https://groups.google.com/forum/embed/?place=forum/npa-npa'
-     + '&showsearch=true&showpopout=true&showtabs=false'
-     + '&parenturl=' + encodeURIComponent(window.location.href);
-</script>
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<a name="se">
+<a name="se"></a>
+
     <br>
-<form>
-    <p id="p2head">
-        <font size=6> Overall Security Mark
-        <br>
-        <br>
-        <font size=4>
-  <input type="radio" name="grade" value="A"> A <br>
-  <input type="radio" name="grade" value="B"> B <br>
-  <input type="radio" name="grade" value="C"> C <input type="radio" name="+-" value="+"> +<br>
-  <input type="radio" name="grade" value="D"> D <input type="radio" name="+-" value="-"> -<br>
-    <input type="radio" name="grade" value="F"> F<br>
-  <input type="radio" name="grade" value="INS"> INS<br>
-            <!--here add a vutton to submit-->
+<iframe src="security.html" width="100%" style="height:85vh;"></iframe>
 
-    <p id="p2head">
-        <font size=6>TO DO
-        <br>
-        <br>
-        <font size=4>
-  <input type="checkbox" name="CBOX" value="ID"> ID cards<br></input>
-  <input type="checkbox" name="CBOX" value="CO"> Communications<br></input>
-  <input type="checkbox" name="CBOX" value="CA"> Cameras<br></input>
-  <input type="checkbox" name="CBOX" value="SOP" > Spy on parents <br></input>
-  <input type="checkbox" name="CBOX" value="TS" > Tech Security</input>
-  <input type="text" name="CBOX" value="Grade"><br>
-  <input type="checkbox" name="CBOX" value="REWRITE">Rewrite NPA site</input>
 
-</form>
-
-<p id="p2head">
-        <font size=6>Notes
-        <br>
-        <br>
-        <font size=4>
-   <textarea name="message" rows="10" cols="80">Enter extra NPA notes here: </textarea>
-   <br>
-
-</form>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<a name="qr">
-    <br>
-    <iframe name="Alfredo" src="https://qrcodescan.in/" width="100%" height="88%" align="right" frameborder="25" scrolling="auto" class="frame-area">
-</iframe>
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-<a name="">
-
+<a name="progs">
+  <a href="https://mail.google.com" target="_blank">Gmail</a>
+  <a href="https://alfred.camera/webapp2/" target="_blank">Alfred</a>
+  <a href="https://groups.google.com/forum/#!forum/npa-npa" target="_blank">Google Groups Forum</a>
+  <a href="https://www.the-qrcode-generator.com/" target="_blank">QR Code Scanner</a>
 <br>
 
 
