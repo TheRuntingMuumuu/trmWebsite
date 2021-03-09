@@ -11,37 +11,41 @@ var allowedKeys = {
 };
 
 // the 'official' Konami Code sequence
-var konamiCode = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a'];
+var password = ['up', 'up', 'down', 'down', 'left', 'right', 'left', 'right', 'b', 'a'];
 
 // a variable to remember the 'position' the user has reached so far.
-var konamiCodePosition = 0;
+var passwordPosition = 0;
 
 // add keydown event listener
 document.addEventListener('keydown', function(e) {
   // get the value of the key code from the key map
   var key = allowedKeys[e.keyCode];
   // get the value of the required key from the konami code
-  var requiredKey = konamiCode[konamiCodePosition];
+  var requiredKey = password[passwordPosition];
 
   // compare the key with the required key
   if (key == requiredKey) {
 
     // move to the next key in the konami code sequence
-    konamiCodePosition++;
+    passwordPosition++;
 
     // if the last key is reached, activate cheats
-    if (konamiCodePosition == konamiCode.length) {
-      activateCheats();
-      konamiCodePosition = 0;
+    if (passwordPosition == password.length) {
+      npa();
+      passwordPosition = 0;
     }
   } else {
-    konamiCodePosition = 0;
+    passwordPosition = 0;
   }
 });
 
-function activateCheats() {
-  alert("Welcome to the NPA");
-  window.open("npa/npalog.html",'_blank');
+function npa() {
+  if (confirm("Welcome to the NPA")){
+    window.open("npa/npalog.html",'_blank');
+  }
+  else {
+    alert("Ok, Cancelling your request.");
+  }
 }
 
 //THIS IS NOT MY CODE. IT WAS TAKEN FROM https://stackoverflow.com/a/31627191/9654083
