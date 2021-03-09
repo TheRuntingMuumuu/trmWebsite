@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<meta http-equiv="refresh" content="1800" > <!--refreshes page (so forces relogin) after 1800 seconds, or 30 minutes (I think???)-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Helps with mobile compatibility-->
 
-<html>
-    <title>NPA website</title>
-    <style>
-        body{
-        background-color:black;
-        }
-    </style>
+<title>NPA website</title>
+<style>/*Loads before the password loads, so the screen is black before*/
+    body{
+    background-color:black;
+    }
+</style>
 
 <script type="text/javascript">
 function passWord() {
@@ -32,28 +30,23 @@ window.setInterval(function() //Runs the password function every 5 minutes
     passWord();
 }, 300000);
 
-document.addEventListener('contextmenu', event => event.preventDefault()); <!-- disable right click -->
+document.addEventListener('contextmenu', event => event.preventDefault()); //Disables right click so people cant copy/paste
 
 </script>
 <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cantarell" /> <!--imports the NPA font (gnome GUI font) from the online link-->
-    <style>
-        body{
-        background-color:limegreen;
-        font-family: Cantarell;
-        }
-    </style>
 
 <link rel="stylesheet" type="text/css" href="menuss.css">
 <link rel="stylesheet" type="text/css" href="stylesheet1.css">
 
-
-<div class="menu">
-  <a href="#main" class="main">Main</a>
-  <a href="#se" class="main">Security</a>
-  <a href="#qr" class="main">Scanner</a>
-  <a href="#gg" class="main">Forum</a>
-  <a href="#progs" class="main">Programs</a>
-  <a href="npalog.html" class="logoot">Logout</a>
+<div class="menuContainer">
+  <div class="menu">
+    <a href="#main" class="main">Main</a>
+    <a href="#se" class="main">Security</a>
+    <a href="#qr" class="main">Scanner</a>
+    <a href="#gg" class="main">Forum</a>
+    <a href="#progs" class="main">Programs</a>
+    <a href="npalog.html" class="logoot">Logout</a>
+  </div>
 </div>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
@@ -66,7 +59,7 @@ document.addEventListener('contextmenu', event => event.preventDefault()); <!-- 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<a name="gg">
+<a id="gg">
     <br>
 <iframe id="forum_embed"
   src="javascript:void(0)"
@@ -84,7 +77,7 @@ document.addEventListener('contextmenu', event => event.preventDefault()); <!-- 
 <a name="se"></a>
 
     <br>
-<iframe src="security.html" width="100%" style="height:85vh;"></iframe>
+<iframe src="security.html" align="right" width="100%" style="border:none; height:88vh;"></iframe>
 
 
 
