@@ -65,7 +65,9 @@
 			var ending = "B";
 		} else if (totalGrade == 6) {
 			var ending = "A";
-		}
+		} else {
+			document.write("Something's wrong...");
+			return false;}
 		newSite = "CheckGrades.html?grade=%s",ending;
 		newSite = newSite.replace('%s', ending);
 		window.location.href = newSite;
