@@ -1,32 +1,15 @@
-html { overflow-y: hidden; }/*Disables Scrolling*/
-
-body {
-  margin: 0px;
-  background-color:limegreen;
-  font-family: Cantarell;
-}
-
-.menuContainer {
-  width: 100%;
-  height: ;
-  text-align: center;
-  overflow: hidden;
-  position: fixed;
-  bottom: 0px;
-}
+html { overflow-y: hidden; }
 
 .menu {
-  overflow: hidden;
+    overflow: hidden;
   background-color: black;
   position: fixed;
-  text-align: center;
-  bottom: 0px;
-  width: 100%;
-  border-radius: 15px 15px 0px 0px;
+  bottom: 3%;
+  width: 99%;
 }
 
 .menu a {
-  display: inline-block;
+  display: block;
   text-align: center;
   text-decoration: none;
   padding: 10px;
@@ -37,8 +20,6 @@ body {
 
 .menu a:hover {
   background-color: limegreen;
-  border-radius: 2px;
-
 }
 
 .logoot {
@@ -60,4 +41,6 @@ body {
 .main {
   background: black;
   color: white;
+  float: left;
 }
+
