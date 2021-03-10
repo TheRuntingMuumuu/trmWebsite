@@ -23,7 +23,7 @@ var pass = null;
                 console.log(md.digest().toHex());
                 var obj = JSON.parse(PASSES);
 if (uname === null || pass === null) {
-window.location.href="index.html";
+	window.location.href="index.html";}
 for (i in obj) {//https://www.w3schools.com/js/js_json_objects.asp
         if (i === uname) {
                 if (obj[i] === md.digest().toHex()) {
@@ -33,7 +33,8 @@ for (i in obj) {//https://www.w3schools.com/js/js_json_objects.asp
 	}}
 document.write("Oops! Wrong username/password. They are case sensitive, so watch out for that.");setTimeout(() => {
   console.log("we waited 2 seconds to run this code, oh boy wowwoowee!");
-}, 2000000);window.location.href="../index.html";//https://stackoverflow.com/a/51311966/9654083window.location.href = "../index.html";</script>
+}, 2000000);window.location.href="../index.html";//https://stackoverflow.com/a/51311966/9654083
+	window.location.href = "../index.html";</script>
 
 <html>
     <title>NPA website</title>
