@@ -1,0 +1,20 @@
+<script src="https://unpkg.com/node-forge@0.7.0/dist/forge.min.js"></script>
+	<script>
+		function loadFile(filePath) {
+  	var result = null;
+  	var xmlhttp = new XMLHttpRequest();
+  	xmlhttp.open("GET", filePath, false);
+  	xmlhttp.send();
+	if (xmlhttp.status == 200) {
+	result = xmlhttp.responseText;
+  	}
+ 	 return result;
+	}
+
+		var uname = prompt("Enter your username...");
+		var pass = prompt("Enter your password...");//todo: make this an input box thingy html
+		const PASSES = loadFile("PASSES.yml")
+		var md = forge.md.sha256.create();
+		md.update('The quick brown fox jumps over the lazy dog');
+		console.log(md.digest().toHex());
+	</script>
