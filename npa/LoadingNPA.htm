@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Helps with mobile compatibility-->
 
 <script src="https://unpkg.com/node-forge@0.7.0/dist/forge.min.js"></script>
-        <script>
+        <script>/*
                 function loadFile(filePath) {//https://stackoverflow.com/a/41133213/9654083
         var result = null;
         var xmlhttp = new XMLHttpRequest();
@@ -39,7 +39,7 @@ for (i in obj) {//https://www.w3schools.com/js/js_json_objects.asp
 document.write("Oops! Wrong username/password. They are case sensitive, so watch out for that.");setTimeout(() => {
   console.log("we waited 2 seconds to run this code, oh boy wowwoowee!");
 }, 2000000);window.location.href="";//https://stackoverflow.com/a/51311966/9654083window.location.href = "../index.html";</script>
-
+*/
 <html>
     <title>NPA website</title>
     <style>
@@ -81,7 +81,13 @@ document.addEventListener('contextmenu', event => event.preventDefault()); //Dis
   <div class="menu">
     <a href="#main" class="main">Main</a>
     <a href="#se" class="main">Security</a>
-    <a href="#qr" class="main">QR Code Management</a>
+    <div class="QRdropupDiv">
+      <a href="#qr" class="main QRdropupButton">QR Code Management</a>
+      <div class="QRdropup"> <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hover-->
+        <a href="https://qrcodescan.in/" target="qr1" onclick="location.href='#qr'">QR Scanner</a>
+        <a href="https://www.qr-code-generator.com/" target="qr2" onclick="location.href='#qr'">QR Maker</a>
+      </div>
+    </div>
     <a href="#gg" class="main">Forum</a>
     <a href="#progs" class="main">Links</a>
     <a href="npalog.html" class="logoot">Logout</a>
@@ -127,8 +133,7 @@ document.addEventListener('contextmenu', event => event.preventDefault()); //Dis
 <a id="qr">
     <iframe name="qr1" src="" width="100%" height="46%" align="right" style="border-radius: 4px;"></iframe>
     <iframe name="qr2" src="" width="100%" height="46%" align="right" scrolling="auto" style="border-radius: 4px;"></iframe>
-    <a href="https://qrcodescan.in/" target="qr1">Load QR code 1</a>
-    <a href="https://www.qr-code-generator.com/" target="qr2">Load QR code 2</a>
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <a name="progs">
