@@ -13,8 +13,15 @@
 
 		var uname = prompt("Enter your username...");
 		var pass = prompt("Enter your password...");//todo: make this an input box thingy html
-		const PASSES = loadFile("PASSES.yml")
+		const PASSES = loadFile("PASSES.json"); //i hate json but https://www.w3schools.com/js/js_json_parse.asp
 		var md = forge.md.sha256.create();
-		md.update('The quick brown fox jumps over the lazy dog');
+		md.update(pass);
 		console.log(md.digest().toHex());
+		var obj = JSON.parse(PASSES);
+for (i in obj) {
+	if (i == uname) {
+		if (obj[i] == md.digest().toHex()) {
+			window.location.href = "LoadingNPA.htm";
+		}}}
+document.write("Oops! Wrong password.")
 	</script>
