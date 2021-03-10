@@ -81,7 +81,10 @@ console.log(queryString);
 const urlParams = new URLSearchParams(queryString);
 const grade = urlParams.get('grade');
 //https://www.sitepoint.com/get-url-parameters-with-javascript/ and the chrome console.
-if (grade == "A") {
+if (grade == "false") {
+	window.location.href = "index.html"
+}
+else if (grade == "A") {
 	//document.writeln("Great job, you're doing great!!!!!!!!!!!!!!!!!!!111");
 	$('.gradeATips').css('display','inline');
 	console.log("grade A");
