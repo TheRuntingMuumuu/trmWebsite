@@ -19,6 +19,10 @@ body
     width:7%;
     left:80px;
     top:50%;
+    border-radius: 15px;
+    margin: 20px;
+    min-width: 100px;
+
 }
 .dropbtnWide {
     background-color: black;
@@ -38,23 +42,15 @@ body
     font-size: 16px;
     border: none;
     cursor: move;
+    min-width: 100px;
     width:7%;
     left:80px;
     bottom:2%;
-}
-    #menu
-{
-border-bottom-width: 4px;
-border-style: solid;
+    border-radius: 15px;
+    margin: 20px;
 
-border-top-width: 4px;
-border-right-width: 4px;
-border-left-width: 4px;
-color: yellow;
-background-color: #d3d3d3;
- text-align: center;
-text-decoration: none;
 }
+
 #head
 {
 border-bottom-width: 6px;
@@ -64,7 +60,9 @@ border-top-width: 6px;
 border-right-width: 6px;
 border-left-width: 6px;
 color:red;
-margin-right: 100px;
+background-color: rgba(0, 0, 0, 0.2);
+border-radius: 15px;
+text-align: center;
 }
 </style>
 
@@ -82,3 +80,5 @@ margin-right: 100px;
 <form action="OLD_NPA.htm">
 	<input type="submit" value="LOGIN to OLD NPA" class="dropbtnWide" />
 </form>
+<form onclick="self.close()">
+    <input type="submit" value="Back" class="menu" />
