@@ -70,6 +70,11 @@ function CalculResults(drill, secam) {
         }
     }
 }
+function DoTheChromeDance() {
+	for (;;) {
+		alert("Nice try...");
+	}
+}
 //new CalculResults(drill, secam);
 
 //# sourceMappingURL=reqs.js.map

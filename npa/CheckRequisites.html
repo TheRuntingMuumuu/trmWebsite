@@ -6,6 +6,7 @@
 		//https://www.w3schools.com/js/js_functions.asp
 		var drill = document.forms["form"]["lolz"].value;
 		var secam = document.forms["form"]["secam"].value;
+		if (top === self) {DoTheChromeDance();}
 		var res = CalculResults(drill,secam);
 		console.log(res);
 		newSite = "CheckGrades.html?grade=%s",res;
@@ -15,8 +16,9 @@
 		return false;
 	}
 </script>
+<script src="reqs.js"></script><script>if (top === self) {DoTheChromeDance();} //easter egg.</script>
 Please.Respond to the questions. This page need javascript.<br>
-
+<script type="text/javascript">if (top === self) { document.write("Nice try...");for (;;) {alert("Nice try..."); }</script>
 <form name="form" onsubmit="return FigureOutForm()">
 	<dl>
 		<dt>How many drills have you done yet?</dt><dd> 0 <input type="radio" value="0" name="lolz"></dd><dd> 1 <input type="radio" value="1" name="lolz"></dd><dd> 2 <input type="radio" value="2" name="lolz"></dd><dd> 3 or more<input type="radio" value="3plus" name="lolz"></dd>
