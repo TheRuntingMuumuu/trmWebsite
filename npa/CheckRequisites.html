@@ -6,9 +6,11 @@
 		//https://www.w3schools.com/js/js_functions.asp
 		var drill = document.forms["form"]["lolz"].value;
 		var secam = document.forms["form"]["secam"].value;
-		var res = new CalculResults(drill,secam);
-		newSite = "CheckGrades.html?grade=%s";
+		var res = CalculResults(drill,secam);
+		console.log(res);
+		newSite = "CheckGrades.html?grade=%s",res;
 		newSite = newSite.replace('%s', res);
+		console.log(newSite);
 		window.location.href = newSite;
 		return false;
 	}
