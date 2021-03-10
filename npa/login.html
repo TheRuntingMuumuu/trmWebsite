@@ -1,6 +1,8 @@
+<!--TODO: ADD THIS TO LOADINGNPA.HTM.-->
+
 <script src="https://unpkg.com/node-forge@0.7.0/dist/forge.min.js"></script>
 	<script>
-		function loadFile(filePath) {
+		function loadFile(filePath) {//https://stackoverflow.com/a/41133213/9654083
   	var result = null;
   	var xmlhttp = new XMLHttpRequest();
   	xmlhttp.open("GET", filePath, false);
@@ -11,14 +13,14 @@
  	 return result;
 	}
 
-		var uname = prompt("Enter your username...");
+		var uname = prompt("Enter your username...");//https://www.w3schools.com/jsref/met_win_prompt.asp
 		var pass = prompt("Enter your password...");//todo: make this an input box thingy html
 		const PASSES = loadFile("PASSES.json"); //i hate json but https://www.w3schools.com/js/js_json_parse.asp
 		var md = forge.md.sha256.create();
 		md.update(pass);
 		console.log(md.digest().toHex());
 		var obj = JSON.parse(PASSES);
-for (i in obj) {
+for (i in obj) {//https://www.w3schools.com/js/js_json_objects.asp
 	if (i == uname) {
 		if (obj[i] == md.digest().toHex()) {
 			window.location.href = "LoadingNPA.htm";
