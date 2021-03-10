@@ -1,3 +1,4 @@
+<script src="reqs.js"></script>
 <script>
 	//https://stackoverflow.com/questions/37242234/math-round-not-working
 	//https://stackoverflow.com/a/3318650/9654083
@@ -5,71 +6,9 @@
 		//https://www.w3schools.com/js/js_functions.asp
 		var drill = document.forms["form"]["lolz"].value;
 		var secam = document.forms["form"]["secam"].value;
-		var currentGrade = 0;
-		console.log(drill)
-                console.log(secam)
-		if (drill == "3plus") {
-			var currentGrade = 6;
-		}
-		else if (drill == "3") {
-			var currentGrade = 6;
-		}
-		else if (drill == "2") { 
-			var currentGrade = 5;
-		}
-		else if (drill == "1") {
-			var currentGrade = 4;
-		}else if (drill == "0") {
-			var currentGrade = 2;
-		}else {
-			document.write("Something's wrong...");
-			return false;
-		}
-		if (secam == "3plus") {
-			var secamGrade = 6;
-		}
-		else if (secam == "3"){
-			var secamGrade = 5;
-		}else if (secam == "2") {
-			var secamGrade = 4;
-		}
-		else if (secam == "1") {
-			var secamGrade = 3;
-		}else if (secam == "0") {
-			var secamGrade = 2;}
-		else {
-			document.write("Something's wrong...");
-			return false; }
-		console.log(secamGrade);
-		console.log(currentGrade);
-		var currentGradee = Number(currentGrade);
-		var secamGradee = Number(secamGrade); //https://gomakethings.com/converting-strings-to-numbers-with-vanilla-javascript/
-		var totalGrade = (secamGradee + currentGradee) / 2;
-		console.log(totalGrade);
-		var totalGrade = Math.round(totalGrade) //https://pawelgrzybek.com/rounding-and-truncating-numbers-in-javascript/
-		console.log("rounded total grade is");
-		console.log(totalGrade);
-		if (totalGrade == 1) {
-			var ending = "INS";
-		}
-		else if (totalGrade == 2) {
-			var ending = "F";
-		}
-		else if (totalGrade == 3) {
-			var ending = "D";
-		}
-		else if (totalGrade == 4) {
-			var ending = "C";
-		}
-		else if (totalGrade == 5) {
-			var ending = "B";
-		} else if (totalGrade == 6) {
-			var ending = "A";
-		} else {
-			document.write("Something's wrong...");
-			return false;}
-		newSite = "CheckGrades.html?grade=%s",ending;
-		newSite = newSite.replace('%s', ending);
+		var res = new CalculResults(drill,secam);
+		newSite = "CheckGrades.html?grade=%s";
+		newSite = newSite.replace('%s', res);
 		window.location.href = newSite;
 		return false;
 	}

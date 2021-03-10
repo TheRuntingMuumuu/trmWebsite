@@ -65,6 +65,6 @@ function CalculResults(drill, secam) {
         }
     }
 }
-new CalculResults(drill, secam);
+//new CalculResults(drill, secam);
 
 //# sourceMappingURL=reqs.js.map
