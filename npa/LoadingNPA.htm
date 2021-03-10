@@ -1,6 +1,37 @@
 <meta http-equiv="refresh" content="1800" > <!--refreshes page (so forces relogin) after 1800 seconds, or 30 minutes (I think???)-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Helps with mobile compatibility-->
 
+<script src="https://unpkg.com/node-forge@0.7.0/dist/forge.min.js"></script>
+        <script>
+                function loadFile(filePath) {//https://stackoverflow.com/a/41133213/9654083
+        var result = null;
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.open("GET", filePath, false);
+        xmlhttp.send();
+        if (xmlhttp.status == 200) {
+        result = xmlhttp.responseText;
+        }
+         return result;
+        }
+
+                var uname = prompt("Enter your username...");//https://www.w3schools.com/jsref/met_win_prompt.asp
+                var pass = prompt("Enter your password...");//todo: make this an input box thingy html
+                const PASSES = loadFile("PASSES.json"); //i hate json but https://www.w3schools.com/js/js_json_parse.asp
+                var md = forge.md.sha256.create();
+                md.update(pass);
+                console.log(md.digest().toHex());
+                var obj = JSON.parse(PASSES);
+for (i in obj) {//https://www.w3schools.com/js/js_json_objects.asp
+        if (i == uname) {
+                if (obj[i] == md.digest().toHex()) {
+			throw new Error("Success!");//https://code-boxx.com/abort-javascript-execution/
+                        //document.write("Oops! Wrong username/password. They are case sensitive, so watch out for that.")
+                }
+	}}
+document.write("Oops! Wrong username/password. They are case sensitive, so watch out for that.");setTimeout(() => {
+  console.log("we waited 2 seconds to run this code, oh boy wowwoowee!");
+}, 2000000);window.location.href="../index.html";//https://stackoverflow.com/a/51311966/9654083window.location.href = "../index.html";</script>
+
 <html>
     <title>NPA website</title>
     <style>
