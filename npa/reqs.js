@@ -1,4 +1,3 @@
-//https://stackoverflow.com/questions/11832914/round-to-at-most-2-decimal-places-only-if-necessary
 function CalculResults(drill, secam) {
     var currentGrade, drillGrade, roundedGrade, secamGrade;
     if (((drill === "3plus") || (drill === "3"))) {
