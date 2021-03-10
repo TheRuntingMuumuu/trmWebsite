@@ -61,3 +61,8 @@ body {
   background: black;
   color: white;
 }
+
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: black;
+}
