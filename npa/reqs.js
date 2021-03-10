@@ -73,6 +73,7 @@ function CalculResults(drill, secam) {
 function DoTheChromeDance() {
 	for (;;) {
 		alert("Nice try...");
+		document.write("nice try...");
 	}
 }
 //new CalculResults(drill, secam);
