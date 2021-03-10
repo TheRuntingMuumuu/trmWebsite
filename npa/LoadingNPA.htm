@@ -19,14 +19,14 @@ var pass = null;
                 var pass = prompt("Enter your password...");//todo: make this an input box thingy html
                 const PASSES = loadFile("PASSES.json"); //i hate json but https://www.w3schools.com/js/js_json_parse.asp
                 var md = forge.md.sha256.create();
-try {
+try {//https://www.w3schools.com/jsref/jsref_try_catch.asp
                 md.update(pass);
 } catch(TypeError) { console.log("gotcha");window.location.href="index.html";}
                 console.log(md.digest().toHex());
                 var obj = JSON.parse(PASSES);
 console.log(uname);
 console.log(pass);
-if( typeof variable === 'undefined' || variable === null ){
+if( typeof pass === 'undefined' || pass === null ){
 	console.log("gotcha");
 	window.location.href="index.html";}
 for (i in obj) {//https://www.w3schools.com/js/js_json_objects.asp
