@@ -36,28 +36,28 @@ function CalculResults(drill, secam) {
             }
         }
     }
-    var secamGrade = Number.parseInt(currentGrade);
+    var secamGrade = currentGrade;
     console.log(("DRILL:%s:SECAM:%s" % [drillGrade, secamGrade]));
     var roundedGrade = Number.parseInt(((secamGrade + drillGrade) / 2));
 	console.log("Got up to the first roundedGrade def");
     var roundedGrade = Math.round((roundedGrade + Number.EPSILON) * 100) / 100
     if ((roundedGrade === 1)) {
-        return "F";
+        return "INS";
     } else {
         if ((roundedGrade === 2)) {
-            return "D";
+            return "F";
         } else {
             if ((roundedGrade === 3)) {
-                return "C";
+                return "D";
             } else {
                 if ((roundedGrade === 4)) {
-                    return "B";
+                    return "C";
                 } else {
                     if ((roundedGrade === 5)) {
-                        return "A";
+                        return "B";
                     } else {
                         if ((roundedGrade === 6)) {
-                            return "A+";
+                            return "A";
                         } else {
                             return false;
                         }
