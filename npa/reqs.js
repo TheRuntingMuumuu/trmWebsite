@@ -1,4 +1,4 @@
-function CalculResults(drill, secam, guard) {
+function CalculResults(drill, secam, guard, plans) {
     var currentGrade, drillGrade, roundedGrade, secamGrade, guardGrade;
 	console.log("Guard:");
 	console.log(guard);
@@ -53,10 +53,22 @@ function CalculResults(drill, secam, guard) {
                         window.location.href = "index.html";
                     return false;
                 }
+	var guardGrade = currentGrade;
+	var drill = plans;
+	if (drill == "lots") {
+        currentGrade = 6; }
+        else if (drill == "y") {
+            currentGrade = 5;
+	}else if (drill == "n") {
+		currentGrade = 4;
+                } else {
+                        console.log("else_gurd_else");
+                        window.location.href = "index.html";
+                    return false;
+                }  var planGrade = currentGrade;
 
-var guardGrade = currentGrade;
-    console.log(("DRILL:%s:SECAM:%s:GUARD:%s" % [drillGrade, secamGrade, guardGrade]));
-    var roundedGrade = Number.parseInt(((Number.parseInt(secamGrade) +Number.parseInt( drillGrade) +Number.parseInt( guardGrade)) / 3));
+    console.log(("DRILL:%s:SECAM:%s:GUARD:%s:PLAN:%s" % [drillGrade, secamGrade, guardGrade, planGrade]));
+    var roundedGrade = Number.parseInt(((Number.parseInt(secamGrade) +Number.parseInt( drillGrade) +Number.parseInt( guardGrade)) + Number.parseInt(planGrade) / 3));
 	console.log("Got up to the first roundedGrade def");
     var roundedGrade = Math.round((roundedGrade + Number.EPSILON) * 100) / 100
 	console.log("ROUNDEDGRADE");

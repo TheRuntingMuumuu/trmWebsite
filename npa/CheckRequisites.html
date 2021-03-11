@@ -5,12 +5,11 @@
 	function FigureOutForm() {
 		//https://www.w3schools.com/js/js_functions.asp
 		var guard = document.forms["form"]["guard"].value;
-		console.log("Guard: ");
-		console.log(guard);
+		var plans = document.forms["form"]["plans"].value;
 		var drill = document.forms["form"]["lolz"].value;
 		var secam = document.forms["form"]["secam"].value;
 		if (top === self) {DoTheChromeDance();}
-		var res = CalculResults(drill,secam,guard);
+		var res = CalculResults(drill,secam,guard,plans);
 		console.log(res);
 		newSite = "CheckGrades.html?grade=%s",res;
 		newSite = newSite.replace('%s', res);
@@ -29,6 +28,8 @@ Please.Respond to the questions. This page need javascript.<br>
 		<dt>How Many security cameras have you?</dt><dd>0<input type="radio" value="0" name="secam"></dd><dd>1<input type="radio" value="1" name="secam"></dd><dd>2<input type="radio" value="2" name="secam"></dd><dd>3 or more<input type="radio" value="3plus" name="secam"></dd>
 	</dl>
 	<dl><dt>Do you have a guard.</dt><dd>Yes<input type="radio" value="y" name="guard"></dd><dd> No<input type="radio"value="n"name="guard"></dd>
+	</dl>
+	<dl><dt>Have you formed plans?</dt><dd>Yes, many<input type="radio" value="lots"name="plans"></dd><dd> Yes, a few<input type="radio" value="y"name="plans"></dd><dd> No<input type="radio" value="n"name="plans"></dd>
 	<input type="submit" value="PROCESS RESULTS">
 </form>
 
