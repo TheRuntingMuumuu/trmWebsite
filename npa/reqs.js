@@ -1,5 +1,7 @@
 function CalculResults(drill, secam, guard) {
-    var currentGrade, drillGrade, roundedGrade, secamGrade;
+    var currentGrade, drillGrade, roundedGrade, secamGrade, guardGrade;
+	console.log("Guard:");
+	console.log(guard);
     if (((drill === "3plus") || (drill === "3"))) {
         currentGrade = 6;
     } else {
@@ -12,6 +14,7 @@ function CalculResults(drill, secam, guard) {
                 if ((drill === "0")) {
                     currentGrade = 1;
                 } else {
+			console.log("else_drill_else");
 		    window.location.href = "index.html";
                     return false;
                 }
@@ -32,6 +35,7 @@ function CalculResults(drill, secam, guard) {
                 if ((drill === "0")) {
                     currentGrade = 1;
                 } else {
+			console.log("secam_else");
 			window.location.href = "index.html";
                     return false;
                 }
@@ -41,21 +45,22 @@ function CalculResults(drill, secam, guard) {
     var secamGrade = currentGrade;
 	drill = guard;
     if (drill == "y") {
-        currentGrade = 6;
-        if ((drill == "n")) {
+        currentGrade = 6; }
+	else if (drill == "n") {
             currentGrade = 4;
                 } else {
+			console.log("else_gurd_else");
                         window.location.href = "index.html";
                     return false;
                 }
-            }
-        
 
 var guardGrade = currentGrade;
     console.log(("DRILL:%s:SECAM:%s:GUARD:%s" % [drillGrade, secamGrade, guardGrade]));
-    var roundedGrade = Number.parseInt(((secamGrade + drillGrade + guardGrade) / 3));
+    var roundedGrade = Number.parseInt(((Number.parseInt(secamGrade) +Number.parseInt( drillGrade) +Number.parseInt( guardGrade)) / 3));
 	console.log("Got up to the first roundedGrade def");
     var roundedGrade = Math.round((roundedGrade + Number.EPSILON) * 100) / 100
+	console.log("ROUNDEDGRADE");
+	console.log(roundedGrade);
     if ((roundedGrade === 1)) {
         return "INS";
     } else {
@@ -70,10 +75,13 @@ var guardGrade = currentGrade;
                 } else {
                     if ((roundedGrade === 5)) {
                         return "B";
+			    console.log("b");
                     } else {
                         if ((roundedGrade === 6)) {
                             return "A";
+				console.log("a");
                         } else {
+				console.log("else");
 				window.location.href = "index.html";
                             return false;
                         }
