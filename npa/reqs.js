@@ -68,7 +68,7 @@ function CalculResults(drill, secam, guard, plans) {
                 }  var planGrade = currentGrade;
 
     console.log(("DRILL:%s:SECAM:%s:GUARD:%s:PLAN:%s" % [drillGrade, secamGrade, guardGrade, planGrade]));
-    var roundedGrade = Number.parseInt(((Number.parseInt(secamGrade) +Number.parseInt( drillGrade) +Number.parseInt( guardGrade)) + Number.parseInt(planGrade) / 4));
+    var roundedGrade = Number.parseInt(((Number.parseInt(secamGrade) + Number.parseInt(drillGrade) + Number.parseInt(guardGrade) + Number.parseInt(planGrade)) / 4));
 	console.log("Got up to the first roundedGrade def");
     var roundedGrade = Math.round((roundedGrade + Number.EPSILON) * 100) / 100
 	console.log("ROUNDEDGRADE");
