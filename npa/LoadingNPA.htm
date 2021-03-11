@@ -5,12 +5,12 @@
 <style>
     body{background-color:black;}/*Loads before the password loads, so the screen is black before*/
 </style>
-
+<a id="top"></a>
 
 <script src="https://unpkg.com/node-forge@0.7.0/dist/forge.min.js"></script>
         <script>
 //This is the code for the username and password code.
-                function loadFile(filePath) {//https://stackoverflow.com/a/41133213/9654083
+        function loadFile(filePath) {//https://stackoverflow.com/a/41133213/9654083
         var result = null;
         var xmlhttp = new XMLHttpRequest();
         xmlhttp.open("GET", filePath, false);
@@ -43,13 +43,12 @@ for (i in obj) {//https://www.w3schools.com/js/js_json_objects.asp
                         //document.write("Oops! Wrong username/password. They are case sensitive, so watch out for that.")
                 }
 	}}
-document.write("Oops! Wrong username/password. They are case sensitive, so watch out for that.");setTimeout(() => {
-  console.log("we waited 2 seconds to run this code, oh boy wowwoowee!");
-}, 2000000);window.location.href="";//https://stackoverflow.com/a/51311966/9654083window.location.href = "../index.html";</script>
+alert("Welcome to the NPA");window.location.href="npa7855TRMTTR.html";//https://stackoverflow.com/a/51311966/9654083window.location.href = "../index.html";</script>
 
 <script type="text/javascript">
 //This is the function for the npa master passWord
 function passWord() {
+window.location.href="#top";
 var pass1 = 1;
 while (pass1 != "11073641") {
 	var pass1 = prompt('Enter master password',' ');}
@@ -73,6 +72,7 @@ document.addEventListener('contextmenu', event => event.preventDefault()); //Dis
     <div class="dropupDiv">
       <a href="#main" class="main dropupButton">Main</a>
       <div class="dropup"> <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hover-->
+        <a href="npa7855TRMTTR.html" target="_blank">Fake NPA</a>
       </div>
     </div>
     <a href="#se" class="main">Security</a>
@@ -86,7 +86,13 @@ document.addEventListener('contextmenu', event => event.preventDefault()); //Dis
       </div>
     </div>
     <a href="#progs" class="main">Links</a>
-    <a href="npalog.html" class="logoot">Logout</a>
+    <div class="dropupDiv LOdropupDiv">
+      <a href="npalog.html" class="logoot dropupButton LOdropupButton">Logout</a>
+      <div class="dropup LOdropup"> <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hover-->
+        <a href="#top" onclick=passWord()>Lock (master pass)</a>
+        <a >User Pass</a>
+      </div>
+    </div>
   </div>
 </div>
 
