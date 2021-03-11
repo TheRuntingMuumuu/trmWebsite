@@ -1,0 +1,118 @@
+<script src="reqs.js"></script><script>if (top === self) {DoTheChromeDance();} //easter egg.</script>
+<style>
+.gradeATips {
+	display: none
+}
+.gradeBTips {
+        display: none;
+}
+.gradeCTips {
+        display: none;
+}
+.gradeDTips {
+        display: none;
+}
+.gradeFTips {
+        display: none;
+}
+.gradeITips {
+        display: none;
+}
+</style>
+	<script> /*just setting up*/var4444 = 55;if (top === self) { for (;;) {alert("Nice try..."); }}var4444 = 5;</script>
+<!--This is where the text gets displayed.-->
+<div class="gradeATips" id="gradeATips">
+	<p>You're doing amazing stuff, keep it up!!</p>
+	<dl>
+		<dt>No new tips.</dt>
+	</dl>
+</div>
+<div class="gradeBTips" id="gradeBTips">
+        <p>Nice, you've met the NPA specifications, but there's still room to improve.
+        <dl>
+        <dt>Have you tried...</dt>
+        <dd>Practicing an extra drill.</dd>
+        <dd>Putting one more security camera outside NPA.</dd></dl></div>
+<div class="gradeCTips">
+	<p>Eh, you've got some room to improve, but overall this is going ok.</p>
+	<dl>
+		<dt>Have you tried</dt>
+		<dd>Practicing TWO extra drills.</dd>
+		<dd>Putting TWO more security cameras outside NPA.</dd>
+	</dl>
+</div>
+<div class="gradeDTips">
+	<p>Oh no! The NPA's security is falling apart!!!</p>
+	<dl>
+		<dt>Have you tried...</dt>
+		<dd>Practicing THREE extra drills.</dd>
+		<dd>Putting THREE more security cameras outside NPA.</dd>
+	</dl>
+</div>
+<div class="gradeFTips">
+	<p>The NPA may be disbanded if the security doesn't come back up.</p>
+	<dl>
+		<dt>Have you tried...</dt>
+		<dd>Practicing THREE extra drills.</dd>
+		<dd>Putting THREE more security cameras outside NPA.</dd>
+		<dd>Adding a guard.</dd>
+	</dl>
+</div>
+<div class="gradeITips">
+	<p>The NPA <b>WILL</b> be disbanded if the security stays this way.</p>
+	<dl>
+		<dt>Have you tried...</dt>
+		<dd>Practicing THREE extra drills.</dd>
+		<dd>Putting THREE more security cameras outside NPA.</dd>
+		<dd>Adding a guard.</dd>
+		<dd>Forming plans.</dd>
+		<dd>Using ID cards or some form of authentication.</dd>
+	</dl>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+<script src="min.js"></script> <!--for older browsers, will offer support for queryString.-->
+<script src="reqs.js"></script><script>if (top === self) {DoTheChromeDance();} //easter egg.</script>
+	<script>
+		//Here be
+		//dragons!
+		//Do not modify this
+		//code if you don't know
+		//what you're doing!
+const queryString = window.location.search;
+console.log("queryString will follow")
+console.log(queryString);
+const urlParams = new URLSearchParams(queryString);
+const grade = urlParams.get('grade');
+//https://www.sitepoint.com/get-url-parameters-with-javascript/ and the chrome console.
+if (top === self) { DoTheChromeDance();}
+if (grade == "false") {
+	window.location.href = "index.html"
+}
+else if (grade == "A") {
+	//document.writeln("Great job, you're doing great!!!!!!!!!!!!!!!!!!!111");
+	$('.gradeATips').css('display','inline');
+	console.log("grade A");
+}
+else if (grade == "B") {
+	console.log("grade B");
+	$('.gradeBTips').css('display', 'inline');
+}
+else if (grade == "C") {
+	//document.writeln("Uh oh! There's a lot of room to improve!");
+	console.log("grade C");
+	$('.gradeCTips').css('display', 'inline');
+} else if (grade == "D") {
+//	document.writeln("Uh oh! There's a lot wrong with the NPA's current status!");
+	console.log("grade D");
+	$('.gradeDTips').css('display', 'inline');
+} else if (grade == "F") {
+//	document.writeln("The NPA will be disbanded if the grade is not improved.");
+	console.log("fail");
+	$('.gradeFTips').css('display', 'inline');
+} else if (grade == "INS") {
+	console.log("insufficient mark for failure");
+//	document.writeln("The NPA will be disbanded if in 15 minutes the grade is not improved.");
+	$('.gradeITips').css('display', 'inline');
+}
+	</script>
+	<!--https://stackoverflow.com/a/5753780/9654083-->

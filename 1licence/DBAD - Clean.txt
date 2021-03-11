@@ -2,9 +2,9 @@
 
 Source: https://github.com/thetechrobo/dbad-clean
 
-    Version 2.0, September 2020
+    Version 2.0.1, January 2021
 
-    Copyright (c) \<YEAR\> \<FULLNAME\>
+    Copyright (c) 2020-2021 TheRuntingMuumuu
 
  Everyone is permitted to copy and distribute verbatim or modified copies of this license document.
 
@@ -21,9 +21,9 @@ Source: https://github.com/thetechrobo/dbad-clean
 
  2. If you become rich through modifications, related works/services, or supporting the original work,
  share the love. Only a rat would make loads off this work and not buy the original work's 
- creator(s) a pint.
+ creator(s) a pint. At least put a link back to the original creator in an easily visible place.
  
  3. Code is provided with no warranty. Using somebody else's code and getting angry at me when it goes wrong makes 
- you a DONKEY rat. Fix the problem yourself. A thoughtful person would submit the fix back or submit a [bug report](https://www.chiark.greenend.org.uk/~sgtatham/bugs.html).
+ you a HUGE rat. Fix the problem yourself. A thoughtful person would submit the fix back or submit a [bug report](https://www.chiark.greenend.org.uk/~sgtatham/bugs.html).
 
 4. If you use code, calling it your own would make you a ROYAL rat. [How to cite a repo](https://academia.stackexchange.com/questions/14010/how-do-you-cite-a-github-repository)
