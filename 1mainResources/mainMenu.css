@@ -111,5 +111,7 @@ body{
   }
   .npa {
 	  display: inline !important ;
+    text-decoration: none;
+    color: black;
   }
 }
