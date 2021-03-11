@@ -6,6 +6,16 @@ body {
   font-family: Cantarell;
 }
 
+::selection { /*To change the selection tool (selecting text)*/
+color: white;
+background: black;
+}
+::-moz-selection { /* Code for Firefox */
+color: white;
+background: black;
+}
+
+
 /*Menu stuff*/
 .menuContainer {
   width: 100%;
@@ -45,11 +55,11 @@ body {
 /*Dropup*/
 
 
-.QRdropupDiv {
+.dropupDiv {
   display: inline-block; /*So that the dropup being in a seperate div does not mess everything up*/
 }
 
-.QRdropup {
+.dropup {
   transition: all 0.3s ease;
   display: none;
   position: absolute;
@@ -63,18 +73,18 @@ body {
 
 }
 
-.QRdropup a {
+.dropup a {
   color: white;
   font-size: 12px
   text-decoration: none;
   display: block;
 }
 
-.QRdropup a:hover {
+.dropup a:hover {
   background-color: rgba(50,205,50,.8)
 }
 
-.QRdropupDiv:hover .QRdropup {
+.dropupDiv:hover .dropup {
   animation-name: fade;
   animation-duration: .7s;
   display: block;
@@ -86,7 +96,7 @@ body {
   100% {opacity: 1;}
 }
 
-.QRdropupDiv:hover .QRdropupButton {
+.dropupDiv:hover .dropupButton {
 }
 
 /*Logout Button*/
@@ -94,6 +104,7 @@ body {
   background: red;
   color: white;
   float: right;
+  border-radius: 4px 15px 4px 4px;
 }
 
 .leave {
