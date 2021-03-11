@@ -207,3 +207,11 @@ Beta 2.10
     • Finally added non-square icon to MC section
     • Updated CR section to have better corner radius
     • Removed 64support files (kept zip)
+Beta 2.11
+    • Bump dbad-clean from 2.0 to 2.0.1
+    • NPA:
+        ◦ HUGE refactor
+        ◦ Many bugfixes
+        ◦ Fix slow loading
+        ◦ Round corners
+    • Privacy notices in school section
