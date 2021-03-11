@@ -24,6 +24,10 @@ body{
   display: none;
 }
 
+.brs {
+	display: none;
+}
+
 @keyframes slidein {
   0% {top: -50%;}
   100% {top: 10%;}
@@ -75,6 +79,9 @@ body{
   color: white;
 }
 
+.npa {
+	display: none;
+}
 
 /*Mobile Compatability*/
 @media screen and (max-width: 900px) { /*Mobile Compatibility - Make the box take up entire screen*/
@@ -93,10 +100,15 @@ body{
     padding: 16px;
     font-size: 18px;
   }
-
+  .brs {
+	  display: inline;
+  }
   /*title in menubox*/
   .menuBoxTitle {
     font-size: 24px;
     color: white;
+  }
+  .npa {
+	  display: inline !important ;
   }
 }
