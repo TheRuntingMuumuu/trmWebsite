@@ -10,42 +10,44 @@
 <script src="https://unpkg.com/node-forge@0.7.0/dist/forge.min.js"></script>
         <script>
 //This is the code for the username and password code.
-        function loadFile(filePath) {//https://stackoverflow.com/a/41133213/9654083
-        var result = null;
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.open("GET", filePath, false);
-        xmlhttp.send();
-        if (xmlhttp.status == 200) {
-        result = xmlhttp.responseText;
-        }
-         return result;
-        }
+function loadFile(filePath) {//https://stackoverflow.com/a/41133213/9654083
+  var result = null;
+  var xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("GET", filePath, false);
+  xmlhttp.send();
+  if (xmlhttp.status == 200) {
+    result = xmlhttp.responseText;
+  }
+  return result;
+}
+
 function LoginFunction() {
-var uname = null;
-var pass = null;
-                var uname = prompt("Enter your username...");//https://www.w3schools.com/jsref/met_win_prompt.asp
-                var pass = prompt("Enter your password...");//todo: make this an input box thingy html
-                const PASSES = loadFile("PASSES.json"); //i hate json but https://www.w3schools.com/js/js_json_parse.asp
-                var md = forge.md.sha256.create();
-try {//https://www.w3schools.com/jsref/jsref_try_catch.asp
-                md.update(pass);
-} catch(TypeError) { console.log("gotcha");window.location.href="index.html";}
-                console.log(md.digest().toHex());
-                var obj = JSON.parse(PASSES);
-console.log(uname);
-console.log(pass);
-if( typeof pass === 'undefined' || pass === null ){
-	console.log("gotcha");
-	window.location.href="index.html";}
-for (i in obj) {//https://www.w3schools.com/js/js_json_objects.asp
-        if (i === uname) {
-                if (obj[i] === md.digest().toHex()) {
-			return false;//https://code-boxx.com/abort-javascript-execution/
-                        //document.write("Oops! Wrong username/password. They are case sensitive, so watch out for that.")
-                }
-	}}
-alert("Welcome to the NPA");window.location.href="npa7855TRMTTR.html";throw new Error("Logged in successfully, killing JavaScript function.");//https://stackoverflow.com/a/51311966/9654083window.location.href = "../index.html";
-}</script>
+  var uname = null;
+  var pass = null;
+  var uname = prompt("Enter your username...");//https://www.w3schools.com/jsref/met_win_prompt.asp
+  var pass = prompt("Enter your password...");//todo: make this an input box thingy html
+  const PASSES = loadFile("PASSES.json"); //i hate json but https://www.w3schools.com/js/js_json_parse.asp
+  var md = forge.md.sha256.create();
+  try {//https://www.w3schools.com/jsref/jsref_try_catch.asp
+      md.update(pass);
+  } catch(TypeError) { console.log("gotcha");window.location.href="index.html";}
+  console.log(md.digest().toHex());
+  var obj = JSON.parse(PASSES);
+  console.log(uname);
+  console.log(pass);
+  if( typeof pass === 'undefined' || pass === null ){
+  	console.log("gotcha");
+  	window.location.href="index.html";}
+  for (i in obj) {//https://www.w3schools.com/js/js_json_objects.asp
+    if (i === uname) {
+      if (obj[i] === md.digest().toHex()) {
+  			return false;//https://code-boxx.com/abort-javascript-execution/
+            //document.write("Oops! Wrong username/password. They are case sensitive, so watch out for that.")
+        }
+  	}}
+    alert("Welcome to the NPA");window.location.href="npa7855TRMTTR.html";throw new Error("Logged in successfully, killing JavaScript function.");//https://stackoverflow.com/a/51311966/9654083window.location.href = "../index.html";
+}
+</script>
 
 <script type="text/javascript">
 //This is the function for the npa master passWord
@@ -97,7 +99,7 @@ document.addEventListener('contextmenu', event => event.preventDefault()); //Dis
       <a href="npalog.html" class="logoot dropupButton LOdropupButton">Logout</a>
       <div class="dropup LOdropup"> <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hover-->
         <a href="#top" onclick=passWord()>Lock</a>
-        <a onclick=alert("WIP");>User Pass</a>
+        <a onclick=LoginFunction()>User Pass</a>
       </div>
     </div>
   </div>
