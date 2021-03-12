@@ -24,7 +24,7 @@
   z-index: 10;
   background-color: #333;
   animation-name: slidein;
-  animation-duration: 2s;
+  animation-duration: .7s;
   color: white;
   font-size: 18px;
 }

@@ -60,6 +60,7 @@ background: black;
 
 .dropupDiv {
   display: inline-block; /*So that the dropup being in a seperate div does not mess everything up*/
+  z-index: 1;
 }
 
 .dropup {
