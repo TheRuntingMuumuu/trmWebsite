@@ -92,6 +92,9 @@ function login() {
   $('.login').hide();
 }
 
+function hideAll() {//Hides all Windows
+  $('.mainWindow').hide();
+}
 </script>
 
 
@@ -104,13 +107,13 @@ function login() {
 <div class="menuContainer">
   <div class="menu">
     <div class="dropupDiv">
-      <a href="#main" class="main dropupButton">Main</a>
+      <a href="#main" onclick="hideAll(); $('.mainWindow').show();"class="main dropupButton">Main</a>
       <div class="dropup"> <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hover-->
         <a href="npa7855TRMTTR.html" target="_blank">Fake NPA</a>
       </div>
     </div>
     <a href="#se" class="main">Security</a>
-    <a href="#todo" class="main">TODO</a>
+    <a href="#todo" class="main" onclick="hideAll()">TODO</a>
     <div class="dropupDiv">
       <a href="#qr1" class="main dropupButton">QR Code Scanner</a>
       <div class="dropup"> <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hover-->
@@ -139,8 +142,9 @@ function login() {
 
 <!--Top bar-->
 <div class="topbar">
-  <a>Logged in as <script>document.write(uname)</script></a>
-  <a href="" onclick="" class="reload">Reload</a>
+  <a class="windowSpecificMenu"><script>//Put vars here</script></a>
+  <a class="whoLoggedIn" onclick="if (confirm('Switch Users?')) {passMode = 'full'; $('.login').show();} else {alert('Ok then')}">Logged in as <script>document.write(uname)</script></a>
+  <a onclick="alert('not implemented yet, soon this will be able to reload the iframe in the section that you are in')" class="reload">Reload</a>
 </div>
 
 
