@@ -20,6 +20,7 @@
         }
          return result;
         }
+function LoginFunction() {
 var uname = null;
 var pass = null;
                 var uname = prompt("Enter your username...");//https://www.w3schools.com/jsref/met_win_prompt.asp
@@ -39,22 +40,24 @@ if( typeof pass === 'undefined' || pass === null ){
 for (i in obj) {//https://www.w3schools.com/js/js_json_objects.asp
         if (i === uname) {
                 if (obj[i] === md.digest().toHex()) {
-			throw new Error("Success!");//https://code-boxx.com/abort-javascript-execution/
+			return false;//https://code-boxx.com/abort-javascript-execution/
                         //document.write("Oops! Wrong username/password. They are case sensitive, so watch out for that.")
                 }
 	}}
-alert("Welcome to the NPA");window.location.href="npa7855TRMTTR.html";//https://stackoverflow.com/a/51311966/9654083window.location.href = "../index.html";</script>
+alert("Welcome to the NPA");window.location.href="npa7855TRMTTR.html";//https://stackoverflow.com/a/51311966/9654083window.location.href = "../index.html";
+}</script>
 
 <script type="text/javascript">
 //This is the function for the npa master passWord
 function passWord() {
 window.location.href="#top";
+LoginFunction();
 var pass1 = 1;
 while (pass1 != "11073641") {
 	var pass1 = prompt('Enter master password','');
   console.log(pass1)
-  if (pass1 === null) {
-        console.log("Canceled");
+  if (pass1 === null || pass1 == 1) {
+        console.log("Cancelled");
         window.location.href="npalog.html"; //break out of the function early
       }
     }}
@@ -93,8 +96,8 @@ document.addEventListener('contextmenu', event => event.preventDefault()); //Dis
     <div class="dropupDiv LOdropupDiv">
       <a href="npalog.html" class="logoot dropupButton LOdropupButton">Logout</a>
       <div class="dropup LOdropup"> <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hover-->
-        <a href="#top" onclick=passWord()>Lock (master pass)</a>
-        <a >User Pass</a>
+        <a href="#top" onclick=passWord()>Lock</a>
+        <a onclick=alert("WIP");>User Pass</a>
       </div>
     </div>
   </div>
