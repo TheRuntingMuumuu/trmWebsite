@@ -1,4 +1,4 @@
-function CalculResults(drill, secam, guard, plans) {
+function CalculResults(drill, secam, guard, plans, id) {
     var currentGrade, drillGrade, roundedGrade, secamGrade, guardGrade;
 	console.log("Guard:");
 	console.log(guard);
@@ -47,7 +47,7 @@ function CalculResults(drill, secam, guard, plans) {
     if (drill == "y") {
         currentGrade = 6; }
 	else if (drill == "n") {
-            currentGrade = 4;
+            currentGrade = 1;
                 } else {
 			console.log("else_gurd_else");
                         window.location.href = "index.html";
@@ -60,15 +60,26 @@ function CalculResults(drill, secam, guard, plans) {
         else if (drill == "y") {
             currentGrade = 5;
 	}else if (drill == "n") {
-		currentGrade = 4;
+		currentGrade = 1;
                 } else {
-                        console.log("else_gurd_else");
+                        console.log("else_plan_else");
                         window.location.href = "index.html";
                     return false;
                 }  var planGrade = currentGrade;
 
+	var drill = id;
+        if (drill == "y") {
+        currentGrade = 6; }
+        else if (drill == "n") {
+            currentGrade = 1;
+                } else {
+                        console.log("else_id_else");
+                        window.location.href = "index.html";
+                    return false;
+                }  var idGrade = currentGrade;
+
     console.log(("DRILL:%s:SECAM:%s:GUARD:%s:PLAN:%s" % [drillGrade, secamGrade, guardGrade, planGrade]));
-    var roundedGrade = Number.parseInt(((Number.parseInt(secamGrade) + Number.parseInt(drillGrade) + Number.parseInt(guardGrade) + Number.parseInt(planGrade)) / 4));
+    var roundedGrade = Number.parseInt((((Number.parseInt(secamGrade) * 0.22) + (Number.parseInt(drillGrade) * 0.22) + (Number.parseInt(guardGrade) * 0.12) + (Number.parseInt(planGrade) * 0.22) + (Number.parseInt(idGrade) * 0.22)) / 5));
 	console.log("Got up to the first roundedGrade def");
     var roundedGrade = Math.round((roundedGrade + Number.EPSILON) * 100) / 100
 	console.log("ROUNDEDGRADE");

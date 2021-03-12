@@ -8,8 +8,9 @@
 		var plans = document.forms["form"]["plans"].value;
 		var drill = document.forms["form"]["lolz"].value;
 		var secam = document.forms["form"]["secam"].value;
+		var id = document.forms["form"]["id"].value;
 		if (top === self) {DoTheChromeDance();}
-		var res = CalculResults(drill,secam,guard,plans);
+		var res = CalculResults(drill,secam,guard,plans, id);
 		console.log(res);
 		newSite = "CheckGrades.html?grade=%s",res;
 		newSite = newSite.replace('%s', res);
@@ -17,7 +18,8 @@
 		window.location.href = newSite;
 		return false;
 	}
-</script>
+</script><noscript><div class="stuff">This Website can't be used.</div><meta http-equiv="refresh" content="5; URL=../index.html" /><style>body { color:white;} .stuff { color: black;}</style>
+</noscript>
 <a href="CheckRequisites.html">Refresh</a>
 <script src="reqs.js"></script><script>if (top === self) {DoTheChromeDance();} //easter egg.</script>
 Please.Respond to the questions. This page need javascript.<br>
@@ -29,7 +31,8 @@ Please.Respond to the questions. This page need javascript.<br>
 	</dl>
 	<dl><dt>Do you have a guard.</dt><dd>Yes<input type="radio" value="y" name="guard"></dd><dd> No<input type="radio"value="n"name="guard"></dd>
 	</dl>
-	<dl><dt>Have you formed plans?</dt><dd>Yes, many<input type="radio" value="lots"name="plans"></dd><dd> Yes, a few<input type="radio" value="y"name="plans"></dd><dd> No<input type="radio" value="n"name="plans"></dd>
+	<dl><dt>Have you formed plans?</dt><dd>Yes, many<input type="radio" value="lots"name="plans"></dd><dd> Yes, a few<input type="radio" value="y"name="plans"></dd><dd> No<input type="radio" value="n"name="plans"></dd></dl>
+	<dl><dt>Are you using ID cards or some other form of secure authentication?</dt><dd>Yes<input type="radio" value="y"name="id"></dd><dd> No<input type="radio" value="n"name="id"></dd></dl>
 	<input type="submit" value="PROCESS RESULTS">
 </form>
 
