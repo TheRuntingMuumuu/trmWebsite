@@ -69,14 +69,15 @@ while (pass1 != "11073641") {
       }
     }}
 
-LoginFunction()
+LoginFunction() //Runs the pass/user on page load
 passWord() //Runs the password thing on page load
-$('.login').hide();
+$('.login').hide(); //Hides the login box
 
 
 document.addEventListener('contextmenu', event => event.preventDefault()); //Disables right click so people cant copy/paste
 
-function login(passMode) {
+//The button on the login window
+function login() {
   console.log(passMode)
   if (window.passMode === 'lock') {
       passWord();
@@ -90,6 +91,7 @@ function login(passMode) {
     }
   $('.login').hide();
 }
+
 
 </script>
 
