@@ -19,6 +19,8 @@ function loadFile(filePath) {//https://stackoverflow.com/a/41133213/9654083
   if (xmlhttp.status == 200) {
     result = xmlhttp.responseText;
   }
+	if (result === null || xmlhttp.status != 200) {
+		alert("Fatal error - aborting!");for (;;) {void(0)}}
   return result;
 }
 
@@ -74,7 +76,8 @@ document.addEventListener('contextmenu', event => event.preventDefault()); //Dis
 <!--THIS IS THE ACTUAL START OF THE FILE AFTER THE PASSWORDS LOAD IN-->
 <link rel="stylesheet" type="text/css" href="npaFont.woff2" /> <!--imports the NPA font (gnome GUI font) from the online link-->
 <link rel="stylesheet" type="text/css" href="menuss.css">
-
+	<script>if (window.uname === null || typeof(window.uname) === "undefined") {
+		for (;;) {void(0)}}</script>
 <!--This is the menu-->
 <div class="menuContainer">
   <div class="menu">
