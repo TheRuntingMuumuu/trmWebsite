@@ -51,9 +51,13 @@ function passWord() {
 window.location.href="#top";
 var pass1 = 1;
 while (pass1 != "11073641") {
-	var pass1 = prompt('Enter master password',' ');}
-if (pass1 == "11073641") {throw new Error("Task failed successfully");}
-}
+	var pass1 = prompt('Enter master password','');
+  console.log(pass1)
+  if (pass1 === null) {
+        console.log("Canceled");
+        window.location.href="npalog.html"; //break out of the function early
+      }
+    }}
 
 passWord() //Runs the password thing on page load
 
