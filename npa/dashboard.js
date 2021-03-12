@@ -1,3 +1,4 @@
+//https://flaviocopes.com/how-to-create-multiline-string-javascript/
 var Misc = `<h2>Dashboard</h2>
 <p>You are the misc person, you have nothing special to do! Just do what is needed.<br>Current Project: <b>Securing the base</b></p>`;
 var Secu = `<h2>Dashboard</h2>
