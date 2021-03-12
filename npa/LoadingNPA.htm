@@ -92,7 +92,6 @@ function login() {
   $('.login').hide();
 }
 
-
 </script>
 
 
@@ -122,9 +121,9 @@ function login() {
     </div>
     <a href="#progs" class="main">Links</a>
     <div class="dropupDiv LOdropupDiv">
-      <a href="npalog.html" class="logoot dropupButton LOdropupButton">Logout</a>
+      <a href="#top" onclick="passMode = 'lock'; $('.login').show();" class="logoot dropupButton LOdropupButton">Lock</a>
       <div class="dropup LOdropup"> <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hover-->
-        <a href="#top" onclick="passMode = 'lock'; $('.login').show();">Lock</a>
+        <a href="npalog.html">Logout</a>
         <a onclick="passMode = 'full'; $('.login').show();">User Pass</a> <!--no var since having a var passmode = lock; means it is a local variable.-->
       </div>
     </div>
@@ -138,12 +137,20 @@ function login() {
   </div>
 </div>
 
+<!--Top bar-->
+<div class="topbar">
+  <a>Logged in as <script>document.write(uname)</script></a>
+  <a href="" onclick="" class="reload">Reload</a>
+</div>
+
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 <div class="window mainWindow">
+  sss
     <p id="main">
-        <font size=6>NPA website</font>
-        The NPA website is outdated.
+      <font size=6>NPA website</font>
+      The NPA website is outdated.
         <script>
   		console.log(5);
   		console.log(uname);

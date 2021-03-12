@@ -27,6 +27,8 @@ background: black;
   overflow: hidden;
   position: fixed;
   bottom: 0px;
+  z-index: 5;
+
 }
 
 .menu {
