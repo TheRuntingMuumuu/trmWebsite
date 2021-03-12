@@ -95,6 +95,22 @@ function login() {
 function hideAll() {//Hides all Windows
   $('.mainWindow').hide();
 }
+//Keybinds
+$(document).on('keydown', function ( e ) { //Lock CTRL + L
+    if ((e.metaKey || e.ctrlKey) && ( String.fromCharCode(e.which).toLowerCase() === 'l') ) {
+      passMode = "lock";
+      $('.login').show();
+    }
+});
+
+$(document).on('keydown', function ( e ) { //Fake NPA and LOCK CTRL + F
+    if ((e.metaKey || e.ctrlKey) && ( String.fromCharCode(e.which).toLowerCase() === 'f') ) {
+      passMode = "lock";
+      $('.login').show();
+      window.open('npa7855TRMTTR.html','_blank');
+    }
+});
+
 </script>
 
 
