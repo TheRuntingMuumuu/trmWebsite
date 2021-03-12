@@ -1,3 +1,4 @@
+/*https://gist.github.com/stekhn/a12ed417e91f90ecec14bcfa4c2ae16a*/
 function weightedMean(arrValues, arrWeights) {
 
   var result = arrValues.map(function (value, i) {
