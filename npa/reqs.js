@@ -1,3 +1,18 @@
+function weightedMean(arrValues, arrWeights) {
+
+  var result = arrValues.map(function (value, i) {
+
+    var weight = arrWeights[i];
+    var sum = value * weight;
+
+    return [sum, weight];
+  }).reduce(function (p, c) {
+
+    return [p[0] + c[0], p[1] + c[1]];
+  }, [0, 0]);
+
+  return result[0] / result[1];
+}
 function CalculResults(drill, secam, guard, plans) {
     var currentGrade, drillGrade, roundedGrade, secamGrade, guardGrade;
 	console.log("Guard:");
@@ -47,7 +62,7 @@ function CalculResults(drill, secam, guard, plans) {
     if (drill == "y") {
         currentGrade = 6; }
 	else if (drill == "n") {
-            currentGrade = 4;
+            currentGrade = 1;
                 } else {
 			console.log("else_gurd_else");
                         window.location.href = "index.html";
@@ -60,20 +75,21 @@ function CalculResults(drill, secam, guard, plans) {
         else if (drill == "y") {
             currentGrade = 5;
 	}else if (drill == "n") {
-		currentGrade = 4;
+		currentGrade = 1;
                 } else {
-                        console.log("else_gurd_else");
+                        console.log("else_plan_else");
                         window.location.href = "index.html";
                     return false;
                 }  var planGrade = currentGrade;
 
     console.log(("DRILL:%s:SECAM:%s:GUARD:%s:PLAN:%s" % [drillGrade, secamGrade, guardGrade, planGrade]));
-    var roundedGrade = Number.parseInt(((Number.parseInt(secamGrade) + Number.parseInt(drillGrade) + Number.parseInt(guardGrade) + Number.parseInt(planGrade)) / 4));
+    var notroundedGrade = weightedMean([Number.parseInt(secamGrade), Number.parseInt(drillGrade), Number.parseInt(guardGrade), Number.parseInt(planGrade)], [0.3, 0.3, 0.1, 0.3]);console.log("Not rounded grade");console.log(notroundedGrade);
+	var notroundedGrade = Number.parseFloat(notroundedGrade);
 	console.log("Got up to the first roundedGrade def");
-    var roundedGrade = Math.round((roundedGrade + Number.EPSILON) * 100) / 100
+    var roundedGrade = Math.round((notroundedGrade));
 	console.log("ROUNDEDGRADE");
 	console.log(roundedGrade);
-    if ((roundedGrade === 1)) {
+    if ((roundedGrade === 1 || roundedGrade === 0)) {
         return "INS";
     } else {
         if ((roundedGrade === 2)) {
