@@ -6,7 +6,7 @@
     body{background-color:black;}/*Loads before the password loads, so the screen is black before*/
 </style>
 <a id="top"></a>
-
+<script src="dashboard.js"></script>
 <script src="https://unpkg.com/node-forge@0.7.0/dist/forge.min.js"></script>
         <script>
 //This is the code for the username and password code.
@@ -21,9 +21,9 @@
          return result;
         }
 function LoginFunction() {
-var uname = null;
+window.uname = null;
 var pass = null;
-                var uname = prompt("Enter your username...");//https://www.w3schools.com/jsref/met_win_prompt.asp
+                window.uname = prompt("Enter your username...");//https://www.w3schools.com/jsref/met_win_prompt.asp
                 var pass = prompt("Enter your password...");//todo: make this an input box thingy html
                 const PASSES = loadFile("PASSES.json"); //i hate json but https://www.w3schools.com/js/js_json_parse.asp
                 var md = forge.md.sha256.create();
@@ -33,13 +33,14 @@ try {//https://www.w3schools.com/jsref/jsref_try_catch.asp
                 console.log(md.digest().toHex());
                 var obj = JSON.parse(PASSES);
 console.log(uname);
-console.log(pass);
+console.log(pass)
 if( typeof pass === 'undefined' || pass === null ){
 	console.log("gotcha");
 	window.location.href="index.html";}
 for (i in obj) {//https://www.w3schools.com/js/js_json_objects.asp
         if (i === uname) {
                 if (obj[i] === md.digest().toHex()) {
+//https://thisinterestsme.com/add-html-body-javascript/
 			return false;//https://code-boxx.com/abort-javascript-execution/
                         //document.write("Oops! Wrong username/password. They are case sensitive, so watch out for that.")
                 }
@@ -106,10 +107,14 @@ document.addEventListener('contextmenu', event => event.preventDefault()); //Dis
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <p id="main">
     <font size=6>NPA website</font>
-    The NPA website is outdated.
 </p>
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!--<script src="dashboard.js"></script>
+	<script>if (uname === "TheTechRobo") { element.innerHTML += Secu;}else if (uname === "TheRuntingMuumuu") { element.innerHTML += Misc;}</script>
+	-->
+	<script>
+		if (uname === "TheTechRobo") { document.body.innerHTML += Secu;}else if (uname === "TheRuntingMuumuu") { document.body.innerHTML += Misc;}
+	</script><!--https://thisinterestsme.com/add-html-body-javascript/ https://stackoverflow.com/a/8348522/9654083-->
+	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
 <div id="se"></div>
