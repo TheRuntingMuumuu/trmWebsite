@@ -7,6 +7,7 @@
 </style>
 <a id="top"></a>
 
+<script src="dashboard.js"></script>
 <script src="https://unpkg.com/node-forge@0.7.0/dist/forge.min.js"></script>
         <script>
 //This is the code for the username and password code.
@@ -22,19 +23,18 @@ function loadFile(filePath) {//https://stackoverflow.com/a/41133213/9654083
 }
 
 function LoginFunction() {
-  var uname = null;
+  window.uname = null;//https://stackoverflow.com/a/8348522/9654083
   var pass = null;
-  var uname = prompt("Enter your username...");//https://www.w3schools.com/jsref/met_win_prompt.asp
+  window.uname = prompt("Enter your username...");//https://www.w3schools.com/jsref/met_win_prompt.asp
   var pass = prompt("Enter your password...");//todo: make this an input box thingy html
   const PASSES = loadFile("PASSES.json"); //i hate json but https://www.w3schools.com/js/js_json_parse.asp
   var md = forge.md.sha256.create();
   try {//https://www.w3schools.com/jsref/jsref_try_catch.asp
       md.update(pass);
-  } catch(TypeError) { console.log("gotcha");window.location.href="index.html";}
+  } catch(TypeError) { console.log("gotcha");window.location.href="npa7855TRMTTR.html";}
   console.log(md.digest().toHex());
   var obj = JSON.parse(PASSES);
   console.log(uname);
-  console.log(pass);
   if( typeof pass === 'undefined' || pass === null ){
   	console.log("gotcha");
   	window.location.href="index.html";}
@@ -108,7 +108,11 @@ document.addEventListener('contextmenu', event => event.preventDefault()); //Dis
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <p id="main">
     <font size=6>NPA website</font>
-    The NPA website is outdated.
+    	<script>
+		console.log(5);
+		console.log(uname);
+		if (uname === "TheTechRobo") { document.body.innerHTML += Secu;}else if (uname === "TheRuntingMuumuu") { document.body.innerHTML += Misc;}
+	</script><!--https://thisinterestsme.com/add-html-body-javascript/ https://stackoverflow.com/a/8348522/9654083-->
 </p>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
