@@ -4,7 +4,7 @@
   position: fixed;
   top: 20px; /*Make room for top bar*/
   height: calc(100vh - 48px - 20px); /*Height - bottombar minus topbar*/
-  /*display: none;*/
+  display: none;
   background-color: limegreen;
   z-index: 0
 }
@@ -56,5 +56,5 @@
 }
 
 .mainWindow {
-
+  display: ;
 }
