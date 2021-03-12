@@ -1,6 +1,10 @@
 <!DOCTYPE html5>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Helps with mobile compatibility-->
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" type="text/css" href="windows.css">
+
+
 <title>NPA Website</title>
 <style>
     body{background-color:black;}/*Loads before the password loads, so the screen is black before*/
@@ -8,7 +12,7 @@
 <a id="top"></a>
 
 <script src="https://unpkg.com/node-forge@0.7.0/dist/forge.min.js"></script>
-        <script>
+        <script>var passMode = '1';
 //This is the code for the username and password code.
 function loadFile(filePath) {//https://stackoverflow.com/a/41133213/9654083
   var result = null;
@@ -53,20 +57,37 @@ function LoginFunction() {
 //This is the function for the npa master passWord
 function passWord() {
 window.location.href="#top";
-LoginFunction();
 var pass1 = 1;
 while (pass1 != "11073641") {
 	var pass1 = prompt('Enter master password','');
   console.log(pass1)
   if (pass1 === null || pass1 == 1) {
-        console.log("Cancelled");
-        window.location.href="npalog.html"; //break out of the function early
+    console.log("Cancelled");
+    window.location.href="npalog.html"; //break out of the function early
       }
     }}
 
+LoginFunction()
 passWord() //Runs the password thing on page load
+$('.login').hide();
+
 
 document.addEventListener('contextmenu', event => event.preventDefault()); //Disables right click so people cant copy/paste
+
+function login(passMode) {
+  console.log(passMode)
+  if (window.passMode === 'locl') {
+      passWord();
+  } else {
+      if (window.passMode === "full") {
+          LoginFunction()
+      } else {
+          LoginFunction()
+          passWord()
+        }
+    }
+  $('.login').hide();
+}
 
 </script>
 
@@ -74,6 +95,7 @@ document.addEventListener('contextmenu', event => event.preventDefault()); //Dis
 <!--THIS IS THE ACTUAL START OF THE FILE AFTER THE PASSWORDS LOAD IN-->
 <link rel="stylesheet" type="text/css" href="npaFont.woff2" /> <!--imports the NPA font (gnome GUI font) from the online link-->
 <link rel="stylesheet" type="text/css" href="menuss.css">
+
 
 <!--This is the menu-->
 <div class="menuContainer">
@@ -98,18 +120,30 @@ document.addEventListener('contextmenu', event => event.preventDefault()); //Dis
     <div class="dropupDiv LOdropupDiv">
       <a href="npalog.html" class="logoot dropupButton LOdropupButton">Logout</a>
       <div class="dropup LOdropup"> <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hover-->
-        <a href="#top" onclick=passWord()>Lock</a>
-        <a onclick=LoginFunction()>User Pass</a>
+        <a href="#top" onclick="passMode = 'lock'; $('.login').show();">Lock</a>
+        <a onclick="passMode = 'full'; $('.login').show();">User Pass</a> <!--no var since having a var passmode = lock; means it is a local variable.-->
       </div>
     </div>
   </div>
 </div>
 
+<!--Logins-->
+<div class="login">
+  <div class="loginBox">
+    <a onclick=login()>Login</a>
+  </div>
+</div>
+
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<p id="main">
-    <font size=6>NPA website</font>
-    The NPA website is outdated.
-</p>
+
+<div class="window mainWindow">
+  <div class="topbar">
+    <p id="main">
+        <font size=6>NPA website</font>
+        The NPA website is outdated.
+    </p>
+  </div>
+</div>
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 

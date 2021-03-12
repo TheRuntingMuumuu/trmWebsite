@@ -2,8 +2,11 @@ html { overflow-y: hidden; }/*Disables Scrolling*/
 
 body {
   margin: 0px;
-  background-color: limegreen;
   font-family: Cantarell;
+  animation-name: fade;
+  animation-duration: .7s;
+  background-color: limegreen;
+
 }
 
 ::selection { /*To change the selection tool (selecting text)*/
