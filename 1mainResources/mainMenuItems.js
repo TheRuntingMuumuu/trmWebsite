@@ -5,9 +5,10 @@ $(document).ready(function(){
     $(".menuLink4").text("Minecraft Server", "");
     $(".menuLink5").text("School Projects", "");
     $(".menuLink6").text("Coding Projects", "");
-    $(".menuLink7").text("Youtube Channel", "");
+    $(".menuLink7").text("YouTube Channel", "");
     $(".menuLink8").text("Contact Me", "");
     $(".menuLink10").text("Clash Royale Clan", "");
+    $(".menuLink10").text("Privacy Policy", "");
     $(".npa").text("NPA", "");
 
 
@@ -20,6 +21,7 @@ $(document).ready(function(){
     $(".menuLink7").attr("href", "youtube/index.html");
     $(".menuLink8").attr("href", "contact.html");
     $(".menuLink10").attr("href", "cr/index.html");
+    $(".menuLink10").attr("href", "privacy.html");
     $(".npa").attr("href","npa/LoadingNPA.htm");
 
 });
