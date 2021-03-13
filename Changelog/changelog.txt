@@ -215,3 +215,4 @@ Beta 2.11
         ◦ Fix slow loading
         ◦ Round corners
     • Privacy notices in school section
+    • Fix a few bugs in OWS. It is **NOT** being supported; this is a one-time thingy.
