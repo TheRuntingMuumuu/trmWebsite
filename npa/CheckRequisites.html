@@ -12,7 +12,7 @@
 		var secam = document.forms["form"]["secam"].value;
 		var id = document.forms["form"]["id"].value;
 		if (top === self) {DoTheChromeDance();}
-		var res = CalculResults(drill,secam,guard,plans);
+		var res = CalculResults(drill,secam,guard,plans,id);
 		console.log(res);
 		newSite = "CheckGrades.html?grade=%s",res;
 		newSite = newSite.replace('%s', res);
