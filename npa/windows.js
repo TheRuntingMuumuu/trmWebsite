@@ -1,4 +1,11 @@
-console.log("windows");
+function hideAll() {//Hides all Windows because they - especially 10 - NEED hiding
+  $('.mainWindow').hide();
+  $('.securityWindow').hide();
+  $('.qrScanWindow').hide();
+  $('.qrCodeWindow').hide();
+  $('.todoWindow').hide();
+  $('.linksWindow').hide();
+}
 function ReloadFrameEh(currentId) {
 	if (currentId == 1) {
 		alert("You're not in an iframe!");return false}

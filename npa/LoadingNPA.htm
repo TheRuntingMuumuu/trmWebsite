@@ -93,14 +93,6 @@ function login() {
   $('.login').hide();
 }
 
-function hideAll() {//Hides all Windows
-  $('.mainWindow').hide();
-  $('.securityWindow').hide();
-  $('.qrScanWindow').hide();
-  $('.qrCodeWindow').hide();
-  $('.todoWindow').hide();
-  $('.linksWindow').hide();
-}
 //Keybinds
 $(document).on('keydown', function ( e ) { //Lock CTRL + L
     if ((e.metaKey || e.ctrlKey) && ( String.fromCharCode(e.which).toLowerCase() === 'l') ) {
