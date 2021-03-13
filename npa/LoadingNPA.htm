@@ -11,14 +11,14 @@
     body{background-color:black;}/*Loads before the password loads, so the screen is black before*/
 </style>
 <a id="top"></a>
-
+<script src="windows.js"></script>
 <script src="dashboard.js"></script>
 <script src="https://unpkg.com/node-forge@0.7.0/dist/forge.min.js"></script>
         <script>var passMode = '1';
 //This is the code for the username and password code.
 function loadFile(filePath) {//https://stackoverflow.com/a/41133213/9654083
-  var result = null;
-  var xmlhttp = new XMLHttpRequest();
+  result = null;
+  xmlhttp = new XMLHttpRequest();
   xmlhttp.open("GET", filePath, false);
   xmlhttp.send();
   if (xmlhttp.status == 200) {
@@ -28,7 +28,6 @@ function loadFile(filePath) {//https://stackoverflow.com/a/41133213/9654083
 		alert("Fatal error - aborting!");for (;;) {void(0)}}
   return result;
 }
-
 function LoginFunction() {
   window.uname = null;//https://stackoverflow.com/a/8348522/9654083
   var pass = null;
@@ -36,6 +35,8 @@ function LoginFunction() {
   var pass = prompt("Enter your password...");//todo: make this an input box thingy html
   const PASSES = loadFile("PASSES.json"); //i hate json but https://www.w3schools.com/js/js_json_parse.asp
   var md = forge.md.sha256.create();
+	if (xmlhttp.status != 200) {
+        alert("Fatal error - aborting!");for (;;) {void(0)}}
   try {//https://www.w3schools.com/jsref/jsref_try_catch.asp
       md.update(pass);
   } catch(TypeError) { console.log("gotcha");window.location.href="npa7855TRMTTR.html";}
@@ -59,7 +60,6 @@ function LoginFunction() {
 <script type="text/javascript">
 //This is the function for the npa master passWord
 function passWord() {
-window.location.href="#top";
 var pass1 = 1;
 while (pass1 != "11073641") {
 	var pass1 = prompt('Enter master password','');
@@ -106,9 +106,10 @@ $(document).on('keydown', function ( e ) { //Lock CTRL + L
     if ((e.metaKey || e.ctrlKey) && ( String.fromCharCode(e.which).toLowerCase() === 'l') ) {
       passMode = "lock";
       $('.login').show();
+	    if (xmlhttp.status != 200) {
+        alert("Fatal error - aborting!");for (;;) {void(0)}}
     }
 });
-
 $(document).on('keydown', function ( e ) { //Fake NPA and LOCK CTRL + F
     if ((e.metaKey || e.ctrlKey) && ( String.fromCharCode(e.which).toLowerCase() === 'f') ) {
       passMode = "lock";
@@ -116,7 +117,6 @@ $(document).on('keydown', function ( e ) { //Fake NPA and LOCK CTRL + F
       window.open('npa7855TRMTTR.html','_blank');
     }
 });
-
 </script>
 
 
@@ -124,27 +124,27 @@ $(document).on('keydown', function ( e ) { //Fake NPA and LOCK CTRL + F
 <link rel="stylesheet" type="text/css" href="npaFont.woff2" /> <!--imports the NPA font (gnome GUI font) from the online link-->
 <link rel="stylesheet" type="text/css" href="menuss.css">
 	<script>if (window.uname === null || typeof(window.uname) === "undefined") {
-		for (;;) {void(0)}}</script>
+		console.log(4);for (;;) {void(0)}}</script>
 <!--This is the menu-->
 <div class="menuContainer">
   <div class="menu">
     <div class="dropupDiv">
-      <a href="#main" onclick="hideAll(); $('.mainWindow').show();"class="main dropupButton">Main</a>
+      <a href="#main" onclick="hideAll(); $('.mainWindow').show();CurrentIframeThingy = 1;"class="main dropupButton">Main</a>
       <div class="dropup"> <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hover-->
         <a href="npa7855TRMTTR.html" target="_blank">Fake NPA</a>
       </div>
     </div>
-    <a href="#se" class="main" onclick="hideAll(); $('.securityWindow').show();">Security</a>
-    <a href="#todo" class="main" onclick="hideAll(); $('.todoWindow').show();">TODO</a> <!--The onclick will hide all the windows-->
+    <a href="#se" class="main" onclick="hideAll(); $('.securityWindow').show();CurrentIframeThingy = 'security';">Security</a>
+    <a href="#todo" class="main" onclick="hideAll(); $('.todoWindow').show();CurrentIframeThingy = 'todo';">TODO</a> <!--The onclick will hide all the windows-->
     <div class="dropupDiv">
-      <a href="#qr1" class="main dropupButton" onclick="hideAll(); $('.qrScanWindow').show();">QR Code Scanner</a>
+      <a href="#qr1" class="main dropupButton" onclick="hideAll(); $('.qrScanWindow').show();CurrentIframeThingy = 1;">QR Code Scanner</a>
       <div class="dropup"> <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hover-->
         <a href="https://qrcodescan.in/" target="qr1" onclick="location.href='#qr'">Load QR Scanner</a>
-        <a href="#qr2" onclick="hideAll(); $('.qrCodeWindow').show();">QR Maker</a>
+        <a href="#qr2" onclick="hideAll(); $('.qrCodeWindow').show();CurrentIframeThingy = 1;">QR Maker</a>
         <a href="https://www.qr-code-generator.com/" target="qr2" onclick="location.href='#qr'">Load QR Maker</a>
       </div>
     </div>
-    <a href="#progs" class="main" onclick="hideAll(); $('.linksWindow').show();">Links</a>
+    <a href="#progs" class="main" onclick="hideAll(); $('.linksWindow').show();CurrentIframeThingy = 1;">Links</a>
     <div class="dropupDiv LOdropupDiv">
       <a href="#top" onclick="passMode = 'lock'; $('.login').show();" class="logoot dropupButton LOdropupButton">Lock</a>
       <div class="dropup LOdropup"> <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hover-->
@@ -166,7 +166,7 @@ $(document).on('keydown', function ( e ) { //Fake NPA and LOCK CTRL + F
 <div class="topbar">
   <a class="windowSpecificMenu"><script>//Put vars here</script></a>
   <a class="whoLoggedIn" onclick="if (confirm('Switch Users? This will reload the page.')) {window.location.reload(true)} else {}">Logged in as <script>document.write(uname)</script></a>
-  <a onclick="alert('not implemented yet, soon this will be able to reload the iframe in the section that you are in')" class="reload">Reload</a>
+  <a onclick="ReloadFrameEh(CurrentIframeThingy);" class="reload">Reload Current Program</a>
 </div>
 
 
@@ -183,10 +183,10 @@ $(document).on('keydown', function ( e ) { //Fake NPA and LOCK CTRL + F
 
 
 <div class="window securityWindow">
-  <iframe src="security.html" width="100%" height="94%" align="right" style="border: none;"></iframe>
+  <iframe src="security.html" width="100%" height="94%" align="right" style="border: none;" id="security">Failed to load iframes, maybe your browser doesn't support them?</iframe>
 </div>
 
-
+<noscript><style>body { display:none;}</style></noscript>
 
 <div class="window qrScanWindow">
   <div id="qr1">
@@ -214,6 +214,6 @@ $(document).on('keydown', function ( e ) { //Fake NPA and LOCK CTRL + F
 
 <div class="window todoWindow">
   <div id="todo">
-    <iframe src="todo.html" width="100%" height="94%" align="right" style="border: none;"></iframe>
+    <iframe src="todo.html" width="100%" height="94%" align="right" style="border: none;" name="todo"></iframe>
   </div>
 </div>
