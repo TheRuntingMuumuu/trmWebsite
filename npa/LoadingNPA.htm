@@ -165,7 +165,7 @@ $(document).on('keydown', function ( e ) { //Fake NPA and LOCK CTRL + F
 <!--Top bar-->
 <div class="topbar">
   <a class="windowSpecificMenu"><script>//Put vars here</script></a>
-  <a class="whoLoggedIn" onclick="if (confirm('Switch Users?')) {passMode = 'full'; $('.login').show();} else {alert('Ok then')}">Logged in as <script>document.write(uname)</script></a>
+  <a class="whoLoggedIn" onclick="if (confirm('Switch Users? This will reload the page.')) {window.location.reload(true)} else {}">Logged in as <script>document.write(uname)</script></a>
   <a onclick="alert('not implemented yet, soon this will be able to reload the iframe in the section that you are in')" class="reload">Reload</a>
 </div>
 
