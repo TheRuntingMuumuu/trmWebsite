@@ -16,8 +16,6 @@ function weightedMean(arrValues, arrWeights) {
 }
 function CalculResults(drill, secam, guard, plans) {
     var currentGrade, drillGrade, roundedGrade, secamGrade, guardGrade;
-	console.log("Guard:");
-	console.log(guard);
     if (((drill === "3plus") || (drill === "3"))) {
         currentGrade = 6;
     } else {
@@ -82,9 +80,10 @@ function CalculResults(drill, secam, guard, plans) {
                         window.location.href = "index.html";
                     return false;
                 }  var planGrade = currentGrade;
+	var drill = id;
 
     console.log(("DRILL:%s:SECAM:%s:GUARD:%s:PLAN:%s" % [drillGrade, secamGrade, guardGrade, planGrade]));
-    var notroundedGrade = weightedMean([Number.parseInt(secamGrade), Number.parseInt(drillGrade), Number.parseInt(guardGrade), Number.parseInt(planGrade)], [0.3, 0.3, 0.1, 0.3]);console.log("Not rounded grade");console.log(notroundedGrade);
+    var notroundedGrade = weightedMean([Number.parseInt(secamGrade), Number.parseInt(drillGrade), Number.parseInt(guardGrade), Number.parseInt(planGrade), Number.parseInt(idGrade)], [0.22, 0.22, 0.12, 0.22, 0.22]);console.log("Not rounded grade");console.log(notroundedGrade);
 	var notroundedGrade = Number.parseFloat(notroundedGrade);
 	console.log("Got up to the first roundedGrade def");
     var roundedGrade = Math.round((notroundedGrade));
