@@ -160,11 +160,11 @@ body {
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-   <a href="/index.html">Index</a>
-    <a href="/page/p2.html">Cool Pictures</a>
-    <a href="/page/p3.html">Updates</a>
-    <a href="/page/p5.html">Other</a>
-    <a href="/page/p6.html">Software</a>
+   <a href="index.html">Index</a>
+    <a href="p2.html">Cool Pictures</a>
+    <a href="p3.html">Updates</a>
+    <a href="p5.html">Other</a>
+    <a href="p6.html">Software</a>
 </div>
 
 
@@ -211,23 +211,8 @@ function closeNav() {
 
 <SCRIPT>
 function passWord() {
-var testV = 1;
 var pass1 = prompt('Please Enter Your Password',' ');
-while (testV < 3) {
-if (!pass1)
-history.go(0);
-if (pass1.toLowerCase() == "11073641") {
-alert('Welcome to the NPA');
-window.open('npa-11073641LoggedIn2WebPage.html');
-break;
-}
-testV+=1;
-var pass1 =
-prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
-}
-if (pass1.toLowerCase()!="password" & testV ==3)
-history.go(0);
-return " ";
+prompt('Access Denied - Password Incorrect.','Password');
 }
 </SCRIPT>
 
@@ -244,7 +229,5 @@ return " ";
 </p>
 <div style='text-align: right;position: fixed;z-index:9999999;bottom: 0; width: 100%;cursor: not-allowed;line-height: 0;display:block !important;'>
 <p>
-<form action="/npa/npalog.html">
-    <input type="submit" value="NPA" />
 </form>
 </div>
