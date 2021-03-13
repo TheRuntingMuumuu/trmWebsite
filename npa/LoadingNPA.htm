@@ -94,6 +94,11 @@ function login() {
 
 function hideAll() {//Hides all Windows
   $('.mainWindow').hide();
+  $('.securityWindow').hide();
+  $('.qrScanWindow').hide();
+  $('.qrCodeWindow').hide();
+  $('.todoWindow').hide();
+  $('.linksWindow').hide();
 }
 //Keybinds
 $(document).on('keydown', function ( e ) { //Lock CTRL + L
@@ -128,17 +133,17 @@ $(document).on('keydown', function ( e ) { //Fake NPA and LOCK CTRL + F
         <a href="npa7855TRMTTR.html" target="_blank">Fake NPA</a>
       </div>
     </div>
-    <a href="#se" class="main" onclick="hideAll()">Security</a>
-    <a href="#todo" class="main" onclick="hideAll()">TODO</a> <!--The onclick will hide all the windows-->
+    <a href="#se" class="main" onclick="hideAll(); $('.securityWindow').show();">Security</a>
+    <a href="#todo" class="main" onclick="hideAll(); $('.todoWindow').show();">TODO</a> <!--The onclick will hide all the windows-->
     <div class="dropupDiv">
-      <a href="#qr1" class="main dropupButton" onclick="hideAll()">QR Code Scanner</a>
+      <a href="#qr1" class="main dropupButton" onclick="hideAll(); $('.qrScanWindow').show();">QR Code Scanner</a>
       <div class="dropup"> <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hover-->
         <a href="https://qrcodescan.in/" target="qr1" onclick="location.href='#qr'">Load QR Scanner</a>
-        <a href="#qr2" onclick="hideAll()">QR Maker</a>
+        <a href="#qr2" onclick="hideAll(); $('.qrCodeWindow').show();">QR Maker</a>
         <a href="https://www.qr-code-generator.com/" target="qr2" onclick="location.href='#qr'">Load QR Maker</a>
       </div>
     </div>
-    <a href="#progs" class="main" onclick="hideAll()">Links</a>
+    <a href="#progs" class="main" onclick="hideAll(); $('.linksWindow').show();">Links</a>
     <div class="dropupDiv LOdropupDiv">
       <a href="#top" onclick="passMode = 'lock'; $('.login').show();" class="logoot dropupButton LOdropupButton">Lock</a>
       <div class="dropup LOdropup"> <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hover-->
@@ -164,11 +169,7 @@ $(document).on('keydown', function ( e ) { //Fake NPA and LOCK CTRL + F
 </div>
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
 <div class="window mainWindow">
-  sss
-    <p id="main">
       <font size=6>NPA website</font>
       The NPA website is outdated.
         <script>
@@ -179,39 +180,40 @@ $(document).on('keydown', function ( e ) { //Fake NPA and LOCK CTRL + F
     </p>
 </div>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 
-<div id="se"></div>
-<iframe src="security.html" width="100%" height="94%" align="right" style="border: none;"></iframe>
-
-
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-<div id="qr1">
-    <iframe name="qr1" src="" width="100%" height="94%" align="right" style="border-radius: 4px;"></iframe>
-</div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<div id="qr2">
-    <iframe name="qr2" src="" width="100%" height="94%" align="right" scrolling="auto" style="border-radius: 4px;"></iframe>
-</div>
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-<div id="progs">
-  <br><br><br>
-  <a href="https://mail.google.com" target="_blank" class="largeButtons">Gmail</a>
-  <a href="https://alfred.camera/webapp2/" target="_blank" class="largeButtons">Alfred</a>
-  <a href="https://groups.google.com/forum/#!forum/npa-npa" target="_blank" class="largeButtons">Google Groups Forum</a>
-  <a href="https://www.the-qrcode-generator.com/" target="_blank" class="largeButtons">QR Code Scanner</a>
+<div class="window securityWindow">
+  <iframe src="security.html" width="100%" height="94%" align="right" style="border: none;"></iframe>
 </div>
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-<div id="todo">
-  <iframe src="todo.html" width="100%" height="94%" align="right" style="border: none;"></iframe>
+<div class="window qrScanWindow">
+  <div id="qr1">
+      <iframe name="qr1" src="" width="100%" height="100%" align="right" style="border-radius: 4px;"></iframe>
+  </div>
 </div>
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div class="window qrCodeWindow">
+  <div id="qr2">
+      <iframe name="qr2" src="" width="100%" height="100%" align="right" scrolling="auto" style="border-radius: 4px;"></iframe>
+  </div>
+</div>
+
+
+<div class="window linksWindow">
+  <div id="progs">
+    <br><br><br>
+    <a href="https://mail.google.com" target="_blank" class="largeButtons">Gmail</a>
+    <a href="https://alfred.camera/webapp2/" target="_blank" class="largeButtons">Alfred</a>
+    <a href="https://groups.google.com/forum/#!forum/npa-npa" target="_blank" class="largeButtons">Google Groups Forum</a>
+    <a href="https://www.the-qrcode-generator.com/" target="_blank" class="largeButtons">QR Code Scanner</a>
+  </div>
+</div>
+
+
+<div class="window todoWindow">
+  <div id="todo">
+    <iframe src="todo.html" width="100%" height="94%" align="right" style="border: none;"></iframe>
+  </div>
+</div>

@@ -55,6 +55,43 @@
   100% {top: 0;}
 }
 
+@keyframes slidein {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+/*Individual Windows*/
 .mainWindow {
   display: ;
+  animation-name: fade;
+  animation-duration: .3s;
+}
+
+.securityWindow {
+  display: ;
+  animation-name: fade;
+  animation-duration: .3s;
+}
+
+.todoWindow {
+  display: ;
+  animation-name: fade;
+  animation-duration: .3s;
+}
+
+.qrScanWindow {
+  display: ;
+  animation-name: fade;
+  animation-duration: .3s;
+}
+
+.qrCodeWindow {
+  display: ;
+  animation-name: fade;
+  animation-duration: .3s;
+}
+
+.linksWindow {
+  display: ;
+  animation-name: fade;
+  animation-duration: .3s;
 }
