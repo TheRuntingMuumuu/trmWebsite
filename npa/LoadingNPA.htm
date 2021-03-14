@@ -127,7 +127,7 @@ $(document).on('keydown', function ( e ) { //Fake NPA and LOCK CTRL + F
       </div>
     </div>
     <a href="#se" class="main" onclick="hideAll(); $('.securityWindow').show();CurrentIframeThingy = 'security';">Security</a>
-    <a href="#todo" class="main" onclick="hideAll(); $('.todoWindow').show();CurrentIframeThingy = 'todo';">TODO</a> <!--The onclick will hide all the windows-->
+    <a href="#todo" class="main" onclick="hideAll(); $('.todoWindow').show();CurrentIframeThingy = 'todoi';">TODO</a> <!--The onclick will hide all the windows-->
     <div class="dropupDiv">
       <a href="#qr1" class="main dropupButton" onclick="hideAll(); $('.qrScanWindow').show();CurrentIframeThingy = 1;">QR Code Scanner</a>
       <div class="dropup"> <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hover-->
@@ -206,6 +206,6 @@ $(document).on('keydown', function ( e ) { //Fake NPA and LOCK CTRL + F
 
 <div class="window todoWindow">
   <div id="todo">
-    <iframe src="todo.html" width="100%" height="94%" align="right" style="border: none;" name="todo"></iframe>
+    <iframe src="todo.html" width="100%" height="94%" align="right" style="border: none;" id="todoi"></iframe>
   </div>
 </div>
