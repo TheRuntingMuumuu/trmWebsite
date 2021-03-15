@@ -25,6 +25,7 @@ function qrScanButton() {
   CurrentIframeThingy = 1;
   $('.reload').hide(); //hide the reload button for this window (since it will not work)
   currentWindow = "qrscan";
+  document.getElementById("windowSpecificMenu").innerHTML = "<a href='https://qrcodescan.in/' target='qr1'>Load</a>";
 }
 
 function qrMakeButton() {
@@ -32,6 +33,7 @@ function qrMakeButton() {
   CurrentIframeThingy = 1;
   $('.reload').hide(); //hide the reload button for this window (since it will not work)
   currentWindow = "qrmake";
+  document.getElementById("windowSpecificMenu").innerHTML = "<a href='https://www.qr-code-generator.com/' target='qr2'>Load</a>";
 }
 
 function linksButton() {
