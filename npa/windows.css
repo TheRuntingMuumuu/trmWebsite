@@ -8,7 +8,7 @@
   background-color: limegreen;
   z-index: 0
 }
-
+/*Topbar*/
 .topbar {
   top: 0px;
   display: inline;
@@ -94,4 +94,9 @@
   display: ;
   animation-name: fade;
   animation-duration: .3s;
+}
+
+/*Generic links change cursor*/
+.linkCursorr:hover{
+  cursor: pointer;
 }
