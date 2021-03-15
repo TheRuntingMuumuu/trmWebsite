@@ -20,22 +20,37 @@
   overflow: hidden;
   z-index: 1;
   text-align: center;
+  animation-name: fade;
+  animation-duration: .7s;
 }
 
 .topbar a {
   color: white;
   text-decoration: none;
   font-size: 13px;
+  animation-name: fade;
+  animation-duration: .3s;
 }
 
 .reload {
-  float: right;
+  right: 0px;
+  display: none;
+  position: absolute;
 }
 
 .whoLoggedIn {
   left: 50%;
 }
 
+.windowSpecificMenuContainer {
+  position: absolute; /*Makes is so the logged in text does not move.*/
+}
+
+.windowSpecificMenu {
+  float: left;
+}
+
+/*Login page*/
 .login {
   position: fixed;
   top: 0px;
@@ -63,7 +78,7 @@
 .mainWindow {
   display: ;
   animation-name: fade;
-  animation-duration: .3s;
+  animation-duration: .1s;
 }
 
 .securityWindow {

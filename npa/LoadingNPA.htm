@@ -157,9 +157,11 @@ $(document).on('keydown', function ( e ) { //Fake NPA and LOCK CTRL + F
 
 <!--Top bar-->
 <div class="topbar">
-  <a class="windowSpecificMenu" id="windowSpecificMenu"><!--This will be changed with JS depending on the window--></a>
+  <div class="windowSpecificMenuContainer">
+    <a class="windowSpecificMenu" id="windowSpecificMenu"><!--This will be changed with JS depending on the window--></a>
+  </div>
   <a class="whoLoggedIn linkCursorr" onclick="if (confirm('Switch Users? This will reload the page.')) {window.location.reload(true)} else {}">Logged in as <script>document.write(uname)</script></a>
-  <a onclick="ReloadFrameEh(CurrentIframeThingy);" class="reload linkCursorr">Reload Current Program</a>
+  <a onclick="ReloadFrameEh(CurrentIframeThingy);" class="reload linkCursorr">Reload</a>
 </div>
 
 
