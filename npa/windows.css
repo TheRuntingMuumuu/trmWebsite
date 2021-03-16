@@ -58,11 +58,34 @@
   height: 100%;
   display: none;
   z-index: 10;
-  background-color: #333;
+  background-color: rgb(52,128,52);
   animation-name: slidein;
   animation-duration: .7s;
   color: white;
   font-size: 18px;
+}
+
+.loginBox {
+  position: relative;
+  background-color: black;
+  width: 20%;
+  height: 20%;
+  top: 20%;
+  left: 40%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.loginButton {
+  padding: 10px 60px 10px 60px;
+  border-radius: 20px;
+}
+
+.loginButton:hover {
+  cursor: pointer;
+  background-color: rgba(50,205,50,.8);
+  color: black;
+  transition-duration: .3s;
 }
 
 @keyframes slidein {

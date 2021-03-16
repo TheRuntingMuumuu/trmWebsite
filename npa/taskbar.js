@@ -11,6 +11,7 @@ function securityButton() {
   CurrentIframeThingy = "security";
   $('.reload').show(); //Show the reload button for this window (since it will work)
   currentWindow = "security";
+  document.getElementById("windowSpecificMenu").innerHTML = "";//This is to clear the window specific menu in other tabs
 }
 
 function todoButton() {
@@ -18,6 +19,7 @@ function todoButton() {
   CurrentIframeThingy = 'todoi';
   $('.reload').show(); //Show the reload button for this window (since it will work)
   currentWindow = "todo";
+  document.getElementById("windowSpecificMenu").innerHTML = "";//This is to clear the window specific menu in other tabs
 }
 
 function qrScanButton() {
@@ -41,6 +43,7 @@ function linksButton() {
   CurrentIframeThingy = 1;
   $('.reload').hide(); //hide the reload button for this window (since it will not work)
   currentWindow = "links";
+  document.getElementById("windowSpecificMenu").innerHTML = "";//This is to clear the window specific menu in other tabs
 }
 
 function lockButton() {
