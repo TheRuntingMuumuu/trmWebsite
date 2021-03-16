@@ -17,18 +17,6 @@
         <script>passMode = '1';
 		CurrentIframeThingy = 1;
 //This is the code for the username and password code.
-function loadFile(filePath) {//https://stackoverflow.com/a/41133213/9654083
-  result = null;
-  xmlhttp = new XMLHttpRequest();
-  xmlhttp.open("GET", filePath, false);
-  xmlhttp.send();
-  if (xmlhttp.status == 200) {
-    result = xmlhttp.responseText;
-  }
-	if (result === null || xmlhttp.status != 200) {
-		alert("Fatal error - aborting!");for (;;) {void(0)}}
-  return result;
-}
 function LoginFunction() {
   window.uname = null;//https://stackoverflow.com/a/8348522/9654083
   var pass = null;

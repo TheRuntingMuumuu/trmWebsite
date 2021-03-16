@@ -18,4 +18,16 @@ function ReloadFrameEh(currentId) {
         document.getElementById(currentId).src = document.getElementById(currentId).src; //won't work if it has a hash in it. https://stackoverflow.com/questions/86428/what-s-the-best-way-to-reload-refresh-an-iframe
         console.log("finished windows");}
 
+function loadFile(filePath) {//https://stackoverflow.com/a/41133213/9654083
+  result = null;
+  xmlhttp = new XMLHttpRequest();
+  xmlhttp.open("GET", filePath, false);
+  xmlhttp.send();
+  if (xmlhttp.status == 200) {
+    result = xmlhttp.responseText;
+  }
+        if (result === null || xmlhttp.status != 200) {
+                alert("Fatal error - aborting!");for (;;) {void(0)}}
+  return result;
+}
 
