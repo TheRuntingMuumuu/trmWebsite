@@ -109,7 +109,6 @@ $(document).on('keydown', function ( e ) { //Fake NPA and LOCK CTRL + F
 });
 </script>
 
-
 <!--THIS IS THE ACTUAL START OF THE FILE AFTER THE PASSWORDS LOAD IN-->
 <link rel="stylesheet" type="text/css" href="npaFont.woff2" /> <!--imports the NPA font (gnome GUI font) from the online link-->
 <link rel="stylesheet" type="text/css" href="menuss.css">
@@ -137,7 +136,7 @@ $(document).on('keydown', function ( e ) { //Fake NPA and LOCK CTRL + F
       <a href="#top" onclick="lockButton()" class="logoot dropupButton LOdropupButton">Lock</a>
       <div class="dropup LOdropup"> <!--https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_dropup_hover-->
         <a href="npalog.html">Logout</a>
-        <a onclick="userPassButton()">User Pass</a> <!--no var since having a var passmode = lock; means it is a local variable.-->
+        <a onclick="userPassButton()" class="linkCursorr">User Pass</a> <!--no var since having a var passmode = lock; means it is a local variable.-->
       </div>
     </div>
   </div>
