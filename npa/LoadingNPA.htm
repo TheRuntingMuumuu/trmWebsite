@@ -108,7 +108,7 @@ function loginPage() {
 $(document).on('keydown', function ( e ) { //Lock CTRL + L
     if ((e.metaKey || e.ctrlKey) && ( String.fromCharCode(e.which).toLowerCase() === 'l') ) {
       passMode = "lock";
-      $('.login').show();
+      loginPage()
 	    if (xmlhttp.status != 200) {
         alert("Fatal error - aborting!");for (;;) {void(0)}}
     }
@@ -116,7 +116,7 @@ $(document).on('keydown', function ( e ) { //Lock CTRL + L
 $(document).on('keydown', function ( e ) { //Fake NPA and LOCK CTRL + F
     if ((e.metaKey || e.ctrlKey) && ( String.fromCharCode(e.which).toLowerCase() === 'f') ) {
       passMode = "lock";
-      $('.login').show();
+      loginPage()
       window.open('npa7855TRMTTR.html','_blank');
     }
 });

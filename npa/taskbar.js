@@ -48,10 +48,10 @@ function linksButton() {
 
 function lockButton() {
   passMode = 'lock';
-  $('.login').show();
+  loginPage();
 }
 
 function userPassButton() {
   passMode = 'full';
-  $('.login').show();
+  loginPage();
 }
