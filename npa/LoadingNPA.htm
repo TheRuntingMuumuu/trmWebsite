@@ -93,6 +93,15 @@ function login() {
         }
     }
   $('.login').hide();
+  $('.menuContainer').show(); //Since they were hidden with the loginPage function
+  $('.topbar').show();
+}
+
+function loginPage() {
+  $('.login').show();
+    $('.menuContainer').hide(); //FInd way to delay all this
+    $('.topbar').hide();
+    hideAll();
 }
 
 //Keybinds
