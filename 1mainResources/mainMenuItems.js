@@ -10,6 +10,7 @@ $(document).ready(function(){
     $(".menuLink10").text("Clash Royale Clan", "");
     $(".menuLink9").text("Privacy Policy", "");
     $(".npa").text("NPA", "");
+    $(".menuLink11").text("Brew", "");
 
 
 //    $(".menuLink1").attr("href", "../index.html");
@@ -22,6 +23,7 @@ $(document).ready(function(){
     $(".menuLink8").attr("href", "contact.html");
     $(".menuLink10").attr("href", "cr/index.html");
     $(".menuLink9").attr("href", "privacy.html");
+    $(".menuLink11").attr("href", "general/brew.html");
     $(".npa").attr("href","npa/LoadingNPA.htm");
 
 });
