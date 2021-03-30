@@ -1,9 +1,10 @@
-html { overflow-y: hidden; }/*Disables Scrolling*/
-
 body {
   margin: 0px;
-  background-color: limegreen;
   font-family: Cantarell;
+  animation-name: fade;
+  animation-duration: .7s;
+  background-color: limegreen;
+
 }
 
 ::selection { /*To change the selection tool (selecting text)*/
@@ -24,6 +25,8 @@ background: black;
   overflow: hidden;
   position: fixed;
   bottom: 0px;
+  z-index: 5;
+
 }
 
 .menu {
@@ -57,6 +60,7 @@ background: black;
 
 .dropupDiv {
   display: inline-block; /*So that the dropup being in a seperate div does not mess everything up*/
+  z-index: 1;
 }
 
 .dropup {
@@ -100,22 +104,21 @@ background: black;
 }
 
 /*Logout Button*/
-.logoot {
-  background: red;
-  color: white;
+.LOdropupDiv {
   float: right;
   border-radius: 4px 15px 4px 4px;
+  background: red;
 }
 
-.leave {
-  background: darkgrey;
-  color: white;
-  float: right;
+.LOdropup {
+  right: 0px;
 }
 
-.leave :hover {
-  background-color: blue;
+
+.LOdropup a:hover {
+  background-color: red;
 }
+
 
 /*Main stuff*/
 .main {

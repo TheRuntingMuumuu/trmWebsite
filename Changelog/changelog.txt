@@ -48,7 +48,7 @@ Beta 2.1
         ◦ Youtube – Undecided – Imported old one for time being
         ◦ Genaral – Redisign – Not started
     • Bugfixes
-    • Renamed Beta 1.0 to Beta 2.0 
+    • Renamed Beta 1.0 to Beta 2.0
 Alpha 1.5.2
     • Updated ESO page
     • Reworked the Versions to include the beta.
@@ -136,7 +136,7 @@ Beta 2.6
         ◦ Mobile compatibility
         ◦ Desktop Compatibility
         ◦ Found out how I like the round corners theme
-    • A couple other things that I forgot 
+    • A couple other things that I forgot
     • Bugfixes on the main page (no horizontal scroll on mobile)
     • Other cosmetic and bug fixes
     • Fixes to make more parts of the site valid HTML5.
@@ -207,3 +207,18 @@ Beta 2.10
     • Finally added non-square icon to MC section
     • Updated CR section to have better corner radius
     • Removed 64support files (kept zip)
+Beta 2.11
+    •	Wow this took awhile
+    • Bump dbad-clean from 2.0 to 2.0.1
+    •	Completely redid the NPA section
+        ◦	Huge refactor
+        ◦	Bugfixes galore
+        ◦	Fix slow loading
+        ◦	Round corners
+    •	Improved the NPA security
+    •	Added a ton of JS to the NPA section
+    •	Added brew section
+    •	Some small bugfixes
+    •	Content updates
+    •	Privacy notes
+    •	Fix some OWS bugs IT IS NOT BEING SUPPORTED; THIS IS A ONE TIME FIX

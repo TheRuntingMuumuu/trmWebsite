@@ -1,3 +1,5 @@
+<link rel="stylesheet" type="text/css" href="npaFont.woff2" /> <!--imports the NPA font (gnome GUI font) from the online link-->
+<link rel="stylesheet" type="text/css" href="menuss.css">
 <script src="reqs.js"></script>
 <script>
 	//https://stackoverflow.com/questions/37242234/math-round-not-working
@@ -8,8 +10,9 @@
 		var plans = document.forms["form"]["plans"].value;
 		var drill = document.forms["form"]["lolz"].value;
 		var secam = document.forms["form"]["secam"].value;
+		var id = document.forms["form"]["id"].value;
 		if (top === self) {DoTheChromeDance();}
-		var res = CalculResults(drill,secam,guard,plans);
+		var res = CalculResults(drill,secam,guard,plans,id);
 		console.log(res);
 		newSite = "CheckGrades.html?grade=%s",res;
 		newSite = newSite.replace('%s', res);
@@ -18,18 +21,18 @@
 		return false;
 	}
 </script>
-<a href="CheckRequisites.html">Refresh</a>
 <script src="reqs.js"></script><script>if (top === self) {DoTheChromeDance();} //easter egg.</script>
 Please.Respond to the questions. This page need javascript.<br>
 	<script type="text/javascript">if (top === self) { document.write("Nice try...");for (;;) {alert("Nice try..."); }}</script>
 <form name="form" onsubmit="return FigureOutForm()">
 	<dl>
-		<dt>How many drills have you done yet?</dt><dd> 0 <input type="radio" value="0" name="lolz"></dd><dd> 1 <input type="radio" value="1" name="lolz"></dd><dd> 2 <input type="radio" value="2" name="lolz"></dd><dd> 3 or more<input type="radio" value="3plus" name="lolz"></dd>
+		<dt>How many drills have you done yet?</dt><dd><input type="radio" value="0" name="lolz"> 0</dd><dd><input type="radio" value="1" name="lolz"> 1 </dd><dd> 2 <input type="radio" value="2" name="lolz"></dd><dd> 3 or more<input type="radio" value="3plus" name="lolz"></dd>
 		<dt>How Many security cameras have you?</dt><dd>0<input type="radio" value="0" name="secam"></dd><dd>1<input type="radio" value="1" name="secam"></dd><dd>2<input type="radio" value="2" name="secam"></dd><dd>3 or more<input type="radio" value="3plus" name="secam"></dd>
 	</dl>
 	<dl><dt>Do you have a guard.</dt><dd>Yes<input type="radio" value="y" name="guard"></dd><dd> No<input type="radio"value="n"name="guard"></dd>
 	</dl>
 	<dl><dt>Have you formed plans?</dt><dd>Yes, many<input type="radio" value="lots"name="plans"></dd><dd> Yes, a few<input type="radio" value="y"name="plans"></dd><dd> No<input type="radio" value="n"name="plans"></dd>
+	</dl><dl><dt>Do you have ID cards or some sort of authentication?</dt> <dd><input type="radio" value="y" name="id">Yes, secure</dd><dd><input type="radio" value="yi"name="id"> Yes, insecure</dd><dd><input type="radio"value='n' die='dont' dont='die' name='id'>No</dd></dl>
 	<input type="submit" value="PROCESS RESULTS">
 </form>
 

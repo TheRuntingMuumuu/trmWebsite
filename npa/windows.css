@@ -1,0 +1,140 @@
+/**/
+.window {
+  width: 100%;
+  position: fixed;
+  top: 20px; /*Make room for top bar*/
+  height: calc(100vh - 48px - 20px); /*Height - bottombar minus topbar*/
+  display: none;
+  background-color: limegreen;
+  z-index: 0
+}
+/*Topbar*/
+.topbar {
+  top: 0px;
+  display: inline;
+  position: fixed;
+  border-radius: 2px;
+  background-color: #555;
+  width: 100%;
+  height: 20px;
+  overflow: hidden;
+  z-index: 1;
+  text-align: center;
+  animation-name: fade;
+  animation-duration: .7s;
+}
+
+.topbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  animation-name: fade;
+  animation-duration: .3s;
+}
+
+.reload {
+  right: 0px;
+  display: none;
+  position: absolute;
+}
+
+.whoLoggedIn {
+  left: 50%;
+}
+
+.windowSpecificMenuContainer {
+  position: absolute; /*Makes is so the logged in text does not move.*/
+}
+
+.windowSpecificMenu {
+  float: left;
+}
+
+/*Login page*/
+.login {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 10;
+  background-color: rgb(52,128,52);
+  animation-name: slidein;
+  animation-duration: .7s;
+  color: white;
+  font-size: 18px;
+}
+
+.loginBox {
+  position: relative;
+  background-color: black;
+  width: 20%;
+  height: 20%;
+  top: 20%;
+  left: 40%;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.loginButton {
+  padding: 10px 60px 10px 60px;
+  border-radius: 20px;
+}
+
+.loginButton:hover {
+  cursor: pointer;
+  background-color: rgba(50,205,50,.8);
+  color: black;
+  transition-duration: .3s;
+}
+
+@keyframes slidein {
+  0% {top: -100%;}
+  100% {top: 0;}
+}
+
+@keyframes fade {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+/*Individual Windows*/
+.mainWindow {
+  display: ;
+  animation-name: fade;
+  animation-duration: .1s;
+}
+
+.securityWindow {
+  display: ;
+  animation-name: fade;
+  animation-duration: .3s;
+}
+
+.todoWindow {
+  display: ;
+  animation-name: fade;
+  animation-duration: .3s;
+}
+
+.qrScanWindow {
+  display: ;
+  animation-name: fade;
+  animation-duration: .3s;
+}
+
+.qrCodeWindow {
+  display: ;
+  animation-name: fade;
+  animation-duration: .3s;
+}
+
+.linksWindow {
+  display: ;
+  animation-name: fade;
+  animation-duration: .3s;
+}
+
+/*Generic links change cursor*/
+.linkCursorr:hover{
+  cursor: pointer;
+}
