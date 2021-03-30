@@ -222,3 +222,6 @@ Beta 2.11
     •	Content updates
     •	Privacy notes
     •	Fix some OWS bugs IT IS NOT BEING SUPPORTED; THIS IS A ONE TIME FIX
+Beta 2.11.1
+    •   Bugfix where text was unselectable and unclicable in chromium browsers
+
