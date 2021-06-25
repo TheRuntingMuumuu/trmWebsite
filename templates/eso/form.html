@@ -1,20 +1,11 @@
 <!DOCTYPE html>
 <title>ESO</title>
 <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='eso/main.css')}}">
-<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='eso/esoMenu.css')}}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--MenuIcon-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> <!--jquery-->
 <link rel="shortcut icon" href="ESOicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Helps with mobile compatibility-->
 <script src="resources/mobileMenu.js"></script>
-
-<style>
-:target { border: 1px solid yellow;border-radius:20px; }</style>
-
-<!--Menu bar-->
-<div id="esoNavBar" class="menuBar">{% include 'eso/esonavBar.html' %}</div>
-<!--todo: use just flask for this-->
-
 <!--Content for the page-->
 <div class="fullPage">
   <div class="mainText">
