@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect
 import mainmenu, flask
 
 app = Flask(__name__)
@@ -6,6 +6,10 @@ app = Flask(__name__)
 @app.route("/")
 def welcome():
     return render_template('index.html', mainMenuItems=mainmenu.items)
+
+@app.route("/index.html")
+def redirIndex():
+    return redirect("/", 301)
 
 @app.route("/sitemap")
 def nav():
