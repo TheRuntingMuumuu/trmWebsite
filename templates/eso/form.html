@@ -18,7 +18,7 @@
 <!--Content for the page-->
 <div class="fullPage">
   <div class="mainText">
-zsh:1: command not found: :q
+{%if request.args.get('submitted') == "yellow"%}
       <p class="Title">Thanks!</p>
       <p class="miniTitle">Your response has been recorded</p>
       <style>form { display:none;}</style>
