@@ -9,6 +9,9 @@ def welcome():
 @app.route("/sitemap")
 def nav():
     return render_template("sitemap.html")
+@app.route("/contact")
+def contactMe():
+    return render_template("contact.html")
 @app.after_request
 def add_header(r):#https://stackoverflow.com/questions/34066804/disabling-caching-in-flask
     """

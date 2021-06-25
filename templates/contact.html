@@ -3,8 +3,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Helps with mobile compatibility-->
 
-<link rel="stylesheet" type="text/css" href="1mainResources/mainMenu.css">
-<link rel="shortcut icon" href="1mainResources/trmicon3circle.png">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='1mainResources/mainMenu.css') }}">
+<link rel="shortcut icon" href="{{ url_for('static', filename='1mainResources/trmicon3circle.png') }}">
 
 
 <style>.menuBox {display:block; top: 30%; }@keyframes slidein {0% {top: -30%;}100% {top: 30%;}}</style>

@@ -20,7 +20,7 @@ $(document).ready(function(){
     $(".menuLink5").attr("href", "school/index.html");
     $(".menuLink6").attr("href", "coding/index.html");
     $(".menuLink7").attr("href", "youtube/index.html");
-    $(".menuLink8").attr("href", "contact.html");
+    $(".menuLink8").attr("href", "contact");
     $(".menuLink10").attr("href", "cr/index.html");
     $(".menuLink9").attr("href", "privacy.html");
     $(".menuLink11").attr("href", "general/brew.html");
