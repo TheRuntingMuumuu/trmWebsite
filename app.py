@@ -20,9 +20,6 @@ def contactMe():
 @app.route("/minecraft")
 def mc():
     return render_template("minecraft/index.html")
-@app.route("/eso")
-def eso():
-    return render_template("eso/index.html")
 @app.route("/school")
 def school():
     return render_template("school/index.html")
@@ -39,7 +36,7 @@ def clash():
 def privacy():
     return render_template("privacy.html")
 
-for i in ("general",):
+for i in ("general","eso"):
     exec(f"from {i} import *")
     setup(app, flask)
 

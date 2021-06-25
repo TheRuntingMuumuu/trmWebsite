@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <title>Characters</title>
-<link rel="stylesheet" type="text/css" href="resources/main.css">
-<link rel="stylesheet" type="text/css" href="resources/esoMenu.css">
-<link rel="stylesheet" type="text/css" href="../.mainResources/mainMenu.css">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='eso/main.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='eso/esoMenu.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='1mainResources/mainMenu.css')}}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--MenuIcon-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> <!--again jquery but this one is for https connections.-->
-<link rel="shortcut icon" href="ESOicon.png">
+<link rel="shortcut icon" href="{{url_for('static', filename='eso/ESOicon.png')}}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Helps with mobile compatibility-->
-<script src="resources/mobileMenu.js"></script>
+<script src="{{url_for('static', filename='eso/mobileMenu.js')}}"></script>
 
 
 <!--Menu bar-->
-<div id="esoNavBar" class="menuBar"><script src="esonavBar.js"></script></div>
+<div id="esoNavBar" class="menuBar">{% include 'eso/esonavBar.html' %}</div>
 
 
 <!--Content for the page-->
@@ -26,34 +26,34 @@
         <p class="Title">Quentavar</p>
           <p class="bodyText">Quentavar is my Sorcerer DPS. He wears mothers sorrow, and law of julianos with the maw of the infernal helmet/shoulders. I am working on getting him False Gods and the MA backbar staff. He currently does 48k dps, and he is my main. I am also leveling up his crafting abilities in hopes of getting him to be a master crafter. He is currently level 50 in all the crafts except for Provisioning, and Enchanting.</p>
           <p class="bodyText">He wears the Dark Brotherhood Robes with the Markarth Face Markings. He has the Whispering Claw Senche raht as his mount, and he does not have a non-combat pet (since they all get in the way) He also uses the wolf hunter hat from from the werewolf dungeon (I cant remember the name)</p>
-          <a href="pictures/quentavar.jpg" target="_blank"><img class="charImages" src="pictures/quentavar.jpg"></a>
+          <a href="{{url_for('static', filename='eso/pictures/quentavar.jpg')}}" target="_blank"><img class="charImages" src="{{url_for('static', filename='eso/pictures/quentavar.jpg')}}"></a>
 
         <p class="Title">Roggvir the Mighty</p>
           <p class="bodyText">Roggvir is my tank. He is currently level 50 and I do many dungeons on him since tanks queue very quickly. I am finding out that I actually like tanking, but I don't know if I prefer it over DPS. I tried tanking nMOL and I was pretty bad but I intend to try more in the future.</p>
           <p class="bodyText">He is currently using a dwarven inferno spider, and he rides the whispering claw senche raht. He also wears a costume but I forget which one it is. I just know that you get if for free in the CP levels.</p>
-          <a href="pictures/roggvir.jpg" target="_blank"><img src="pictures/roggvir.jpg" class="charImages"></a>
+          <a href="{{url_for('static', filename='eso/pictures/roggvir.jpg')}}" target="_blank"><img src="{{url_for('static', filename='eso/pictures/roggvir.jpg')}}" class="charImages"></a>
 
         <p class="Title">Admiral Rubbish</p>
           <p class="bodyText">Admiral rubbish is a Vampire Nightblade Assassin. He is currently level 50. He is an avid member of the thieves guild, and the dark brotherhood. I use him to gather mats since he is very fast due to his gear, and ability set. (Due to U27, he lost rapid manouver but I recently regained it.) He can also make gold fairly quickly if I were to sell all of the mats that I have gathered.</p>
           <p class="bodyText">He wears the Vampire Noble Costume and uses the Wraithshadow steed, with the mudcrab of eternal doom. He is also a stage 4 vampire.</p>
-          <a href="pictures/admiralRubbish.jpg" target="_blank"><img src="pictures/admiralRubbish.jpg" class="charImages"></a>
+          <a href="{{url_for('static', filename='eso/pictures/admiralRubbish.jpg')}}" target="_blank"><img src="{{url_for('static', filename='eso/pictures/admiralRubbish.jpg')}}" class="charImages"></a>
 
         <p class="Title">Hits-Head-on-Cabinet</p>
           <p class="bodyText">This is my stamblade. He is sadly only level 49 (so close to 50) but I intend to do trials with him so I can learn how to play a melee class.</p>
           <p class="bodyText">The image is out of date. He currently wears a lot of medium armour died blue with the red indrik. He currently wears the black oily skin (from the recent event) and wears the ashlander costume.</p>
-          <a href="pictures/hitshead.jpg" target="_blank"><img src="pictures/hitshead.jpg" class="charImages"></a>
+          <a href="{{url_for('static', filename='eso/pictures/hitshead.jpg')}}" target="_blank"><img src="{{url_for('static', filename='eso/pictures/hitshead.jpg')}}" class="charImages"></a>
 
         <p class="Title">Quaranar (Frosty Witch Farmer)</p>
           <p class="bodyText">This is my magden who does about 23.3k dps (6m). He currently wears julianos/mothers sorrow with the valkyn skoria helmet/shoulders. He is not done yet since I have yet to get a good backbar or even the right traits on his jewlery. For some reason, my sister calls him a "Frosty Witch Farmer" though.</a>.</p>
-          <a href="pictures/Quaranar.jpg" target="_blank"><img src="pictures/Quaranar.jpg" class="charImages"></a>
+          <a href="{{url_for('static', filename='eso/pictures/Quaranar.jpg')}}" target="_blank"><img src="{{url_for('static', filename='eso/pictures/Quaranar.jpg')}}" class="charImages"></a>
 
         <p class="Title">Capt. Rubbish</p>
           <p class="bodyText">Capt. Rubbish is my other nightblade. He was kind of a test nightblade and got to level 19 before I changed to Admiral Rubbish... EDIT: I actually never use him anymore and am considering deleting him, but I think that he looks cool so I'll keep the picture on the website.</p>
-          <a href="pictures/captRubbish.jpg" target="_blank"><img src="pictures/captRubbish.jpg" class="charImages"></a>
+          <a href="{{url_for('static', filename='eso/pictures/captRubbish.jpg')}}" target="_blank"><img src="{{url_for('static', filename='eso/pictures/captRubbish.jpg')}}" class="charImages"></a>
 
         <p class="Title">Captain Rubbish</p>
           <p class="bodyText">Captain Rubbish is my very first character. He is a level 11 templar and I only sometimes use him for writs (740G per day...) EDIT: I never use him anymore and are thinking of deleting him. I will only keep the image here since I think he looks very cool (and want to preserve this style for a future templar since I think it looks very cool.)</p>
-          <a href="pictures/captainRubbish.jpg" target="_blank"><img src="pictures/captainRubbish.jpg" class="charImages"></a>
+          <a href="{{url_for('static', filename='eso/pictures/captainRubbish.jpg')}}" target="_blank"><img src="{{url_for('static', filename='eso/pictures/captainRubbish.jpg')}}" class="charImages"></a>
 
       </div>
     </div>
