@@ -1,11 +1,12 @@
 items = {
     "General": "/general",
+    "Brew": "/brew",
     "Elder Scrolls Online": "/eso",
     "Minecraft": "/minecraft",
     "School": "/school",
     "Programming": "/coding",
-    "Youtube": "/youtube",
+    "YouTube Channel": "/youtube",
     "Contact Me": "/contact",
     "Clash Royale Clan": "/cr",
-    "Privacy Policie": "/privacy",
+    "Privacy Policy": "/privacy",
 }

@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-import mainmenu
+import mainmenu, flask
 
 app = Flask(__name__)
 
@@ -34,9 +34,10 @@ def clash():
 @app.route("/privacy")
 def privacy():
     return render_template("privacy.html")
-@app.route("/general")
-def general():
-    return render_template("general/index.html")
+
+for i in ("general",):
+    exec(f"from {i} import *")
+    setup(app, flask)
 
 @app.after_request
 def add_header(r):#https://stackoverflow.com/questions/34066804/disabling-caching-in-flask
