@@ -4,7 +4,7 @@ items = {
     "Minecraft": "/minecraft",
     "School": "/school",
     "Programming": "/coding",
-    "Youtube": "/youtube/",
+    "Youtube": "/youtube",
     "Contact Me": "/contact",
     "Clash Royale Clan": "/cr",
     "Privacy Policie": "/privacy",
