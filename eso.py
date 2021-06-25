@@ -8,5 +8,5 @@ def esoToons():
 def setup(app, flask):
     globals()['flask'] = flask
     stuff = {"eso": "/eso", "esoTrials": "/eso/trial", "esoToons": "/eso/toons"}
-    for i in stuff:
+    for i in stuff: #https://stackoverflow.com/questions/28741965/decorate-a-function-after-it-is-defined
         exec(f"{i} = app.route('{stuff[i]}')({i})")
