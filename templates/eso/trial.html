@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <title>Trials</title>
-<link rel="stylesheet" type="text/css" href="resources/main.css">
-<link rel="stylesheet" type="text/css" href="resources/esoMenu.css">
-<link rel="stylesheet" type="text/css" href="../.mainResources/mainMenu.css">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='eso/main.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='eso//esoMenu.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='/1mainResources/mainMenu.css')}}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--MenuIcon-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> <!--Importing JQuery which is used for the menu bar to be editable from one file.-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> <!--again jquery but this one is for https connections.-->
-<link rel="shortcut icon" href="ESOicon.png">
+<link rel="shortcut icon" href="{{url_for('static', filename='eso/ESOicon.png')}}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Helps with mobile compatibility-->
 <script src="resources/mobileMenu.js"></script>
 
 
 <!--Menu bar-->
-<div id="esoNavBar" class="menuBar"><script src="esonavBar.js"></script></div>
+<div id="esoNavBar" class="menuBar">{% include 'eso/esonavBar.html' %}</div>
 
 
 <!--Content for the page-->
@@ -22,12 +22,12 @@
       <p class="bodyText">ESO has a lot of content. Some of that content, is trials. Trials are big hard 12 player dungeons. They should be done with 12 players and they are designed to test how well people work together in a group. They have 2 modes. Normal and veteran (and veteran hard mode). Normal can be done by anyone who is decent, but veteran ones are much harder (I have not done any.) </p>
 
     <p class="Title">What ones have I done</p>
-      <p class="bodyText">I have done normal Sanctum Ophidia (nSO) in a beginner environment (thanks <a href="index.html" class="textLinks">ATC</a>) It went really well. I did it with <a href="toons.html" class="textLinks">Quentavar</a> (my magsorc) .I intend to do more of them later and will post them here.</p>
+      <p class="bodyText">I have done normal Sanctum Ophidia (nSO) in a beginner environment (thanks <a href="/eso" class="textLinks">ATC</a>) It went really well. I did it with <a href="/eso/toons" class="textLinks">Quentavar</a> (my magsorc) .I intend to do more of them later and will post them here.</p>
       <p class="bodyText">I have completed Maw of Lorkhaj on normal difficulty (nMOL) and I found it really fun. It was again done in an interactive and fun environment (thanks ATC), and I loved doing it. I have also recently completed it a second time with ATC where I was a runner (and now I understand the runner mechanics).</p>
       <p class="bodyText">I have attempted nHoF (halls of fabrication) but did not finish it. We got stuck on the final boss. We also struggled a lot with the triplets. I do intend to run this one again and hopefully clear it.</p>
       <p class="bodyText">I have also done nHRC (normal ***-ra citadel) twice with ATC, and we only had a group of 11 people. I think it was the most fun trial that I have done yet. I have recently also ran vHRC twice and it was not actually that bad.</p>
-      <p class="bodyText">I have done nSS (normal Sunspire) with <a href="index.html" class="textLinks">ATC</a> and it was really fun. I did this trial late at night so I was not sure if I would like it or not, but it ended not too late (22:30). I also got the first piece of the False Gods set for <a href="toons.html" class="textLinks">Quentavar</a></p>
-      <p class="bodyText">I have recently done nAA (aetherian archive) with <a href="index.html" class="textLinks">ATC</a> and it was really fun. It was very fun and easy and the second time I ran it, I ran it with <a href="toons.html" class="textLinks">Quaranar</a></p>
+      <p class="bodyText">I have done nSS (normal Sunspire) with <a href="/eso" class="textLinks">ATC</a> and it was really fun. I did this trial late at night so I was not sure if I would like it or not, but it ended not too late (22:30). I also got the first piece of the False Gods set for <a href="/eso/toons" class="textLinks">Quentavar</a></p>
+      <p class="bodyText">I have recently done nAA (aetherian archive) with <a href="/eso" class="textLinks">ATC</a> and it was really fun. It was very fun and easy and the second time I ran it, I ran it with <a href="toons.html" class="textLinks">Quaranar</a></p>
 
     <p class="Title">Table</p>
       <div style="overflow-x:auto;"> <!--So that the table works on small screens-->
