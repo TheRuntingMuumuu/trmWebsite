@@ -22,6 +22,18 @@ def eso():
 @app.route("/school")
 def school():
     return render_template("school/index.html")
+@app.route("/coding")
+def codie():
+    return render_template("coding/index.html")
+@app.route("/youtube")
+def youtube():
+    return render_template("youtube/index.html")
+@app.route("/cr")
+def clash():
+    return render_template("cr/index.html")
+@app.route("/privacy")
+def privacy():
+    return render_template("privacy.html")
 
 @app.after_request
 def add_header(r):#https://stackoverflow.com/questions/34066804/disabling-caching-in-flask
