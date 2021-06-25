@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <title>ESO</title>
-<link rel="stylesheet" type="text/css" href="resources/main.css">
-<link rel="stylesheet" type="text/css" href="resources/esoMenu.css">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='eso/main.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='eso/esoMenu.css')}}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--MenuIcon-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> <!--jquery-->
 <link rel="shortcut icon" href="ESOicon.png">
@@ -10,8 +10,8 @@
 
 
 <!--Menu bar-->
-<div id="esoNavBar" class="menuBar"><script src="esonavBar.js"></script></div>
-
+<div id="esoNavBar" class="menuBar">{% include 'eso/esonavBar.html' %}</div>
+<!--todo: use just flask for this-->
 
 <!--Content for the page-->
 <div class="fullPage">
