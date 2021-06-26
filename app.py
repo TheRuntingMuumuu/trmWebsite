@@ -1,8 +1,7 @@
 from flask import Flask, render_template, request, redirect
 import mainmenu, flask
-
+from downloads import downloaddddddd
 app = Flask(__name__)
-
 @app.route("/")
 def welcome():
     return render_template('index.html', mainMenuItems=mainmenu.items)
@@ -32,7 +31,6 @@ def clash():
 @app.route("/privacy")
 def privacy():
     return render_template("privacy.html")
-
 for i in ("general","eso","minecraft"):
     exec(f"from {i} import *")
     setup(app, flask)
@@ -48,7 +46,6 @@ def add_header(r):#https://stackoverflow.com/questions/34066804/disabling-cachin
     r.headers["Expires"] = "0"
     r.headers['Cache-Control'] = 'public, max-age=0'
     return r
-
 # Errors {{{
 @app.errorhandler(404)
 def error404(e):
@@ -56,6 +53,6 @@ def error404(e):
                            description="""This page does not exist. You may try to find the page yourself by visiting either the <a href="index.html" class="textLinks">index </a>or the <a href="sitemap.html" class="textLinks">sitemap</a>.
                            If you need help, please contact me <a href="contact.html" class="textLinks">here</a>."""), 404
 # }}}
-
+app.register_blueprint(downloaddddddd, url_prefix="/downloads")
 if __name__ == '__main__':
     app.run()
