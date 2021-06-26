@@ -17,9 +17,6 @@ def nav():
 @app.route("/contact")
 def contactMe():
     return render_template("contact.html")
-@app.route("/minecraft")
-def mc():
-    return render_template("minecraft/index.html")
 @app.route("/school")
 def school():
     return render_template("school/index.html")
@@ -36,7 +33,7 @@ def clash():
 def privacy():
     return render_template("privacy.html")
 
-for i in ("general","eso"):
+for i in ("general","eso","minecraft"):
     exec(f"from {i} import *")
     setup(app, flask)
 
