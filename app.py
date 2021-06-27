@@ -47,8 +47,8 @@ def add_header(r):#https://stackoverflow.com/questions/34066804/disabling-cachin
 @app.errorhandler(404)
 def error404(e):
     return render_template("error/error.html", code="HTTP-404",
-                           description="""This page does not exist. You may try to find the page yourself by visiting either the <a href="index.html" class="textLinks">index </a>or the <a href="sitemap.html" class="textLinks">sitemap</a>.
-                           If you need help, please contact me <a href="contact.html" class="textLinks">here</a>."""), 404
+                           description="""This page does not exist. You may try to find the page yourself by visiting either the <a href="/" class="textLinks">index </a>or the <a href="/sitemap" class="textLinks">sitemap</a>.
+                           If you need help, please contact me <a href="/contact" class="textLinks">here</a>."""), 404
 # }}}
 app.register_blueprint(downloaddddddd, url_prefix="/downloads")
 if __name__ == '__main__':
