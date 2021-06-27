@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Helps with mobile compatibility-->
+    <link rel="stylesheet" href="{{url_for('static', filename='stylesheet.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='menu.css')}}">
+  </head>
+
+  <body>
+    <nav>
+        <a href="/eso" class="main">ESO</a>
+        <a href="/general" class="main">General</a>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+  </body>
+</html>
