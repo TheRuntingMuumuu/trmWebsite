@@ -19,9 +19,6 @@ def contactMe():
 @app.route("/school")
 def school():
     return render_template("school/index.html")
-@app.route("/coding")
-def codie():
-    return render_template("coding/index.html")
 @app.route("/youtube")
 def youtube():
     return render_template("youtube/index.html")
@@ -31,7 +28,7 @@ def clash():
 @app.route("/privacy")
 def privacy():
     return render_template("privacy.html")
-for i in ("general","eso","minecraft"):
+for i in ("general","eso","minecraft", "coding"):
     exec(f"from {i} import *")
     setup(app, flask)
 

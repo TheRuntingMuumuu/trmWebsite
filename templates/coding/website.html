@@ -1,16 +1,15 @@
 <!DOCTYPE html5>
 <title>Website</title>
-<link rel="stylesheet" type="text/css" href="1resources/main.css">
-<link rel="stylesheet" type="text/css" href="1resources/MenuBar.css">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='coding/1resources/main.css')}}">
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='coding/1resources/MenuBar.css')}}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--MenuIcon-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> <!--jquery-->
-<link rel="shortcut icon" href="../1mainResources/trmicon3circle.png">
+<link rel="shortcut icon" href="{{url_for('static', filename='1mainResources/trmicon3circle.png')}}">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Helps with mobile compatibility-->
 <script src="1resources/mobileMenu.js"></script>
 
 
 <!--Menu bar-->
-<div id="codingNavBar" class="menuBar"><script src="codingNavBar.js"></script></div>
+<div id="codingNavBar" class="menuBar">{% include 'coding/codingNavBar.html' %}</div>
 
 
 <!--Content for the page-->
@@ -20,13 +19,11 @@
       <p class="bodyText">This is my website. I have been working on it for a long time (probably 4 years) but only really for the past year or so. Before that I knew almost no html and did not work much on the website. It went through 3 main phases (so far) and here they are along with download links.</p>
     <p class="miniTitle">Current (beta 2.11.1)</p>
       <p class="bodyText"><a class="textLinks" href="https://github.com/TheRuntingMuumuu/trmWebsite/tree/master">Source Code</a></p>
-      <p class="bodyText"><a class="textLinks" href="https://theruntingmuumuu.github.io/trmWebsite">Beta (less stable, experimental features)</a></p>
+      <p class="bodyText"><a class="textLinks" href="https://theruntingmuumuu.github.io/trmWebsite/tree/betaSiteLive">Beta (less stable, experimental features)</a></p>
     <p class="miniTitle">Alpha Site (alpha 1.5.4, discontinued)</p>
       <p class="bodyText">This was the old site, all of the features should be ported to the new one, but if for some reason one is not, you should be able to access it through the portal below. I stopped working on it because it was a meh design and was missing the ability to have different menu bars for each section of the website.</p>
-      <p class="bodyText"><a class="textLinks" href="AlphaPortal.html">Portal to Site</a></p>
-      <p class="bodyText"><a href="../1old/alphasitedl.zip" class="textLinks" download>Download</a></p>
+      <p class="bodyText"><a class="textLinks" href="/coding/alpha/portal">Portal to Site</a></p>
     <p class="miniTitle">Owens Weird Site (release 1.1, discontinued)</p>
       <p class="bodyText">This was my original site. It is very buggy and does not work well but not all of the features are present on the modern site hence the portal. None of them should be needed, but I am keeping it just in case. It was a complete mess of code since it was my first big html project (before I knew much) so I would highly not suggest using it, but I will provide the download in case you want it for some reason.</p>
-      <p class="bodyText"><a class="textLinks" href="OWSPortal.html">Portal to Site</a></p>
-      <p class="bodyText"><a href="../1old/oldsitedl.zip" class="textLinks" download>Download</a></p>
+      <p class="bodyText"><a class="textLinks" href="/coding/ows/portal">Portal to Site</a></p> 
 </div>
