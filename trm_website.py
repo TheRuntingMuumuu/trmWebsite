@@ -52,4 +52,4 @@ def error404(e):
 # }}}
 app.register_blueprint(downloaddddddd, url_prefix="/downloads")
 if __name__ == '__main__':
-    app.run()
+    app.run(host="0.0.0.0")
