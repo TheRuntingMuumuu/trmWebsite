@@ -1,4 +1,5 @@
 items = {
+    "THIS IS THE BETA, IT IS REALLY BUGGY": "/",
     "General": "/general",
     "Brew": "/brew",
     "Elder Scrolls Online": "/eso",
