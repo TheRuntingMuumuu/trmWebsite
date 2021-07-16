@@ -18,16 +18,26 @@
     <link rel="stylesheet" href="{{url_for('static', filename='menu.css')}}">
   </head>
   <body>
-      <div id="bignav">{% include 'nav.html' %}
+      <div id="bignav">
+<div class="menuBoxBG"></div>
+  <div class="menuBox">
+    <p class="menuBoxTitle">Which area do you want to visit?</p>
+      {% for item in mainMenuItems %}
+      <a href="{{mainMenuItems[item]}}" class="menulink" id="area">{{item}}</a>
+      {% endfor%}
+      </div>
+<!--NO JS SUPPORT-->
+<div class="brs"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> 
+  <a href="npa/LoadingNPA.htm" class="npa">NPA</a>
+    </div>
       </div></div>
     <style>
 
 #bignav { display: none; }
-#bignav:target { display: block;} 
 .menuBoxBG {
     display: none;
 } /*https://stackoverflow.com/questions/22061454/change-style-of-an-element-when-focus-is-another-element*/
-#bignav:target + .menuBox + .menuBoxBG {
+#bignav:target + .menuBox + .menuBoxBG + #bignav {
 display: block;
 }</style>
     <nav>
