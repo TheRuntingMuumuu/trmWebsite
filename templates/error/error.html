@@ -1,0 +1,34 @@
+<!DOCTYPE html5>
+<title>Error {{ code }}</title>
+<!-- idea stolen from OSC -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Helps with mobile compatibility-->
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='1mainResources/mainMenu.css')}}">
+<link rel="shortcut icon" href="{{url_for('static', filename='1mainResources/trmicon3circle.png')}}">
+<style>.menuBox {display:block;}
+.text {
+  color: white;
+  padding: 0px 14px 14px 14px;
+  font-size: 20px;
+}
+.textLinks {
+  text-decoration: underline;
+  color: #5f88e1;
+  list-style-type: none;
+}
+
+.textLinks:hover {
+  transition: all .2s;
+  color: orange;
+  background-color: #111;
+}
+.menuBox  a{
+  display: inline;
+  padding: 0px;
+}
+</style>
+
+<div class="menuBoxBG"></div>
+  <div class="menuBox">
+      <p class="menuBoxTitle">Error {{code}}</p>
+      <p class="text">{{description | safe}}</p>
+  </div>
