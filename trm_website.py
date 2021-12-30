@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, send_from_directory
 import mainmenu, flask
 from downloads import downloaddddddd
 app = Flask(__name__)
@@ -28,9 +28,15 @@ def clash():
 @app.route("/privacy")
 def privacy():
     return render_template("privacy.html")
-for i in ("general","eso","minecraft", "coding"):
+
+for i in ("school", "general","eso","minecraft", "coding"):
     exec(f"from {i} import *")
     setup(app, flask)
+del setup
+
+@app.route("/<path:static>")
+async def get_static(static):
+    return send_from_directory("static", path=static)
 
 @app.after_request
 def add_header(r):#https://stackoverflow.com/questions/34066804/disabling-caching-in-flask

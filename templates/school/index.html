@@ -1,16 +1,18 @@
 <!DOCTYPE html5>
 <title>School Projects</title>
-<link rel="stylesheet" type="text/css" href="1resources/main.css">
-<link rel="stylesheet" type="text/css" href="1resources/schoolMenuBar.css">
+<link rel="stylesheet" type="text/css" href="/static/school/main.css">
+<link rel="stylesheet" type="text/css" href="/static/school/schoolMenuBar.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--MenuIcon-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script> <!--jquery-->
-<link rel="shortcut icon" href="../1mainResources/trmicon3circle.png">
+<link rel="shortcut icon" href="/static/1mainResources/trmicon3circle.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Helps with mobile compatibility-->
-<script src="1resources/mobileMenu.js"></script>
+<script src="/static/school/mobileMenu.js"></script>
 
 
 <!--Menu bar-->
-<div id="schoolNavBar" class="menuBar"><script src="schoolNavBar.js"></script></div>
+<div id="schoolNavBar" class="menuBar">
+	{%include 'school/schoolNavBar.html' %}
+</div>
 
 
 <!--Content for the page-->
