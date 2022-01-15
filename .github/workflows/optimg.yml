@@ -1,0 +1,19 @@
+name: Are images optimised ?
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    name: Test Image Optimisation
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.7
+          architecture: x64
+      - run: https://github.com/TheTechRobo/photopt/raw/master/optimise.py
+      - run: sudo apt install -y optipng jpegoptim
+      - run: python3 optimise.py
+
