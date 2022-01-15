@@ -13,7 +13,7 @@ jobs:
         with:
           python-version: 3.7
           architecture: x64
-      - run: https://github.com/TheTechRobo/photopt/raw/master/optimise.py
+      - run: wget https://github.com/TheTechRobo/photopt/raw/master/optimise.py
       - run: sudo apt install -y optipng jpegoptim
       - run: python3 optimise.py
 
