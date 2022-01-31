@@ -2,6 +2,7 @@
 //https://flaviocopes.com/how-to-create-multiline-string-javascript/
 var Misc = `<p>You are the misc person, you have nothing special to do! Just do what is needed.<br>Current Project: <b>Securing the base</b></p>`;
 var Secu = `<p>Your project is <a href="#se">Security</a>. Work on it!<br>Or maybe work on the NPA website.`;
+var Defence = '<p>You are the defence person, your job is to defend the base from parents and intruders.</p>';
 
 //Trash
 function hideAll() {//Hides all Windows because they - especially 10 - NEED hiding
@@ -30,4 +31,3 @@ function loadFile(filePath) {//https://stackoverflow.com/a/41133213/9654083
                 alert("Fatal error - aborting!");for (;;) {void(0)}}
   return result;
 }
-

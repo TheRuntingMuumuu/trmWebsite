@@ -5,17 +5,24 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <link rel="stylesheet" type="text/css" href="windows.css">
 
+<!--Imports the misc stuff-->
+<script src="misc.js"></script>
+
+<!--Imports the taskbar-->
+<script src="taskbar.js"></script>
+
+<!--Imports something else-->
+<script src="https://unpkg.com/node-forge@0.7.0/dist/forge.min.js"></script>
 
 <title>NPA Website</title>
 <style>
     body{background-color:black;}/*Loads before the password loads, so the screen is black before*/
 </style>
 <a id="top"></a>
-<script src="misc.js"></script>
-<script src="taskbar.js"></script>
-<script src="https://unpkg.com/node-forge@0.7.0/dist/forge.min.js"></script>
-        <script>passMode = '1';
-		CurrentIframeThingy = 1;
+
+<script>
+passMode = '1';
+CurrentIframeThingy = 1;
 //This is the code for the username and password code.
 function LoginFunction() {
   window.uname = null;//https://stackoverflow.com/a/8348522/9654083
@@ -63,10 +70,10 @@ LoginFunction() //Runs the pass/user on page load
 passWord() //Runs the password thing on page load
 $('.login').hide(); //Hides the login box
 
+//Disables right click so people cant copy/paste
+document.addEventListener('contextmenu', event => event.preventDefault());
 
-document.addEventListener('contextmenu', event => event.preventDefault()); //Disables right click so people cant copy/paste
-
-//The button on the login window
+//The functions to be called when user clicks button on the login window
 function login() {
   console.log(passMode)
   if (window.passMode === 'lock') {
@@ -91,7 +98,7 @@ function loginPage() {
     hideAll();
 }
 
-//Keybinds
+//Keybinds for locking and the fake NPA
 $(document).on('keydown', function ( e ) { //Lock CTRL + L
     if ((e.metaKey || e.ctrlKey) && ( String.fromCharCode(e.which).toLowerCase() === 'l') ) {
       passMode = "lock";
@@ -114,7 +121,8 @@ $(document).on('keydown', function ( e ) { //Fake NPA and LOCK CTRL + F
 <link rel="stylesheet" type="text/css" href="menuss.css">
 	<script>if (window.uname === null || typeof(window.uname) === "undefined") {
 		console.log(4);for (;;) {void(0)}}</script>
-<!--This is the menu-->
+
+<!--This is the menu at the bottom of the screen-->
 <div class="menuContainer">
   <div class="menu">
     <div class="dropupDiv">
@@ -150,7 +158,7 @@ $(document).on('keydown', function ( e ) { //Fake NPA and LOCK CTRL + F
   </div>
 </div>
 
-<!--Top bar-->
+<!--Code for the Top bar-->
 <div class="topbar">
   <div class="windowSpecificMenuContainer">
     <a class="windowSpecificMenu" id="windowSpecificMenu"><!--This will be changed with JS depending on the window--></a>
@@ -167,13 +175,17 @@ $(document).on('keydown', function ( e ) { //Fake NPA and LOCK CTRL + F
         <p>Welcome <script>document.write(uname);</script> to the NPA website. Please make sure to log out or lock when you are done. To log out in a pinch, click CTRL + L</p>
       </div>
     <script>
-  		console.log(5);
   		console.log(uname);
-  		if (uname === "TheTechRobo") { var d22 = document.getElementById('dashboard'); d22.innerHTML += Secu;}else if (uname === "TheRuntingMuumuu") { var d22 = document.getElementById('dashboard'); d22.innerHTML += Misc;}
+      //Fills the dashboard with the correct information depending on the username.
+  		if (uname === "TheTechRobo") { var d22 = document.getElementById('dashboard'); d22.innerHTML += Secu;}
+      else if (uname === "TheRuntingMuumuu") { var d22 = document.getElementById('dashboard'); d22.innerHTML += Misc;}
+      else if (uname === "Mega") { var d22 = document.getElementById('dashboard'); d22.innerHTML += Defence;}
+
   	</script><!--https://thisinterestsme.com/add-html-body-javascript/ https://stackoverflow.com/a/8348522/9654083-->
 </div>
 
 
+<!--Code for the individual windows-->
 
 <div class="window securityWindow">
   <iframe src="security.html" width="100%" height="100%" align="right" scrolling="yes" style="border: none;" id="security">Failed to load iframes, maybe your browser doesn't support them?</iframe>

@@ -224,4 +224,7 @@ Beta 2.11
     •	Fix some OWS bugs IT IS NOT BEING SUPPORTED; THIS IS A ONE TIME FIX
 Beta 2.11.1
     •   Bugfix where text was unselectable and unclicable in chromium browsers
-
+Beta 2.11.2|C1
+    •   Updated a bit of code
+    •   Updated a the version naming system
+    •   Killed the word (docx) file for the changelog
